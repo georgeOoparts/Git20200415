@@ -125,7 +125,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("kyoutuhensu::"+rrCount);
+        //Debug.Log("kyoutuhensu::"+rrCount);
     }
 
 
