@@ -19,6 +19,6 @@ public class H_99_54_BackButton : MonoBehaviour
 
     public void onClick() 
     {
-        Debug.Log("Clickdethe");
+        Debug.Log("Clickdethe;;;");
     }
 }
