@@ -5,6 +5,8 @@ using UnityEngine;
 public class H_99_55_rrPanelButton : MonoBehaviour
 {
     public H_99_01_kyoutuHensu kyotu;
+
+    public T0020M_mojiHonban moji;
     void Start()
     {
         
@@ -17,10 +19,10 @@ public class H_99_55_rrPanelButton : MonoBehaviour
     }
     public void tup()
     {
-        
-        Debug.Log("MMMaeRRRRRRRRRpanel;;;;"+kyotu.rrCount);
+
+        Debug.Log("MMMaeRRRRRRRRRpanel;;;;" + kyotu.rrCount + "moji::" + moji.premoji);
         kyotu.rrCount++;
-        Debug.Log("AAAtoRRRRRRRRRpanel;;;;" + kyotu.rrCount);
+        Debug.Log("AAAtoRRRRRRRRRpanel;;;;" + kyotu.rrCount + "moji::" + moji.premoji);
 
     }
 }
