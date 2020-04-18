@@ -17,6 +17,10 @@ public class H_99_55_rrPanelButton : MonoBehaviour
     }
     public void tup()
     {
-        Debug.Log("RRRRRRRRRpanel;;;;"+kyotu.rrCount);
+        
+        Debug.Log("MMMaeRRRRRRRRRpanel;;;;"+kyotu.rrCount);
+        kyotu.rrCount++;
+        Debug.Log("AAAtoRRRRRRRRRpanel;;;;" + kyotu.rrCount);
+
     }
 }
