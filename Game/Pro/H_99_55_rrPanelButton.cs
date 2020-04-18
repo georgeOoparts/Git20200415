@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class H_99_55_rrPanelButton : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public H_99_01_kyoutuHensu kyotu;
     void Start()
     {
         
@@ -17,6 +17,6 @@ public class H_99_55_rrPanelButton : MonoBehaviour
     }
     public void tup()
     {
-        Debug.Log("RRRRRRRRRpanel;;;;");
+        Debug.Log("RRRRRRRRRpanel;;;;"+kyotu.rrCount);
     }
 }
