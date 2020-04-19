@@ -97,8 +97,8 @@ public class testPrehubNarabe : MonoBehaviour
         //過去と現在のTextPanelの幅が違っていたら、
         //mojipanelを並び替える
         //rtTextPanel.sizeDelta.x、つまりこのアタッチしているtexpanelの幅
-        if (turnCount==1 || kakoTextPanelWidth != rtTextPanel.sizeDelta.x) 
-        {
+        //if (turnCount==1 || kakoTextPanelWidth != rtTextPanel.sizeDelta.x) 
+        //{
             //startwizeを０に初期化。
             startWidth = 0;
             //pKaigyouを初期化
@@ -125,20 +125,20 @@ public class testPrehubNarabe : MonoBehaviour
                     startWidth = 0;
                 }
             }
-        }turnCount++;
+        //}turnCount++;
 
-        //並び
-        //ボタンクリックで再びmojipanel並びなおし
-        //右クリックInput.GetMouseButtonDown(1)でも並びなおし
-        //rrcountまきもどし機能追加する Input.GetKeyDown("b")
-        //mcountまきもどし機能追加する　 Input.GetKeyDown("n")
-        if (Input.GetMouseButtonDown(0)|| Input.GetMouseButtonDown(1)|| Input.GetKeyDown("b") || Input.GetKeyDown("n")) {
-            turnCount = 0;
-        }
-        //textpanelの幅が変わったらmojipanelを並び替えるため
-        //最後に、kakoTextPanelWidthを代入。
-        kakoTextPanelWidth = rtTextPanel.sizeDelta.x;
-        //debuglogのためのk++
-        k++;
+        ////並び
+        ////ボタンクリックで再びmojipanel並びなおし
+        ////右クリックInput.GetMouseButtonDown(1)でも並びなおし
+        ////rrcountまきもどし機能追加する Input.GetKeyDown("b")
+        ////mcountまきもどし機能追加する　 Input.GetKeyDown("n")
+        //if (Input.GetMouseButtonDown(0)|| Input.GetMouseButtonDown(1)|| Input.GetKeyDown("b") || Input.GetKeyDown("n")) {
+        //    turnCount = 0;
+        //}
+        ////textpanelの幅が変わったらmojipanelを並び替えるため
+        ////最後に、kakoTextPanelWidthを代入。
+        //kakoTextPanelWidth = rtTextPanel.sizeDelta.x;
+        ////debuglogのためのk++
+        //k++;
     }
 }
