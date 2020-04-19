@@ -81,6 +81,18 @@ public class T0020M_mojiHonban : MonoBehaviour
     private int kyouchouHenkanInt2 = 99;
     private int kyouchouHenkanInt3 = 99;
 
+
+
+    public void bKey() //bkeyw
+    {
+        //rrcountを戻すにはとりあえずｂを押す
+        if (Input.GetKeyDown("b"))
+        {
+            listReset();
+            if (kyotu.rrCount > 0)//0の時はバックできない
+                kyotu.rrCount--;
+        }
+    }
     void Update()//updatew
     {
         //kyotu.mojiSwitch 初期値:3
@@ -112,12 +124,12 @@ public class T0020M_mojiHonban : MonoBehaviour
             kyotu.mojiSwitch = 3;
         }
         //rrcountを戻すにはとりあえずｂを押す
-        else if (Input.GetKeyDown("b"))
-        {
-            listReset();
-            if (kyotu.rrCount > 0)//0の時はバックできない
-                kyotu.rrCount--;
-        }
+        //else if (Input.GetKeyDown("b"))//bw
+        //{
+        //    listReset();
+        //    if (kyotu.rrCount > 0)//0の時はバックできない
+        //        kyotu.rrCount--;
+        //}
         //mcountを戻すにはとりあえずｂを押す
         else if (Input.GetKeyDown("n"))
         {
@@ -126,6 +138,7 @@ public class T0020M_mojiHonban : MonoBehaviour
             if (kyotu.MCount > 0)//0の時はバックできない
                 kyotu.MCount--;
         }
+        bKey();
 
         //kyotu.rrCountの数を増やす
         if (Input.GetMouseButtonDown(0))//rrcountw
