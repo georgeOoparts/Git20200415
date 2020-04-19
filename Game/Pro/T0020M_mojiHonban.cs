@@ -125,12 +125,12 @@ public class T0020M_mojiHonban : MonoBehaviour
             kyotu.mojiSwitch = 3;
         }
         //rrcountを戻すにはとりあえずｂを押す
-        //else if (Input.GetKeyDown("b"))//bw
-        //{
-        //    listReset();
-        //    if (kyotu.rrCount > 0)//0の時はバックできない
-        //        kyotu.rrCount--;
-        //}
+        else if (Input.GetKeyDown("b"))//bw
+        {
+            listReset();
+            if (kyotu.rrCount > 0)//0の時はバックできない
+                kyotu.rrCount--;
+        }
         //mcountを戻すにはとりあえずｂを押す
         else if (Input.GetKeyDown("n"))
         {
