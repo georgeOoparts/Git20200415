@@ -91,7 +91,7 @@ public class T0020M_mojiHonban : MonoBehaviour
             listReset();
             if (kyotu.rrCount > 0)//0の時はバックできない
                 kyotu.rrCount--;
-            Debug.Log("IIINBBkey;;"+kyotu.rrCount);
+            Debug.Log("update外public void bKey();;" + kyotu.rrCount);
         //}
     }
     void Update()//updatew

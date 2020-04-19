@@ -19,10 +19,11 @@ public class H_99_55_rrPanelButton : MonoBehaviour
     }
     public void tup()
     {
+        Debug.Log("RRRRRRRRRpanel;;;;" + kyotu.rrCount );
 
-        Debug.Log("MMMaeRRRRRRRRRpanel;;;;" + kyotu.rrCount + "moji::" + moji.m1_1[0,0]);
+        //Debug.Log("MMMaeRRRRRRRRRpanel;;;;" + kyotu.rrCount + "moji::" + moji.m1_1[0,0]);
         //kyotu.rrCount++;
-        Debug.Log("AAAtoRRRRRRRRRpanel;;;;" + kyotu.rrCount + "moji::" + moji.m1_1[0, 1]);
+        //Debug.Log("AAAtoRRRRRRRRRpanel;;;;" + kyotu.rrCount + "moji::" + moji.m1_1[0, 1]);
 
     }
 }
