@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class H_99_54_BackButton : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public H_99_01_kyoutuHensu kyotu;
     void Start()
     {
         
@@ -19,6 +19,6 @@ public class H_99_54_BackButton : MonoBehaviour
 
     public void onClick() 
     {
-        Debug.Log("BBBBBBBBBack;;;;");
+        Debug.Log("BBBBBBBBBack;;rrcout;;"+kyotu.rrCount);
     }
 }
