@@ -94,6 +94,13 @@ public class T0020M_mojiHonban : MonoBehaviour
             Debug.Log("update外public void bKey();;" + kyotu.rrCount);
         //}
     }
+    bool rrPanelDown = false;
+    public void onPanelButton() //bkeyw
+    {
+        rrPanelDown = true;
+        Debug.Log("update外public void onPanelButton();;" + kyotu.rrCount+ rrPanelDown);
+        
+    }
     void Update()//updatew
     {
         //kyotu.mojiSwitch 初期値:3
@@ -144,6 +151,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //kyotu.rrCountの数を増やす
         if (Input.GetMouseButtonDown(0))//rrcountw
         {
+            Debug.Log("update内Input.GetMouseButtonDown(0)；；"+kyotu.rrCount+ rrPanelDown);
             listReset();
             //rrcountが紙芝居の最後のページじゃなければ
             //文字が増えるたびここも増える1--------ここから-----123----------
