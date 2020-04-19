@@ -42,12 +42,12 @@ public class T0020M_mojiHonban : MonoBehaviour
     List<GameObject> kodomoTextObj = new List<GameObject>();
 
     //textオブジェのコンポTEXTに当てはめるText変数
-    List<Text> kodomoTextText = new List<Text>();
+    public List<Text> kodomoTextText = new List<Text>();
 
     //4次元listを定義
     //List<List<List<List<string>>>> bunsho = new List<List<List<List<string>>>>();
     //k0016_99_2_1：2次元listの宣言
-    private List<List<string>> kariList = new List<List<string>>();
+    public List<List<string>> kariList = new List<List<string>>();
 
     //k0016_99_1_1：listの宣言
     private List<string> M1 = new List<string>();
@@ -81,7 +81,7 @@ public class T0020M_mojiHonban : MonoBehaviour
     private int kyouchouHenkanInt2 = 99;
     private int kyouchouHenkanInt3 = 99;
 
-    void Update()
+    void Update()//updatew
     {
         //kyotu.mojiSwitch 初期値:3
         //変更
@@ -128,7 +128,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         }
 
         //kyotu.rrCountの数を増やす
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))//rrcountw
         {
             listReset();
             //rrcountが紙芝居の最後のページじゃなければ
@@ -649,7 +649,8 @@ public class T0020M_mojiHonban : MonoBehaviour
     }
 
     //list 初期化
-    void listReset()
+
+    public void listReset()
     {
         //kyotu.rrCount = 0;
         ///k0016_99_1_1_4　：Listすべての要素を削除
@@ -1172,7 +1173,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     };
 
-    private string[,] m1_2 = new string[,]//m1_2w
+    public string[,] m1_2 = new string[,]//m1_2w
     {
         {"命題I-2","","","","","","","","","","","","","","","","99","99","99"},
         {"与えられた直線", "と","同じ長さの直線","を","与えられた点","から","作図すること","","","","","","","","","","0","99","99"},
@@ -1386,7 +1387,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //{"", "","","","","","","","","","","99"},
 
     };//private string[,] m1_4 = new string[,]
-    private string[,] m1_3 = new string[,]//m1_3w
+    public string[,] m1_3 = new string[,]//m1_3w
     {
         {"命題I-3","","","","","","","","","","","","","","","","99","99","99"},
         {"長さが異なる", "二つの直線","が","与えられたとき、","長い方","から","短い方","の","長さを切り取ること","","","","","","","","0","99","99"},
@@ -1506,7 +1507,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
 
     };
-    private string[,] m1_4 = new string[,]//m1_4w
+    public string[,] m1_4 = new string[,]//m1_4w
     {
         {"命題I-4","","","","","","","","","","","","","","","","99","99","99"},
         {"二つの三角形", "において、","二つの辺","が","それぞれ等しく","","","","","","","","","","","","0","99","99"},
@@ -1690,7 +1691,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     };
     //m1_5w
-    private string[,] m1_5 = new string[,]
+    public string[,] m1_5 = new string[,]
     {
         {"命題I-5","","","","","","","","","","","","","","","","99","99","99"},
         {"二等辺三角形", "の","底辺上","の","二つの角","は互いに等しい","","","","","","","","","","","0","99","99"},
@@ -2096,7 +2097,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         {"これが証明すべきことであった。", "","","","","","","","","","","","","","","","99","99","99"},
         //{"", "","","","","","","","","","","99"},
     };
-    private string[,] m1_6 = new string[,]//m1_6w
+    public string[,] m1_6 = new string[,]//m1_6w
     {
         {"命題I-6","","","","","","","","","","","","","","","","99","99","99"},
         {"三角形", "の","二つの角","が","等しい","ならば、","それら","に","対する","二つの辺","も","互いに等しい","","","","","0","99","99"},
@@ -2367,7 +2368,7 @@ public class T0020M_mojiHonban : MonoBehaviour
     };
 
     //kourinaiyou---------------------------------------------------------------
-    private string[,] ka1 = new string[,]//ka1w
+    public string[,] ka1 = new string[,]//ka1w
     {
         {"公理a1","","","","","","","","","","","","","","","","99","99","99"},
         {"同じもの","に","等しいもの","は","互いに等しい","","","","","","","","","","","","0","99","99"},
@@ -2375,7 +2376,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         {"同じもの","に","等しいもの","は","互いに等しい","","","","","","","","","","","","4","99","99"},
         {"同じもの","に","等しいもの","は","互いに等しい","","","","","","","","","","","","99","99","99"},
     };
-    private string[,] ka3 = new string[,]//ka3w
+    public string[,] ka3 = new string[,]//ka3w
     {
         {"公理a3","","","","","","","","","","","","","","","","99","99","99"},
         {"等しいもの","から","等しいもの","を","引いた差","は","互いに等しい","","","","","","","","","","0","99","99"},
@@ -2385,7 +2386,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         {"等しいもの","から","等しいもの","を","引いた差","は","互いに等しい","","","","","","","","","","99","99","99"},
 
     };
-    private string[,] ka4 = new string[,]//ka4w
+    public string[,] ka4 = new string[,]//ka4w
     {
         {"公理a4","","","","","","","","","","","","","","","","99","99","99"},
         {"互いに重なり合うもの","は","互いに等しい","","","","","","","","","","","","","","0","99","99"},
@@ -2393,7 +2394,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         {"互いに重なり合うもの","は","互いに等しい","","","","","","","","","","","","","","2","99","99"},
         {"互いに重なり合うもの","は","互いに等しい","","","","","","","","","","","","","","99","99","99"},
     };
-    private string[,] ka5 = new string[,]//ka5w
+    public string[,] ka5 = new string[,]//ka5w
     {
         {"公理a5","","","","","","","","","","","","","","","","99","99","99"},
         {"全体","は","部分","より","大きい","","","","","","","","","","","","0","99","99"},
@@ -2403,7 +2404,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     };
     //koujun------------------------------------------------------------------
-    private string[,] kjp1 = new string[,]//kjp1w
+    public string[,] kjp1 = new string[,]//kjp1w
     {
         {"公準p1","","","","","","","","","","","","","","","","99","99","99"},
         {"任意の点","から","任意の点","へ","直線","を","引くこと","","","","","","","","","","0","99","99"},
@@ -2413,7 +2414,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         {"任意の点","から","任意の点","へ","直線","を","引くこと","","","","","","","","","","99","99","99"},
 
     };
-    private string[,] kjp2 = new string[,]//kjp2w
+    public string[,] kjp2 = new string[,]//kjp2w
     {
         {"公準p2","","","","","","","","","","","","","","","","99","99","99"},
         {"任意の直線","を","連続して延ばすこと","","","","","","","","","","","","","","0","99","99"},
@@ -2421,7 +2422,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         {"任意の直線","を","連続して延ばすこと","","","","","","","","","","","","","","99","99","99"},
 
     };
-    private string[,] kjp3 = new string[,]//kjp3w
+    public string[,] kjp3 = new string[,]//kjp3w
     {
         {"公準p3","","","","","","","","","","","","","","","","99","99","99"},
         {"任意の中心","と","任意の半径","の","円","を描くこと。","","","","","","","","","","","0","99","99"},
@@ -2432,13 +2433,13 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     };
     //teigimoji 2tu
-    private string[,] tdi1 = new string[,]//tdi1w
+    public string[,] tdi1 = new string[,]//tdi1w
     {
         {"定義di1","","","","","","","","","","","","","","","","99","99","99"},
         {"点","は","部分","をもたないものである。","","","","","","","","","","","","","0","2","99"},
         {"点","は","部分","をもたないものである。","","","","","","","","","","","","","99","99","99"},
     };
-    private string[,] tdi15 = new string[,]//tdi5w
+    public string[,] tdi15 = new string[,]//tdi5w
    {
         //kaizou
         //{"", "","","","",
