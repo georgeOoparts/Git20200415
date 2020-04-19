@@ -149,7 +149,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //bKey();
 
         //kyotu.rrCountの数を増やす
-        if (Input.GetMouseButtonDown(0))//rrcountw
+        if (rrPanelDown==true)//rrcountw
         {
             Debug.Log("update内Input.GetMouseButtonDown(0)；；"+kyotu.rrCount+ rrPanelDown);
             listReset();
@@ -276,6 +276,8 @@ public class T0020M_mojiHonban : MonoBehaviour
                     }
                 }
             }
+            rrPanelDown = false;
+            Debug.Log("update内Input.GetMouseButtonDown(0)外；；" + kyotu.rrCount + rrPanelDown);
 
         }
         else if (Input.GetMouseButtonDown(1))
