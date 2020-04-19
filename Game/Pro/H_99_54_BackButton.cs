@@ -6,6 +6,8 @@ using UnityEngine;
 public class H_99_54_BackButton : MonoBehaviour
 {
     public H_99_01_kyoutuHensu kyotu;
+
+    public T0020M_mojiHonban moji;
     void Start()
     {
         

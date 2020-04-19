@@ -86,12 +86,13 @@ public class T0020M_mojiHonban : MonoBehaviour
     public void bKey() //bkeyw
     {
         //rrcountを戻すにはとりあえずｂを押す
-        if (Input.GetKeyDown("b"))
-        {
+        //if (Input.GetKeyDown("b"))
+        //{
             listReset();
             if (kyotu.rrCount > 0)//0の時はバックできない
                 kyotu.rrCount--;
-        }
+            Debug.Log("IIINBBkey;;"+kyotu.rrCount);
+        //}
     }
     void Update()//updatew
     {
@@ -138,7 +139,7 @@ public class T0020M_mojiHonban : MonoBehaviour
             if (kyotu.MCount > 0)//0の時はバックできない
                 kyotu.MCount--;
         }
-        bKey();
+        //bKey();
 
         //kyotu.rrCountの数を増やす
         if (Input.GetMouseButtonDown(0))//rrcountw
