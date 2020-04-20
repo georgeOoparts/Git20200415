@@ -15,6 +15,9 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     //2020/04/20　testPrehubNarabeを廃止。T0020M_mojiHonbanにtextpanel並べ替え機能を追加した。
     //これにより文字列が変わった時の残像が無くなったと思われたがなくならず。
+    //inputogetmoubuttonからrrパネルでrrcountすすむようにした。
+    //バックパネルでrrcountすすむようにした。
+
 
     //testPrehubNarabeとセット＜＜現在使われていない
     //このプログラムでmojipanelの内容を変更
