@@ -50,8 +50,11 @@ public class T0020M_mojiHonban : MonoBehaviour
     public List<List<string>> kariList = new List<List<string>>();
 
     //k0016_99_1_1：listの宣言
-    private List<string> M1 = new List<string>();
+    //private List<string> M1 = new List<string>();
 
+    //mojipanelのrecttransformを入れる変数
+    //k4_1:どこかに書いてあるRectTransformの変数を作る
+    List<RectTransform> rtMojiPanel = new List<RectTransform>();
     void Start()
     {
         //ここから↓ないとバグ出る-----------------
@@ -73,6 +76,20 @@ public class T0020M_mojiHonban : MonoBehaviour
             kodomoTextObj[i].name = "text" + i;
         }
         //ここから↑ないとバグ出る-----------------
+        //プレハブの呼び出しはtextPrehubYobiでやっている
+        //そっちのプログラムを先に呼び込むように設定する。
+        for (int i = 0; i < 16; i++)
+        {
+            //k0016_99_1_1_1：list新しい値を入れる
+            ///別プログラムで呼び出されたmojipanelオブジェを当てはめる
+            //mojiPanel.Add(GameObject.Find("mojiPanel" + i).gameObject);
+            ///premojiの子供オブジェであるtextをlistにする。
+            //kodomoTextObj.Add(mojiPanel[i].transform.GetChild(0).gameObject);
+            ///premojiの子供オブジェであるtextのコンポートメントであるTextをlistにする。
+            //kodomoTextText.Add(kodomoTextObj[i].GetComponent<Text>());
+            ///mojipanelオブジェのRectTransformを当てはめる
+            rtMojiPanel.Add(mojiPanel[i].GetComponent<RectTransform>());
+        }
     }
 
     //強調する文字が配列の何番目かを入れる変数（強調できる文字数3つ）
