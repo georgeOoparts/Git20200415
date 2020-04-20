@@ -697,7 +697,44 @@ public class T0020M_mojiHonban : MonoBehaviour
 
         //Debug.Log("MS::" + kyotu.mojiSwitch + "::MC::" + kyotu.MCount + "::RRC::" + kyotu.rrCount);
 
-    }
+        //startwizeを０に初期化。
+        startWidth = 0;
+        //pKaigyouを初期化
+        pKaigyou = 0;
+        //hanteiWidthを初期化
+        hanteiWidth = 0;
+        for (int i = 0; i < rtMojiPanel.Count; i++)
+        {
+            //パネルの位置調整
+            //下方向は-なので、-rtMojiPanel[0].sizeDelta.y*pKaigyou
+            //Debug.Log(rtMojiPanel[0].sizeDelta.y);
+            rtMojiPanel[i].anchoredPosition = new Vector2(startWidth, -rtMojiPanel[0].sizeDelta.y * pKaigyou);
+            //mojipanelのスタート位置を代入---
+            startWidth += rtMojiPanel[i].sizeDelta.x;
+
+            //kaigyouのため＞hanteiWidthにこれまでのmojipanelの幅と次のmojipanelの幅を入れる
+            //最後のmojipanelの１つ前の段階で判定が終了するのでrtMojiPanel.Count-1までとなる
+            if (i < rtMojiPanel.Count - 1) hanteiWidth = startWidth + rtMojiPanel[i + 1].sizeDelta.x;
+
+            //kaigyouのため判定
+            if (rtTextPanel.sizeDelta.x < hanteiWidth)
+            {
+                pKaigyou++;
+                startWidth = 0;
+            }
+        }
+
+
+    }//updateend
+    //mojipanelのスタート位置のための変数
+    float startWidth = 0;
+
+    //kaigyouのため
+    //mojipanelの合計がtextpanelを超えるか判定する変数
+    float hanteiWidth = 0;
+
+    private int pKaigyou = 0;
+
 
     //list 初期化
 
