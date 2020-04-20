@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class testPrehubNarabe : MonoBehaviour
 {
+    //現在使われていない＞t20に吸収　t20のupdate内にいれれば残像無くなると思った・＞なくならなかった。
+    
     //現在使用中(無理やり前に使っていたものを流用)
 
     //mojipanelの並び替えはこのプログラムでやっている

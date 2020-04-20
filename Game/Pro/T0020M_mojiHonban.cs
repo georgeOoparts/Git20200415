@@ -726,6 +726,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
 
     }//updateend
+    
     //mojipanelのスタート位置のための変数
     float startWidth = 0;
 
