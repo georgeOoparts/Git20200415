@@ -55,6 +55,11 @@ public class T0020M_mojiHonban : MonoBehaviour
     //mojipanelのrecttransformを入れる変数
     //k4_1:どこかに書いてあるRectTransformの変数を作る
     List<RectTransform> rtMojiPanel = new List<RectTransform>();
+
+    //このオブジェtextpanelのコンポを入れる変数
+    RectTransform rtTextPanel;
+
+    //public GameObject textPanel;
     void Start()
     {
         //ここから↓ないとバグ出る-----------------
@@ -78,6 +83,9 @@ public class T0020M_mojiHonban : MonoBehaviour
             rtMojiPanel.Add(mojiPanel[i].GetComponent<RectTransform>());
 
         }
+        //textpanelのRectTransformを得る
+        rtTextPanel = this.gameObject.GetComponent<RectTransform>();
+
         //ここから↑ないとバグ出る-----------------
         //プレハブの呼び出しはtextPrehubYobiでやっている
         //そっちのプログラムを先に呼び込むように設定する。
