@@ -12,9 +12,16 @@ public class T0020M_mojiHonban : MonoBehaviour
     //ユクユクはこれを分割させたい。
     //プレハブセット、共通変数セット、最後までクリックしても表示させる。めん土井。
 
-    //testPrehubNarabeとセット
+
+    //2020/04/20　testPrehubNarabeを廃止。T0020M_mojiHonbanにtextpanel並べ替え機能を追加した。
+    //これにより文字列が変わった時の残像が無くなったと思われたがなくならず。
+
+    //testPrehubNarabeとセット＜＜現在使われていない
     //このプログラムでmojipanelの内容を変更
     //testPrehubNarabeでそれを並べ替える
+
+
+
 
     //UIオブジェcanvasworld＞UIオブジェtextpanelの中に
     //UIプレハブpremoji（UIpanel＞UITEXT）を呼び出す
