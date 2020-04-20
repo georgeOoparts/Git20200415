@@ -91,14 +91,14 @@ public class T0020M_mojiHonban : MonoBehaviour
             listReset();
             if (kyotu.rrCount > 0)//0の時はバックできない
                 kyotu.rrCount--;
-            Debug.Log("update外public void bKey();;" + kyotu.rrCount);
+            Debug.Log("T20MmojiHonban>bKey():kyotu.rrCount:" + kyotu.rrCount);
         //}
     }
     bool rrPanelDown = false;
     public void onPanelButton() //bkeyw
     {
         rrPanelDown = true;
-        Debug.Log("update外public void onPanelButton();;" + kyotu.rrCount+ rrPanelDown);
+        Debug.Log("T20MmojiHonban>onPanelButton::kyotu.rrCount:rrPanelDown::" + kyotu.rrCount+ "::"+rrPanelDown);
         
     }
     void Update()//updatew
@@ -151,7 +151,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //kyotu.rrCountの数を増やす
         if (rrPanelDown==true)//rrcountw
         {
-            Debug.Log("update内Input.GetMouseButtonDown(0)；；"+kyotu.rrCount+ rrPanelDown);
+            Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
             listReset();
             //rrcountが紙芝居の最後のページじゃなければ
             //文字が増えるたびここも増える1--------ここから-----123----------
@@ -277,7 +277,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                 }
             }
             rrPanelDown = false;
-            Debug.Log("update内Input.GetMouseButtonDown(0)外；；" + kyotu.rrCount + rrPanelDown);
+            Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)外::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount +"::"+ rrPanelDown);
 
         }
         else if (Input.GetMouseButtonDown(1))

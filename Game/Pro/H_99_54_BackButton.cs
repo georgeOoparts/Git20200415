@@ -21,6 +21,6 @@ public class H_99_54_BackButton : MonoBehaviour
 
     public void onClick() 
     {
-        Debug.Log("BBBBBBBBBack;;rrcout;;"+kyotu.rrCount);
+        Debug.Log("54backbutton>onClick:kyotu.rrCount:" + kyotu.rrCount);
     }
 }
