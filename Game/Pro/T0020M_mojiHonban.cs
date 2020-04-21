@@ -72,7 +72,7 @@ public class T0020M_mojiHonban : MonoBehaviour
     //public GameObject textPanel;
     void Start()
     {
-        Debug.Log("T20MmojiHonban>start::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
+        //Debug.Log("T20MmojiHonban>start::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
 
         //ここから↓ないとバグ出る-----------------
         for (int i = 0; i < 16; i++)
@@ -138,7 +138,7 @@ public class T0020M_mojiHonban : MonoBehaviour
     public void onPanelButton() //bkeyw
     {
         rrPanelDown = true;
-        Debug.Log("T20MmojiHonban>onPanelButton::kyotu.rrCount:rrPanelDown::" + kyotu.rrCount+ "::"+rrPanelDown);
+        //Debug.Log("T20MmojiHonban>onPanelButton::kyotu.rrCount:rrPanelDown::" + kyotu.rrCount+ "::"+rrPanelDown);
         
     }
     void Update()//updatew
@@ -180,7 +180,7 @@ public class T0020M_mojiHonban : MonoBehaviour
             listReset();
             if (kyotu.rrCount > 0)//0の時はバックできない
                 kyotu.rrCount--;
-            Debug.Log("T20MmojiHonban>update>else if (Input.GetKeyDown(b))::kyotu.rrCount::" + kyotu.rrCount);
+            //Debug.Log("T20MmojiHonban>update>else if (Input.GetKeyDown(b))::kyotu.rrCount::" + kyotu.rrCount);
             backButton = false;
         }
         //mcountを戻すにはとりあえずｂを押す
@@ -196,7 +196,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //kyotu.rrCountの数を増やす
         if (rrPanelDown==true)//rrcountw
         {
-            Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
+            //Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
             listReset();
             //rrcountが紙芝居の最後のページじゃなければ
             //文字が増えるたびここも増える1--------ここから-----123----------
@@ -322,7 +322,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                 }
             }
             rrPanelDown = false;
-            Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)外::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount +"::"+ rrPanelDown);
+            //Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)外::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount +"::"+ rrPanelDown);
 
         }
         else if (Input.GetMouseButtonDown(1))

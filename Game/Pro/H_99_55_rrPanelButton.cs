@@ -9,14 +9,14 @@ public class H_99_55_rrPanelButton : MonoBehaviour
     public T0020M_mojiHonban moji;
     void Start()
     {
-        Debug.Log("55rrPanelButton>start::kyotu.rrCount::" + kyotu.rrCount );
+        //Debug.Log("55rrPanelButton>start::kyotu.rrCount::" + kyotu.rrCount );
 
     }
 
 
     public void tup()
     {
-        Debug.Log("55rrPanelButton>tup::kyotu.rrCount::" + kyotu.rrCount );
+        //Debug.Log("55rrPanelButton>tup::kyotu.rrCount::" + kyotu.rrCount );
 
 
 
