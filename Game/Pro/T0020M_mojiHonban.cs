@@ -72,6 +72,8 @@ public class T0020M_mojiHonban : MonoBehaviour
     //public GameObject textPanel;
     void Start()
     {
+        Debug.Log("T20MmojiHonban>start::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
+
         //ここから↓ないとバグ出る-----------------
         for (int i = 0; i < 16; i++)
         {
@@ -118,17 +120,18 @@ public class T0020M_mojiHonban : MonoBehaviour
     private int kyouchouHenkanInt2 = 99;
     private int kyouchouHenkanInt3 = 99;
 
-
-
+    //バックボタン押すと下のメソッドが開始される
+    bool backButton = false;
     public void bKey() //bkeyw
     {
+        backButton = true;
         //rrcountを戻すにはとりあえずｂを押す
         //if (Input.GetKeyDown("b"))
         //{
-            listReset();
-            if (kyotu.rrCount > 0)//0の時はバックできない
-                kyotu.rrCount--;
-            Debug.Log("T20MmojiHonban>bKey():kyotu.rrCount:" + kyotu.rrCount);
+            //listReset();
+            //if (kyotu.rrCount > 0)//0の時はバックできない
+            //    kyotu.rrCount--;
+            //Debug.Log("T20MmojiHonban>bKey():kyotu.rrCount:" + kyotu.rrCount);
         //}
     }
     bool rrPanelDown = false;
@@ -140,6 +143,8 @@ public class T0020M_mojiHonban : MonoBehaviour
     }
     void Update()//updatew
     {
+        //Debug.Log("T20MmojiHonban>updateFirst::kyotu.rrCount:rrPanelDown::" + kyotu.rrCount+ "::"+rrPanelDown);
+
         //kyotu.mojiSwitch 初期値:3
         //変更
         //公理:0,公準:1,定義:2,meidai:3
@@ -168,12 +173,15 @@ public class T0020M_mojiHonban : MonoBehaviour
             kyotu.rrCount = 0;
             kyotu.mojiSwitch = 3;
         }
-        //rrcountを戻すにはとりあえずｂを押す
-        else if (Input.GetKeyDown("b"))//bw
+        //rrcountを戻すにはとりあえずｂを押す>廃止
+        //2020/04/21よりバックボタンでrrcount戻るようにした
+        else if (backButton==true)//bw
         {
             listReset();
             if (kyotu.rrCount > 0)//0の時はバックできない
                 kyotu.rrCount--;
+            Debug.Log("T20MmojiHonban>update>else if (Input.GetKeyDown(b))::kyotu.rrCount::" + kyotu.rrCount);
+            backButton = false;
         }
         //mcountを戻すにはとりあえずｂを押す
         else if (Input.GetKeyDown("n"))
@@ -749,7 +757,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     //list 初期化
 
-    public void listReset()
+    public void listReset()//listresetw
     {
         //kyotu.rrCount = 0;
         ///k0016_99_1_1_4　：Listすべての要素を削除

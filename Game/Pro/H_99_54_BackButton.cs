@@ -10,7 +10,8 @@ public class H_99_54_BackButton : MonoBehaviour
     public T0020M_mojiHonban moji;
     void Start()
     {
-        
+        Debug.Log("54backbutton>start::kyotu.rrCount::" + kyotu.rrCount);
+
     }
 
     // Update is called once per frame
@@ -21,6 +22,6 @@ public class H_99_54_BackButton : MonoBehaviour
 
     public void onClick() 
     {
-        Debug.Log("54backbutton>onClick:kyotu.rrCount:" + kyotu.rrCount);
+        Debug.Log("54backbutton>onClick::kyotu.rrCount::" + kyotu.rrCount);
     }
 }
