@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class T0002M_kyotuHensu : MonoBehaviour
 {
+    //現在使われていない
     //色々なプログラムで使う共通変数の保存場所
     //メインカメラにアタッチ
 
@@ -22,6 +23,6 @@ public class T0002M_kyotuHensu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("kyoutuu");
+        //Debug.Log("つかわれているかい？");// +this.gameObject);
     }
 }

@@ -55,14 +55,14 @@ public class T0009M_flagTextPanelNarabe : MonoBehaviour
         //リアルタイムで対象のオブジェをflagパネルの前に置く
         //共通変数のmeidaiNumberを使う
         //k5_3_1_1_1:gameobject(メソッド、変数)を使いまわす
-        if (0<= T0002M_kyotuHensu.meidaiNumber&& T0002M_kyotuHensu.meidaiNumber <=5) 
+        if (0<= kyotu.meidaiHensu&& kyotu.meidaiHensu <=5) 
         {
-            if (kakkoMeidaiNumber != T0002M_kyotuHensu.meidaiNumber) 
+            if (kakkoMeidaiNumber != kyotu.meidaiHensu) 
             {
                 int i = 0;
                 foreach (RectTransform unko in this.gameObject.transform) 
                 {
-                    if (i == T0002M_kyotuHensu.meidaiNumber) 
+                    if (i == kyotu.meidaiHensu) 
                     {
                        unko.anchoredPosition= new Vector3(0, 0, 0);
                     } 

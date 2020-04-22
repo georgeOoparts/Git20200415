@@ -128,8 +128,10 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
         //Debug.Log("kyoutuhensu::"+rrCount);
         //Debug.Log("H_99_01_kyoutuHensu>update::t2mMeidaiNumber::t2mCameraPosiNumber::"
         //    + T0002M_kyotuHensu.meidaiNumber + "::" + T0002M_kyotuHensu.cameraPosiNumber);
-        Debug.Log("H_99_01_kyoutuHensu>updatewwww::t2mMeidaiNumber::mainCameraPosi::"
-            + T0002M_kyotuHensu.meidaiNumber + "::" + mainCameraPosi);
+        //Debug.Log("H_99_01_kyoutuHensu>updatewwww::t2mMeidaiNumber::mainCameraPosi::"
+        //    + T0002M_kyotuHensu.meidaiNumber + "::" + mainCameraPosi);
+        Debug.Log("H_99_01_kyoutuHensu>updatewwww::meidaiHensu::mainCameraPosi::"
+            + meidaiHensu + "::" + mainCameraPosi);
     }
 
 

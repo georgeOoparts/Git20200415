@@ -60,7 +60,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
             if ((up == down)&&(elapse <= tupTime))
             {
-                T0002M_kyotuHensu.meidaiNumber = 0;
+                //T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 kyotu.meidaiHensu = 0;
@@ -72,7 +72,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
         {
             if ((up == down) && (elapse <= tupTime))
             {
-                T0002M_kyotuHensu.meidaiNumber = 1;
+                //T0002M_kyotuHensu.meidaiNumber = 1;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 kyotu.meidaiHensu = 1;
@@ -83,7 +83,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
         {
             if ((up == down) && (elapse <= tupTime))
             {
-                T0002M_kyotuHensu.meidaiNumber = 2;
+                //T0002M_kyotuHensu.meidaiNumber = 2;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 kyotu.meidaiHensu = 2;
@@ -94,7 +94,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
         {
             if ((up == down) && (elapse <= tupTime))
             {
-                T0002M_kyotuHensu.meidaiNumber = 3;
+                //T0002M_kyotuHensu.meidaiNumber = 3;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 kyotu.meidaiHensu = 3;
@@ -105,7 +105,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
         {
             if ((up == down) && (elapse <= tupTime))
             {
-                T0002M_kyotuHensu.meidaiNumber = 4;
+                //T0002M_kyotuHensu.meidaiNumber = 4;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 kyotu.meidaiHensu = 4;
@@ -116,7 +116,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
         {
             if ((up == down) && (elapse <= tupTime))
             {
-                T0002M_kyotuHensu.meidaiNumber = 5;
+                //T0002M_kyotuHensu.meidaiNumber = 5;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 kyotu.meidaiHensu = 5;
