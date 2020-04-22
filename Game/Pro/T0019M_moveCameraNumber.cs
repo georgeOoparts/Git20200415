@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class T0019M_moveCameraNumber : MonoBehaviour
 {
+    //maincameraにこのプログラムはアタッチされている。
     //共通変数のカメラポジションの数値が変化すると、メインカメラの位置が変わる
     //共通変数カメラポジション0＞メインカメラのx座標　0
     //共通変数カメラポジション1＞メインカメラのx座標　5
     //共通変数カメラポジション2＞メインカメラのx座標　10
     Transform cameraMove;
+
+    public H_99_01_kyoutuHensu kyotu;
 
     //↓メインカメラにアタッチされているスクリプトの変数を使うのでインスぺでメインカメラ指定
     public T0016M_DtateFlickSwipeMeidai yokoMove;
@@ -36,6 +39,6 @@ public class T0019M_moveCameraNumber : MonoBehaviour
                 cameraMove.position = new Vector3(10, cameraMove.position.y, cameraMove.position.z);
             }
         }
-        
+        //Debug.Log(this.gameObject);   
     }
 }
