@@ -13,6 +13,8 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
     //メインカメラの移動を制御
     //canvas>FlagPanel>MoveflagPanel>Flag1_1～6(制御)>FlagPanel1_1_1～6
 
+    public H_99_01_kyoutuHensu kyotu;
+
     //k6_1:ストップウォッチ関数を使う時のおまじない。
     private System.Diagnostics.Stopwatch stopwatch
     = new System.Diagnostics.Stopwatch();
@@ -60,6 +62,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             {
                 T0002M_kyotuHensu.meidaiNumber = 0;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
+                kyotu.mainCameraPosi = 1;
             }
 
             boolClick0 = false;
@@ -70,6 +73,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             {
                 T0002M_kyotuHensu.meidaiNumber = 1;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
+                kyotu.mainCameraPosi = 1;
 
             }
             boolClick1 = false;
@@ -80,6 +84,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             {
                 T0002M_kyotuHensu.meidaiNumber = 2;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
+                kyotu.mainCameraPosi = 1;
 
             }
             boolClick2 = false;
@@ -90,6 +95,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             {
                 T0002M_kyotuHensu.meidaiNumber = 3;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
+                kyotu.mainCameraPosi = 1;
 
             }
             boolClick3 = false;
@@ -100,7 +106,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             {
                 T0002M_kyotuHensu.meidaiNumber = 4;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
-
+                kyotu.mainCameraPosi = 1;
             }
             boolClick4 = false;
         }
@@ -110,7 +116,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
             {
                 T0002M_kyotuHensu.meidaiNumber = 5;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
-
+                kyotu.mainCameraPosi = 1;
             }
             boolClick5 = false;
         }
