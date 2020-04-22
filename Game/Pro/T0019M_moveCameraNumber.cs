@@ -25,7 +25,7 @@ public class T0019M_moveCameraNumber : MonoBehaviour
     {
         if (yokoMove.yokoMove==0) 
         {
-            //T0002M_kyotuHensu というスクリプトにある使いまわす変数cameraPosiNumberを使う
+            //使いまわす変数kyotu.mainCameraPosiを使う
             if (kyotu.mainCameraPosi == 0)
             {
                 cameraMove.position = new Vector3(0, cameraMove.position.y, cameraMove.position.z);
