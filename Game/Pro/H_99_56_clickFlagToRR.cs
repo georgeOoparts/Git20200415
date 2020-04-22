@@ -25,6 +25,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 2;
                 kyotu.meidaiHensu = 0;
+                
                 kyotu.rrCount = 0;
                 kyotu.mojiSwitch = 2;
                 kyotu.MCount = 0;
@@ -33,8 +34,15 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             boolClick0 = false;
         }
 
-        Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::kyotu.mainCameraPosi::"
-            + kyotu.meidaiHensu + "::" + kyotu.mainCameraPosi);
+        Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::"+ kyotu.meidaiHensu 
+            + "kyotu.mainCameraPosi::"+ kyotu.mainCameraPosi
+            + "kyotu.rrCount::" + kyotu.rrCount
+            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            + "kyotu.MCount::" + kyotu.MCount
+
+
+
+            );
 
         //Debug.Log("tesutdesuuu");
     }
