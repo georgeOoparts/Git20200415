@@ -63,6 +63,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
                 T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
+                kyotu.meidaiHensu = 0;
             }
 
             boolClick0 = false;
@@ -74,7 +75,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
                 T0002M_kyotuHensu.meidaiNumber = 1;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
-
+                kyotu.meidaiHensu = 1;
             }
             boolClick1 = false;
         }
@@ -85,7 +86,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
                 T0002M_kyotuHensu.meidaiNumber = 2;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
-
+                kyotu.meidaiHensu = 2;
             }
             boolClick2 = false;
         }
@@ -96,7 +97,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
                 T0002M_kyotuHensu.meidaiNumber = 3;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
-
+                kyotu.meidaiHensu = 3;
             }
             boolClick3 = false;
         }
@@ -107,6 +108,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
                 T0002M_kyotuHensu.meidaiNumber = 4;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
+                kyotu.meidaiHensu = 4;
             }
             boolClick4 = false;
         }
@@ -117,6 +119,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
                 T0002M_kyotuHensu.meidaiNumber = 5;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
+                kyotu.meidaiHensu = 5;
             }
             boolClick5 = false;
         }

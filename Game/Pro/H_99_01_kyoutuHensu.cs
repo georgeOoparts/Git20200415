@@ -38,8 +38,8 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public int mainCameraPosi = 0;
 
 
-    ////meidaiの何がライン2（フラッグ図）にくるか決める変数
-    //public int meidaiHensu = 1;
+    ////meidaiの何がライン2（フラッグ図）にくるか決める変数0～5
+    public int meidaiHensu = 0;
 
     ////cameraTakasaY：カメラの真ん中から上半分のyジクの距離
     //public float cameraTakasaY = 5;
