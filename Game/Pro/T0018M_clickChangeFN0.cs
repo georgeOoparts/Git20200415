@@ -28,6 +28,8 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
     Vector3 up;
     void LateUpdate()
     {
+        //Debug.Log("T0018M_clickChangeFN0>lateupdate::meidaiNumber::cameraPosiNumber;;"
+        //    + T0002M_kyotuHensu.meidaiNumber + "::"+ T0002M_kyotuHensu.cameraPosiNumber);
         elapse = (float)stopwatch.Elapsed.TotalSeconds;
 
 
