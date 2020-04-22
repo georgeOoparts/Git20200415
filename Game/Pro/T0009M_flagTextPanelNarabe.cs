@@ -9,13 +9,15 @@ public class T0009M_flagTextPanelNarabe : MonoBehaviour
     //オブジェ構成
     //canvas>FlagPanel>MoveflagPanel(アタッチ)>Flag1_1～6(制御)>FlagPanel1_1_1～6
     //flag1-1～6はアンカーを　シフト+真中　上にする。
-    
+
     //めインカメラにアタッチされた共通変数　
     //meidaiNumberをフラグパネルの変更に使う
     //k5_3_1_1:gameobject(メソッド、変数)を使いまわす
     //このスクリプトをアタッチしたオブジェクトにいちいちこのオブジェクトをアタッチ
     //public T0002M_kyotuHensu kyotu;
-    
+
+
+    public H_99_01_kyoutuHensu kyotu; 
     //画面上からの距離指定
     public float startPosition = 20;
     //flag1-1～6の間の距離指定
@@ -49,6 +51,7 @@ public class T0009M_flagTextPanelNarabe : MonoBehaviour
 
     void Update() 
     {
+        //Debug.Log(this.gameObject);
         //リアルタイムで対象のオブジェをflagパネルの前に置く
         //共通変数のmeidaiNumberを使う
         //k5_3_1_1_1:gameobject(メソッド、変数)を使いまわす
