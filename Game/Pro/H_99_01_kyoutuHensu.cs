@@ -35,7 +35,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
 
 
     //maincameraがある位置を1～３で表す。----------------------
-    //public int mainCameraPosi = 0;
+    public int mainCameraPosi = 0;
 
 
     ////meidaiの何がライン2（フラッグ図）にくるか決める変数

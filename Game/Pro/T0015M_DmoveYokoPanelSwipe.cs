@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
 {
+    public H_99_01_kyoutuHensu kyotu;
     //横移動
     //メインカメラを横座標に動かす（メインカメラは縦には一切動かない）
     //メインカメラにアタッチ
@@ -61,6 +62,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
                 trMainCamera.position = new Vector3(5, 0, -10);
                 yokoMove.yokoMove = 0;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
+                kyotu.mainCameraPosi = 1;
                 //Debug.Log("soto?" + yokoMove);
             }
             else if (trMainCamera.position.x <= 0 && yokoMove.yokoMove == -1)
@@ -68,6 +70,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
                 trMainCamera.position = new Vector3(0, 0, -10);
                 yokoMove.yokoMove = 0;
                 T0002M_kyotuHensu.cameraPosiNumber = 0;
+                kyotu.mainCameraPosi = 0;
             }
 
         }
@@ -87,6 +90,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
                 trMainCamera.position = new Vector3(10, 0, -10);
                 yokoMove.yokoMove = 0;
                 T0002M_kyotuHensu.cameraPosiNumber = 2;
+                kyotu.mainCameraPosi = 2;
 
             }
             else if (trMainCamera.position.x < 5 && yokoMove.yokoMove == -1 && yokoPosi == 10)
@@ -94,6 +98,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
                 trMainCamera.position = new Vector3(5, 0, -10);
                 yokoMove.yokoMove = 0;
                 T0002M_kyotuHensu.cameraPosiNumber = 1;
+                kyotu.mainCameraPosi = 1;
 
             }
 
@@ -114,6 +119,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
                 trMainCamera.position = new Vector3(10, 0, -10);
                 yokoMove.yokoMove = 0;
                 T0002M_kyotuHensu.cameraPosiNumber = 2;
+                kyotu.mainCameraPosi = 2;
 
             }
             //else if (trMainCamera.position.x < 5 && yokoMove == -1) 
