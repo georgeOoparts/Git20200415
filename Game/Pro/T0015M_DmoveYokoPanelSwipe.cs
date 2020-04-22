@@ -61,7 +61,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
             {
                 trMainCamera.position = new Vector3(5, 0, -10);
                 yokoMove.yokoMove = 0;
-                T0002M_kyotuHensu.cameraPosiNumber = 1;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
                 //Debug.Log("soto?" + yokoMove);
             }
@@ -69,7 +69,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
             {
                 trMainCamera.position = new Vector3(0, 0, -10);
                 yokoMove.yokoMove = 0;
-                T0002M_kyotuHensu.cameraPosiNumber = 0;
+                //T0002M_kyotuHensu.cameraPosiNumber = 0;
                 kyotu.mainCameraPosi = 0;
             }
 
@@ -89,7 +89,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
             {
                 trMainCamera.position = new Vector3(10, 0, -10);
                 yokoMove.yokoMove = 0;
-                T0002M_kyotuHensu.cameraPosiNumber = 2;
+                //T0002M_kyotuHensu.cameraPosiNumber = 2;
                 kyotu.mainCameraPosi = 2;
 
             }
@@ -97,7 +97,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
             {
                 trMainCamera.position = new Vector3(5, 0, -10);
                 yokoMove.yokoMove = 0;
-                T0002M_kyotuHensu.cameraPosiNumber = 1;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 kyotu.mainCameraPosi = 1;
 
             }
@@ -118,7 +118,7 @@ public class T0015M_DmoveYokoPanelSwipe : MonoBehaviour
             {
                 trMainCamera.position = new Vector3(10, 0, -10);
                 yokoMove.yokoMove = 0;
-                T0002M_kyotuHensu.cameraPosiNumber = 2;
+                //T0002M_kyotuHensu.cameraPosiNumber = 2;
                 kyotu.mainCameraPosi = 2;
 
             }
