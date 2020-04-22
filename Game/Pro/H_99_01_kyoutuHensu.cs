@@ -34,7 +34,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public int rrCount=0;
 
 
-    //maincameraがある位置を1～３で表す。----------------------
+    //maincameraがある位置を0～2で表す。----------------------
     public int mainCameraPosi = 0;
 
 
@@ -126,8 +126,10 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     private void Update()
     {
         //Debug.Log("kyoutuhensu::"+rrCount);
-        Debug.Log("H_99_01_kyoutuHensu>update::t2mMeidaiNumber::t2mCameraPosiNumber::"
-            + T0002M_kyotuHensu.meidaiNumber + "::" + T0002M_kyotuHensu.cameraPosiNumber);
+        //Debug.Log("H_99_01_kyoutuHensu>update::t2mMeidaiNumber::t2mCameraPosiNumber::"
+        //    + T0002M_kyotuHensu.meidaiNumber + "::" + T0002M_kyotuHensu.cameraPosiNumber);
+        Debug.Log("H_99_01_kyoutuHensu>updatewwww::t2mMeidaiNumber::mainCameraPosi::"
+            + T0002M_kyotuHensu.meidaiNumber + "::" + mainCameraPosi);
     }
 
 
