@@ -31,7 +31,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             //T0002M_kyotuHensu.cameraPosiNumber = 1;
                 
                 kyotu.mainCameraPosi = 2;
-                kyotu.meidaiHensu = 0;
+                //kyotu.meidaiHensu = 0;
                 
                 kyotu.rrCount = 0;
                 kyotu.mojiSwitch = 2;
@@ -41,6 +41,33 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             //}
 
             boolClick0 = false;
+
+            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            + "kyotu.rrCount::" + kyotu.rrCount
+            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            + "kyotu.MCount::" + kyotu.MCount
+            );
+        }
+        else if (boolClick1)
+        {
+            //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
+            //if ((up == down) && (elapse <= tupTime))
+            //{
+            //T0002M_kyotuHensu.meidaiNumber = 0;
+            //T0002M_kyotuHensu.cameraPosiNumber = 1;
+
+            kyotu.mainCameraPosi = 2;
+            //kyotu.meidaiHensu = 0;
+
+            kyotu.rrCount = 0;
+            kyotu.mojiSwitch = 1;
+            kyotu.MCount = 0;
+
+            mojiHonban.listReset();
+            //}
+
+            boolClick1 = false;
 
             Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
             + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
@@ -71,5 +98,9 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
     public void onClick0()
     {
         boolClick0 = true;
+    }
+    public void onClick1()
+    {
+        boolClick1 = true;
     }
 }
