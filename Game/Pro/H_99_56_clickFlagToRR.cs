@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class H_99_56_clickFlagToRR : MonoBehaviour
 {
-    //アタッチ＞flagpanel>moveflagpanel
+    //このプログラムアタッチ＞flagpanel>moveflagpanel
 
     public H_99_01_kyoutuHensu kyotu;
 
+    public　T0020M_mojiHonban mojiHonban;//アタッチ＞UIオブジェcanvasworld＞UIオブジェtextpanel
     void Start()
     {
-        
+        Debug.Log("H_99_56_clickFlagToRR>start::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+             + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+             + "kyotu.rrCount::" + kyotu.rrCount
+             + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+             + "kyotu.MCount::" + kyotu.MCount
+             );
     }
 
     // Update is called once per frame
@@ -21,28 +27,35 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
             //if ((up == down) && (elapse <= tupTime))
             //{
-                //T0002M_kyotuHensu.meidaiNumber = 0;
-                //T0002M_kyotuHensu.cameraPosiNumber = 1;
+            //T0002M_kyotuHensu.meidaiNumber = 0;
+            //T0002M_kyotuHensu.cameraPosiNumber = 1;
+                
                 kyotu.mainCameraPosi = 2;
                 kyotu.meidaiHensu = 0;
                 
                 kyotu.rrCount = 0;
-                kyotu.mojiSwitch = 0;
-                kyotu.MCount = 0;
+                kyotu.mojiSwitch = 2;
+                kyotu.MCount = 1;
+
+                mojiHonban.listReset();
             //}
 
             boolClick0 = false;
-        }
 
-        Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::"+ kyotu.meidaiHensu 
-            + "kyotu.mainCameraPosi::"+ kyotu.mainCameraPosi
+            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
             + "kyotu.rrCount::" + kyotu.rrCount
             + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
             + "kyotu.MCount::" + kyotu.MCount
-
-
-
             );
+        }
+
+        //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::"+ kyotu.meidaiHensu 
+        //    + "kyotu.mainCameraPosi::"+ kyotu.mainCameraPosi
+        //    + "kyotu.rrCount::" + kyotu.rrCount
+        //    + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+        //    + "kyotu.MCount::" + kyotu.MCount
+        //);
 
         //Debug.Log("tesutdesuuu");
     }
