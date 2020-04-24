@@ -90,12 +90,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
         else if (boolClick1)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
-            //if ((up == down) && (elapse <= tupTime))
-            //{
-            //T0002M_kyotuHensu.meidaiNumber = 0;
-            //T0002M_kyotuHensu.cameraPosiNumber = 1;
+            if ((up == down) && (elapse <= tupTime))
+            {
+                //T0002M_kyotuHensu.meidaiNumber = 0;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
 
-            kyotu.mainCameraPosi = 2;
+                kyotu.mainCameraPosi = 2;
             //kyotu.meidaiHensu = 0;
 
             kyotu.rrCount = 0;
@@ -103,7 +103,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             kyotu.MCount = 0;
 
             mojiHonban.listReset();
-            //}
+            }
 
             boolClick1 = false;
 
