@@ -27,7 +27,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
                 kyotu.meidaiHensu = 0;
                 
                 kyotu.rrCount = 0;
-                kyotu.mojiSwitch = 2;
+                kyotu.mojiSwitch = 0;
                 kyotu.MCount = 0;
             //}
 
