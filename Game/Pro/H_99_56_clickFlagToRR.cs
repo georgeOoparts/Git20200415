@@ -9,6 +9,23 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
     public H_99_01_kyoutuHensu kyotu;
 
     public　T0020M_mojiHonban mojiHonban;//アタッチ＞UIオブジェcanvasworld＞UIオブジェtextpanel
+
+
+    //longTupを反応させないための処理に使うストップウォッチ
+    //k6_1:ストップウォッチ関数を使う時のおまじない。
+    private System.Diagnostics.Stopwatch stopwatch
+    = new System.Diagnostics.Stopwatch();
+
+    //k6_1_1:何秒たったかを変数elapseに入れる：update内に入れる-------
+    ////?
+    private float elapse;
+    //0.15秒以上タップしていると、ボタンを押しているのが無効になる
+    public float tupTime = 0.15f;
+    //タップした場所と違うところでupするとボタンを押しているのが無効になる。
+    //そのための座標を入れる変数
+    Vector3 down;
+    Vector3 up;
+
     void Start()
     {
         Debug.Log("H_99_56_clickFlagToRR>start::kyotu.meidaiHensu::" + kyotu.meidaiHensu
@@ -22,14 +39,35 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        elapse = (float)stopwatch.Elapsed.TotalSeconds;
+
+
+        //tupTimeHantei = false;
+        if (Input.GetMouseButtonDown(0))
+        {
+            //k6_1_1_2:ストップウォッチの時間をリセット
+            stopwatch.Reset();
+            //k6_1_1_1:ストップウォッチスタート
+            stopwatch.Start();
+
+            down = Input.mousePosition;
+        }
+
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            stopwatch.Stop();
+            up = Input.mousePosition;
+        }
+
         if (boolClick0)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
-            //if ((up == down) && (elapse <= tupTime))
-            //{
-            //T0002M_kyotuHensu.meidaiNumber = 0;
-            //T0002M_kyotuHensu.cameraPosiNumber = 1;
-                
+            if ((up == down) && (elapse <= tupTime))
+            {
+                //T0002M_kyotuHensu.meidaiNumber = 0;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
+
                 kyotu.mainCameraPosi = 2;
                 //kyotu.meidaiHensu = 0;
                 
@@ -38,7 +76,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
                 kyotu.MCount = 1;
 
                 mojiHonban.listReset();
-            //}
+            }
 
             boolClick0 = false;
 
