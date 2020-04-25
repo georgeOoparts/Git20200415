@@ -60,7 +60,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             up = Input.mousePosition;
         }
 
-        if (boolClick0)
+        if (boolClick1_1_2)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
             if ((up == down) && (elapse <= tupTime))
@@ -78,7 +78,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
                 mojiHonban.listReset();
             }
 
-            boolClick0 = false;
+            boolClick1_1_2 = false;
 
             Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
             + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
@@ -87,7 +87,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             + "kyotu.MCount::" + kyotu.MCount
             );
         }
-        else if (boolClick1)
+        else if (boolClick1_1_3)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
             if ((up == down) && (elapse <= tupTime))
@@ -105,7 +105,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             mojiHonban.listReset();
             }
 
-            boolClick1 = false;
+            boolClick1_1_3 = false;
 
             Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
             + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
@@ -124,8 +124,8 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
         //Debug.Log("tesutdesuuu");
     }
-    bool boolClick0 = false;
-    bool boolClick1 = false;
+    bool boolClick1_1_2 = false;
+    bool boolClick1_1_3 = false;
     bool boolClick2 = false;
     bool boolClick3 = false;
     bool boolClick4 = false;
@@ -133,12 +133,13 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
     //uiボタンを押したとき起動するメソッド
     //canvas>MokujiPanel>MoveMokujiPanel>MokujiTextPanel1_1～6（このUIたちにインスぺで設定した）>TextMokuji1_1～6
-    public void onClick0()
+    public void onClick1_1_2()
     {
-        boolClick0 = true;
+        boolClick1_1_2 = true;
     }
-    public void onClick1()
+    public void onClick1_1_3()
     {
-        boolClick1 = true;
+        boolClick1_1_3 = true;
     }
+    
 }
