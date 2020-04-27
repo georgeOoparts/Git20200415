@@ -546,6 +546,87 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             + "kyotu.MCount::" + kyotu.MCount
             );
         }
+        else if (boolClick1_4_2)
+        {
+            //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
+            if ((up == down) && (elapse <= tupTime))
+            {
+                //T0002M_kyotuHensu.meidaiNumber = 0;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
+
+                kyotu.mainCameraPosi = 2;
+                //kyotu.meidaiHensu = 0;
+
+                kyotu.rrCount = 0;
+                kyotu.mojiSwitch = 3;
+                kyotu.MCount = 2;
+
+                mojiHonban.listReset();
+            }
+
+            boolClick1_4_2 = false;
+
+            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            + "kyotu.rrCount::" + kyotu.rrCount
+            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            + "kyotu.MCount::" + kyotu.MCount
+            );
+        }
+        else if (boolClick1_4_3)
+        {
+            //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
+            if ((up == down) && (elapse <= tupTime))
+            {
+                //T0002M_kyotuHensu.meidaiNumber = 0;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
+
+                kyotu.mainCameraPosi = 2;
+                //kyotu.meidaiHensu = 0;
+
+                kyotu.rrCount = 0;
+                kyotu.mojiSwitch = 3;
+                kyotu.MCount = 2;
+
+                mojiHonban.listReset();
+            }
+
+            boolClick1_4_3 = false;
+
+            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            + "kyotu.rrCount::" + kyotu.rrCount
+            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            + "kyotu.MCount::" + kyotu.MCount
+            );
+        }
+        else if (boolClick1_4_4)
+        {
+            //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
+            if ((up == down) && (elapse <= tupTime))
+            {
+                //T0002M_kyotuHensu.meidaiNumber = 0;
+                //T0002M_kyotuHensu.cameraPosiNumber = 1;
+
+                kyotu.mainCameraPosi = 2;
+                //kyotu.meidaiHensu = 0;
+
+                kyotu.rrCount = 0;
+                kyotu.mojiSwitch = 3;
+                kyotu.MCount = 2;
+
+                mojiHonban.listReset();
+            }
+
+            boolClick1_4_4 = false;
+
+            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            + "kyotu.rrCount::" + kyotu.rrCount
+            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            + "kyotu.MCount::" + kyotu.MCount
+            );
+        }
 
         //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::"+ kyotu.meidaiHensu 
         //    + "kyotu.mainCameraPosi::"+ kyotu.mainCameraPosi
@@ -578,6 +659,9 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
     bool boolClick1_3_5 = false;
     bool boolClick1_3_6 = false;
 
+    bool boolClick1_4_2 = false;
+    bool boolClick1_4_3 = false;
+    bool boolClick1_4_4 = false;
     //uiボタンを押したとき起動するメソッド
     //canvas>MokujiPanel>MoveMokujiPanel>MokujiTextPanel1_1～6（このUIたちにインスぺで設定した）>TextMokuji1_1～6
     public void onClick1_1_2()
@@ -652,7 +736,18 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
     {
         boolClick1_3_6 = true;
     }
-    
+    public void onClick1_4_2()
+    {
+        boolClick1_4_2 = true;
+    }
+    public void onClick1_4_3()
+    {
+        boolClick1_4_3 = true;
+    }
+    public void onClick1_4_4()
+    {
+        boolClick1_4_4 = true;
+    }
 
 
 }
