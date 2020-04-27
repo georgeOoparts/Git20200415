@@ -558,8 +558,8 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
                 //kyotu.meidaiHensu = 0;
 
                 kyotu.rrCount = 0;
-                kyotu.mojiSwitch = 3;
-                kyotu.MCount = 2;
+                kyotu.mojiSwitch = 1;
+                kyotu.MCount = 0;
 
                 mojiHonban.listReset();
             }
@@ -585,7 +585,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
                 //kyotu.meidaiHensu = 0;
 
                 kyotu.rrCount = 0;
-                kyotu.mojiSwitch = 3;
+                kyotu.mojiSwitch = 0;
                 kyotu.MCount = 2;
 
                 mojiHonban.listReset();
@@ -613,7 +613,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
                 kyotu.rrCount = 0;
                 kyotu.mojiSwitch = 3;
-                kyotu.MCount = 2;
+                kyotu.MCount = 3;
 
                 mojiHonban.listReset();
             }
