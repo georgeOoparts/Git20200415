@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Test4 : MonoBehaviour
 {
+    //現在使われていない2020/04/28
+    
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject premoji;
 

@@ -28,12 +28,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("H_99_56_clickFlagToRR>start::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-             + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-             + "kyotu.rrCount::" + kyotu.rrCount
-             + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-             + "kyotu.MCount::" + kyotu.MCount
-             );
+        //Debug.Log("H_99_56_clickFlagToRR>start::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+        //     + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+        //     + "kyotu.rrCount::" + kyotu.rrCount
+        //     + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+        //     + "kyotu.MCount::" + kyotu.MCount
+        //     );
     }
 
     // Update is called once per frame
@@ -80,12 +80,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_1_2 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_1_3)
         {
@@ -107,12 +107,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_1_3 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_1_4)
         {
@@ -134,12 +134,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_1_4 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_1_5)
         {
@@ -161,12 +161,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_1_5 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_1_6)
         {
@@ -188,12 +188,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_1_6 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_2)
         {
@@ -215,12 +215,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_2 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_3)
         {
@@ -242,12 +242,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_3 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_4)
         {
@@ -269,12 +269,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_4 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_5)
         {
@@ -296,12 +296,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_5 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_6)
         {
@@ -323,12 +323,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_6 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_7)
         {
@@ -350,12 +350,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_7 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_8)
         {
@@ -377,12 +377,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_8 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_2_9)
         {
@@ -404,12 +404,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_2_9 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_3_2)
         {
@@ -431,12 +431,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_3_2 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_3_3)
         {
@@ -458,12 +458,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_3_3 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_3_4)
         {
@@ -485,12 +485,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_3_4 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_3_5)
         {
@@ -512,12 +512,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_3_5 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_3_6)
         {
@@ -539,12 +539,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_3_6 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_4_2)
         {
@@ -566,12 +566,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_4_2 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_4_3)
         {
@@ -593,12 +593,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_4_3 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_4_4)
         {
@@ -620,12 +620,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_4_4 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_5_2)
         {
@@ -647,12 +647,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_5_2 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_5_3)
         {
@@ -674,12 +674,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_5_3 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_5_4)
         {
@@ -701,12 +701,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_5_4 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_5_5)
         {
@@ -728,12 +728,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_5_5 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_5_6)
         {
@@ -755,12 +755,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_5_6 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_5_7)
         {
@@ -782,12 +782,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_5_7 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_6_2)
         {
@@ -809,12 +809,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_6_2 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_6_3)
         {
@@ -836,12 +836,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_6_3 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_6_4)
         {
@@ -863,12 +863,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_6_4 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_6_5)
         {
@@ -890,12 +890,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_6_5 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         else if (boolClick1_6_6)
         {
@@ -917,12 +917,12 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
 
             boolClick1_6_6 = false;
 
-            Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
-            + "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
-            + "kyotu.rrCount::" + kyotu.rrCount
-            + "kyotu.mojiSwitch::" + kyotu.mojiSwitch
-            + "kyotu.MCount::" + kyotu.MCount
-            );
+            //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::" + kyotu.meidaiHensu
+            //+ "kyotu.mainCameraPosi::" + kyotu.mainCameraPosi
+            //+ "kyotu.rrCount::" + kyotu.rrCount
+            //+ "kyotu.mojiSwitch::" + kyotu.mojiSwitch
+            //+ "kyotu.MCount::" + kyotu.MCount
+            //);
         }
         //Debug.Log("H_99_56_clickFlagToRR>updatewwww::kyotu.meidaiHensu::"+ kyotu.meidaiHensu 
         //    + "kyotu.mainCameraPosi::"+ kyotu.mainCameraPosi

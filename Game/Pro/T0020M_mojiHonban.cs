@@ -72,7 +72,7 @@ public class T0020M_mojiHonban : MonoBehaviour
     //public GameObject textPanel;
     void Start()
     {
-        Debug.Log("T20MmojiHonban>start::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
+        //Debug.Log("T20MmojiHonban>start::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
 
         //ここから↓ないとバグ出る-----------------
         for (int i = 0; i < 16; i++)
