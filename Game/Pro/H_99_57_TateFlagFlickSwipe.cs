@@ -140,6 +140,58 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
             }
         }
     }
+    //yokoMoveHantei-----------------------------------------------------------
+    //void flick()の　中で使う。yokomoveが0の時のみ、上下フリック、スワイプするようにする
+    public float yokoMove = 0;
+    Vector3 yokopMoveHanteiFirstPoint = new Vector3(0, 0, 0);
+    Vector3 yokopMoveHanteiSa = new Vector3(0, 0, 0);
+    void yokoMoveHantei()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            yokoMove = 0;
+            yokopMoveHanteiFirstPoint = Input.mousePosition;
+        }
+        if (Input.GetMouseButton(0))
+        {
+            yokopMoveHanteiSa = Input.mousePosition - yokopMoveHanteiFirstPoint;
+
+            if (yokopMoveHanteiSa.x == 0)
+            {
+                yokoMove = 0;
+            }
+            else if (yokopMoveHanteiSa.y == 0)
+            {
+                if (yokopMoveHanteiSa.x > 0)
+                {
+                    yokoMove = -1;
+                }
+                else
+                {
+                    yokoMove = 1;
+                }
+
+            }
+            else
+            {
+                if (-0.3 <= yokopMoveHanteiSa.y / yokopMoveHanteiSa.x
+                    && yokopMoveHanteiSa.y / yokopMoveHanteiSa.x <= 0.3)
+                {
+                    if (yokopMoveHanteiSa.x > 0)
+                    {
+                        yokoMove = -1;
+                    }
+                    else
+                    {
+                        yokoMove = 1;
+                    }
+                    //Debug.Log(yokoMove);
+                }
+            }
+        }
+    }
+
+    //yokoMoveHantei-----------end---------------------------------------------
     //flick------カメラは動かさずパネルを動かす--------------------------------------------------------------------
     //フリックをするメソッド
 
@@ -160,7 +212,7 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
             {
                 Vector3 diff = Input.mousePosition - tupDown;
                 //横移動判定がなければかつメインカメラのx軸が1ならば
-                if (/*yokoMove == 0 && */trMainCamera.position.x == 5)
+                if (yokoMove == 0 && trMainCamera.position.x == 5)
 
                     rtmoveFlagPanel.anchoredPosition
                     = new Vector2(0, rtmoveFlagPanel.anchoredPosition.y + diff.y);
