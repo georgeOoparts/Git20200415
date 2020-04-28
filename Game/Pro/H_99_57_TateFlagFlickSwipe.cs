@@ -7,12 +7,14 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
 
     public H_99_01_kyoutuHensu kyotu;
 
+    //flagの縦スワイプをするプログラム
+    //canvas>flagpanel>moveflagpanelにアタッチ
     //縦移動のみスワイプ--------------------
     //縦移動のみフリック
     //tupしていた時間を得るプログラム
     //tupしていた距離を得るプログラム
     //メインカメラにアタッチ
-    //フリック、スワイプとも＞パブリックでMOVEパネル（toumeiPanel）をインスぺで当てはめる
+    //フリック、スワイプとも＞パブリックでMOVEパネル（moveflagPanel）をインスぺで当てはめる
     //フリック、スワイプともにmovepanelが上下に動く
 
     //メインカメラが目次にある時のみ、目次透明パネルが上下移動するようにする。
@@ -24,9 +26,9 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
     //パブリックでMOVEパネルを当てはめる
     //この透明のパネルの子にmojipanelが並ぶ。
     //親のmovepanelが動かすことで、子のmojipanelが上下移動する
-    public GameObject toumeiPanel;
-    //toumeiPanelのRectTransformが入る変数
-    RectTransform rtToumeiPanel;
+    public GameObject moveFlagPanel;
+    //moveFlagPanelのRectTransformが入る変数
+    RectTransform rtmoveFlagPanel;
 
     //縦移動のみスワイプ--------------------
 
@@ -39,7 +41,7 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
     void Start()
     {
         //toumeiPanelのRectTransformが入る変数当てはめる
-        rtToumeiPanel = toumeiPanel.GetComponent<RectTransform>();
+        rtmoveFlagPanel = moveFlagPanel.GetComponent<RectTransform>();
 
         //maincameraのtransformが入る変数当てはめる
         trMainCamera = mainCamera.GetComponent<Transform>();
@@ -67,74 +69,74 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
         // 全体を動かすmovemokujipanelオブジェが下へ行きすぎないように制御
         if (kyotu.meidaiHensu==0) 
         {
-            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            if (rtmoveFlagPanel.anchoredPosition.y <= 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
             ///全体を動かすmovemokujipanelより上へ行かないように制御
-            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            else if (rtmoveFlagPanel.anchoredPosition.y >= 20)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 20);
             }
         }
         else if (kyotu.meidaiHensu == 1)
         {
-            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            if (rtmoveFlagPanel.anchoredPosition.y <= 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
             ///全体を動かすmovemokujipanelより上へ行かないように制御
-            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            else if (rtmoveFlagPanel.anchoredPosition.y >= 325)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 325);
             }
         }
         else if (kyotu.meidaiHensu == 2)
         {
-            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            if (rtmoveFlagPanel.anchoredPosition.y <= 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
             ///全体を動かすmovemokujipanelより上へ行かないように制御
-            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            else if (rtmoveFlagPanel.anchoredPosition.y >= 60)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 60);
             }
         }
         else if (kyotu.meidaiHensu == 3)
         {
-            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            if (rtmoveFlagPanel.anchoredPosition.y <= 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
             ///全体を動かすmovemokujipanelより上へ行かないように制御
-            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            else if (rtmoveFlagPanel.anchoredPosition.y > 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
         }
         else if (kyotu.meidaiHensu == 4)
         {
-            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            if (rtmoveFlagPanel.anchoredPosition.y <= 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
             ///全体を動かすmovemokujipanelより上へ行かないように制御
-            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            else if (rtmoveFlagPanel.anchoredPosition.y >= 265)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 265);
             }
         }
         else if (kyotu.meidaiHensu == 5)
         {
-            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            if (rtmoveFlagPanel.anchoredPosition.y <= 0)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 0);
             }
             ///全体を動かすmovemokujipanelより上へ行かないように制御
-            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            else if (rtmoveFlagPanel.anchoredPosition.y >= 95)
             {
-                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+                rtmoveFlagPanel.anchoredPosition = new Vector2(0, 95);
             }
         }
     }
@@ -160,8 +162,8 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
                 //横移動判定がなければかつメインカメラのx軸が1ならば
                 if (/*yokoMove == 0 && */trMainCamera.position.x == 5)
 
-                    rtToumeiPanel.anchoredPosition
-                    = new Vector2(0, rtToumeiPanel.anchoredPosition.y + diff.y);
+                    rtmoveFlagPanel.anchoredPosition
+                    = new Vector2(0, rtmoveFlagPanel.anchoredPosition.y + diff.y);
 
             }
             tupDown = Input.mousePosition;

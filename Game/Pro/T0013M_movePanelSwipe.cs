@@ -17,11 +17,11 @@ public class T0013M_movePanelSwipe : MonoBehaviour
     //親のmovepanelが動かすことで、子のmojipanelが上下移動する
     public GameObject toumeiPanel;
     //toumeiPanelのRectTransformが入る変数
-    RectTransform rtToumeiPanel;
+    RectTransform rtmoveFlagPanel;
     private void Start()
     {
         //toumeiPanelのRectTransformが入る変数当てはめる
-        rtToumeiPanel = toumeiPanel.GetComponent<RectTransform>();
+        rtmoveFlagPanel = toumeiPanel.GetComponent<RectTransform>();
     }
     void Update()
     {
@@ -41,14 +41,14 @@ public class T0013M_movePanelSwipe : MonoBehaviour
 
         //（フリック、スワイプで）目次がある値以上の場所へ行かない処理（movemokujipanelが）
         // 全体を動かすmovemokujipanelオブジェが下へ行きすぎないように制御
-        if (rtToumeiPanel.anchoredPosition.y <= 0)
+        if (rtmoveFlagPanel.anchoredPosition.y <= 0)
         {
-            rtToumeiPanel.anchoredPosition = new Vector3(0, 0, 0);
+            rtmoveFlagPanel.anchoredPosition = new Vector3(0, 0, 0);
         }
         ///全体を動かすmoveMokujiPanelより上へ行かないように制御
-        else if (rtToumeiPanel.anchoredPosition.y >= 150)
+        else if (rtmoveFlagPanel.anchoredPosition.y >= 150)
         {
-            rtToumeiPanel.anchoredPosition = new Vector3(0, 150, 0);
+            rtmoveFlagPanel.anchoredPosition = new Vector3(0, 150, 0);
         }
     }
     //swipe------カメラは動かさずパネルを動かす--------------------------------------------------------------------
@@ -103,7 +103,7 @@ public class T0013M_movePanelSwipe : MonoBehaviour
             if (swipeJikan > swipeElapse)
             {
                 //移動実施
-                rtToumeiPanel.anchoredPosition += new Vector2(0, -swipeSpeed * diff.y* Time.deltaTime);
+                rtmoveFlagPanel.anchoredPosition += new Vector2(0, -swipeSpeed * diff.y* Time.deltaTime);
             }
             //スワイプ時間外ならば
             else 
@@ -262,8 +262,8 @@ public class T0013M_movePanelSwipe : MonoBehaviour
             {
                 Vector3 diff = Input.mousePosition - tupDown;
                 
-                rtToumeiPanel.anchoredPosition
-                    = new Vector2(0, rtToumeiPanel.anchoredPosition.y + diff.y);
+                rtmoveFlagPanel.anchoredPosition
+                    = new Vector2(0, rtmoveFlagPanel.anchoredPosition.y + diff.y);
             }
             tupDown = Input.mousePosition;
         }
