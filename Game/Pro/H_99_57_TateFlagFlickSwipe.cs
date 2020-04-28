@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
 {
+
+    public H_99_01_kyoutuHensu kyotu;
+
     //縦移動のみスワイプ--------------------
     //縦移動のみフリック
     //tupしていた時間を得るプログラム
@@ -58,7 +61,7 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
 
         //フリックをするメソッド
         flick();
-        //Debug.Log("575757575775;;;;;");
+        Debug.Log("H_99_57_TateFlagFlickSwipe>update::kyotu.meidaihensu::"+kyotu.meidaiHensu);
         
         //（フリック、スワイプで）目次がある値以上の場所へ行かない処理（movemokujipanelが）
         // 全体を動かすmovemokujipanelオブジェが下へ行きすぎないように制御

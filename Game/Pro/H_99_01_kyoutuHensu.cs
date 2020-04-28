@@ -39,6 +39,8 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
 
 
     ////meidaiの何がライン2（フラッグ図）にくるか決める変数0～5
+    //canvas>mokujipanel>movemokujipanel>T0018M_clickChangeFN0で変更
+    //meidaiパネルボタン１～６を押すと変更される
     public int meidaiHensu = 0;
 
     ////cameraTakasaY：カメラの真ん中から上半分のyジクの距離
