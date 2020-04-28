@@ -58,12 +58,17 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
         //k6_ac:何秒たったかを変数elapseに入れる:update内にいれる。
         //>tupTimeHanteiに使う。>swipe()に使う
         //elapse = (float)stopwatch.Elapsed.TotalSeconds;
+        elapse = (float)stopwatch.Elapsed.TotalSeconds;
 
-        
 
         //フリックをするメソッド
         flick();
-        Debug.Log("H_99_57_TateFlagFlickSwipe>update::kyotu.meidaihensu::"+kyotu.meidaiHensu);
+        //スワイプをするメソッド
+        //スワイプしている最中どこかをtupするとスワイプを止める。
+        //swipe();
+
+        //tupTimeHantei();
+        //Debug.Log("H_99_57_TateFlagFlickSwipe>update::kyotu.meidaihensu::"+kyotu.meidaiHensu);
 
         //（フリック、スワイプで）目次がある値以上の場所へ行かない処理（movemokujipanelが）
         // 全体を動かすmovemokujipanelオブジェが下へ行きすぎないように制御
@@ -140,6 +145,54 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
             }
         }
     }
+    //tupTimeHantei-------------------------------------------------------------------------------
+    //tupしてから指を離した時、その時間が0.35秒以内だった瞬間だけ
+    //変数timeHanteiが1、その他はtimeHanteiが0になるメソッド
+    //k6_a:ストップウォッチ関数を使う時のおまじない。
+    private System.Diagnostics.Stopwatch stopwatch
+        = new System.Diagnostics.Stopwatch();
+
+    //tupしてから指を放すまで何秒たったかを変数elapseに入れる。ストップウォッチ
+    private float elapse;
+    //tupしてから指を離した時、その時間が0.35秒以内だった瞬間だけ
+    //変数timeHanteiが1、その他はtimeHanteiが0
+    int timeHantei = 0;
+
+    void tupTimeHantei()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            timeHantei = 0;
+            stopwatch.Start();
+            //Debug.Log("kokokuru?::"+elapse);
+
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (elapse <= 0.35)
+            {
+                timeHantei = 1;
+                //Debug.Log(timeHantei);
+            }
+            else
+            {
+                timeHantei = 0;
+                //Debug.Log(timeHantei);
+
+            }
+            //Debug.Log("kokokuru?::"+elapse);
+
+            stopwatch.Reset();
+            stopwatch.Stop();
+            //Debug.Log("kokokuru?::"+elapse);
+        }
+        else//tup　upしてない時はtimeHantei常に0 
+        {
+            timeHantei = 0;
+        }
+    }
+    //tupTimeHantei---end----------------------------------------------------------------------------
+
     //yokoMoveHantei-----------------------------------------------------------
     //void flick()の　中で使う。yokomoveが0の時のみ、上下フリック、スワイプするようにする
     public float yokoMove = 0;

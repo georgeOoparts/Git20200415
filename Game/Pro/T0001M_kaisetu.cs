@@ -196,9 +196,9 @@ public class T0001M_kaisetu : MonoBehaviour
     
     //k6_1_1:何秒たったかを変数elapseに入れる：update内に入れる-------
     ////?
-    private float elapse;
+    private float elapse;//update外
     
-    elapse = (float)stopwatch.Elapsed.TotalSeconds;
+    elapse = (float)stopwatch.Elapsed.TotalSeconds;//update内
     -------------------------------------------------
 
     //k6_1_1_1:ストップウォッチスタート
