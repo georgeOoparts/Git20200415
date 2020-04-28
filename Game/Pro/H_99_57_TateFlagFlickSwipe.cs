@@ -77,9 +77,66 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
                 rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
             }
         }
-        
-        
-        
+        else if (kyotu.meidaiHensu == 1)
+        {
+            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+            }
+            ///全体を動かすmovemokujipanelより上へ行かないように制御
+            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+            }
+        }
+        else if (kyotu.meidaiHensu == 2)
+        {
+            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+            }
+            ///全体を動かすmovemokujipanelより上へ行かないように制御
+            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+            }
+        }
+        else if (kyotu.meidaiHensu == 3)
+        {
+            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+            }
+            ///全体を動かすmovemokujipanelより上へ行かないように制御
+            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+            }
+        }
+        else if (kyotu.meidaiHensu == 4)
+        {
+            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+            }
+            ///全体を動かすmovemokujipanelより上へ行かないように制御
+            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+            }
+        }
+        else if (kyotu.meidaiHensu == 5)
+        {
+            if (rtToumeiPanel.anchoredPosition.y <= 0)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+            }
+            ///全体を動かすmovemokujipanelより上へ行かないように制御
+            else if (rtToumeiPanel.anchoredPosition.y >= 20)
+            {
+                rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+            }
+        }
     }
     //flick------カメラは動かさずパネルを動かす--------------------------------------------------------------------
     //フリックをするメソッド
