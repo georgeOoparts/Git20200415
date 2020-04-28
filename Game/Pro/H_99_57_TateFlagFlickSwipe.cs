@@ -66,7 +66,7 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
         //スワイプをするメソッド
         //スワイプしている最中どこかをtupするとスワイプを止める。
         //swipe();
-
+        tupKyoriHantei();
         //tupTimeHantei();
         //Debug.Log("H_99_57_TateFlagFlickSwipe>update::kyotu.meidaihensu::"+kyotu.meidaiHensu);
 
@@ -145,6 +145,39 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
             }
         }
     }
+    //tupKyoriHantei--------------------------------------------------------------------------
+    //tup down up  した時の距離がスクリーンポイント100以上だったら
+    //kyoriHanteiが１、他は０になるメソッド
+    //スクリーンポイントをkyoriに値を入れる
+    //縦、横とも移動はメインカメラが動くので
+    //world座標でなく、スクリーン座標で距離を得る
+
+    Vector3 kyoriDown = new Vector3(0, 0, 0);
+    Vector3 kyori = new Vector3(0, 0, 0);
+    int kyoriHantei = 0;
+    void tupKyoriHantei()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            kyoriDown = Input.mousePosition;
+            kyoriHantei = 0;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            kyori = Input.mousePosition - kyoriDown;
+            if (kyori.y >= 100 || kyori.y <= -100)
+            {
+                kyoriHantei = 1;
+            }
+            Debug.Log("kyori::" + kyori + "hantei::" + kyoriHantei);
+        }
+        else
+        {
+            kyoriHantei = 0;
+        }
+
+    }
+    //tupKyoriHantei---end-----------------------------------------------------------------------
     //tupTimeHantei-------------------------------------------------------------------------------
     //tupしてから指を離した時、その時間が0.35秒以内だった瞬間だけ
     //変数timeHanteiが1、その他はtimeHanteiが0になるメソッド
