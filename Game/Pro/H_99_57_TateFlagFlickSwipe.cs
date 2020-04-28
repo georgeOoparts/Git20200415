@@ -59,6 +59,18 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
         //フリックをするメソッド
         flick();
         //Debug.Log("575757575775;;;;;");
+        
+        //（フリック、スワイプで）目次がある値以上の場所へ行かない処理（movemokujipanelが）
+        // 全体を動かすmovemokujipanelオブジェが下へ行きすぎないように制御
+        if (rtToumeiPanel.anchoredPosition.y <= 0)
+        {
+            rtToumeiPanel.anchoredPosition = new Vector2(0, 0);
+        }
+        ///全体を動かすmovemokujipanelより上へ行かないように制御
+        else if (rtToumeiPanel.anchoredPosition.y >= 20)
+        {
+            rtToumeiPanel.anchoredPosition = new Vector2(0, 20);
+        }
     }
     //flick------カメラは動かさずパネルを動かす--------------------------------------------------------------------
     //フリックをするメソッド
