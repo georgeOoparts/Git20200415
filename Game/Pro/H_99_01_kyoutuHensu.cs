@@ -28,8 +28,8 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //rrの何ターン目かをカウントする共通変数 -----------
 
     //use　H_99_16_sTriangleHenka、H_99_13_mojiHonban    
-    //どのプログラムで数が増える？＞canvasworld>textpanel>H_99_13_mojiHonban（左クリック）
-    //どのプログラムで減る＞canvasworld>textpanel>H_99_13_mojiHonban（右クリック0にリセット）
+    //どのプログラムで数が増える？＞canvasworld>textpanel>T0020M_mojiHonban（左クリック）
+    //どのプログラムで減る＞canvasworld>textpanel>T0020M_mojiHonban（右クリック0にリセット）
 
     public int rrCount=0;
 

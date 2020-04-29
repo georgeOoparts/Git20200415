@@ -38,6 +38,11 @@ public class T0020M_mojiHonban : MonoBehaviour
     //このスクリプトをアタッチしたオブジェクトにいちいちこのオブジェクトをアタッチ
     public H_99_01_kyoutuHensu kyotu;
 
+    //k5_3_1_1:gameobject(メソッド、変数)を使いまわす
+    //このスクリプトをアタッチしたオブジェクトにいちいちこのオブジェクトをアタッチ
+    //横移動判定に使うyokoMoveを扱うために
+    public T0016M_DtateFlickSwipeMeidai dtate;
+
     //強調表現点滅に使う変数を共通変数として使う。
     public H_99_01B_kyotuElapse kyotuEla;
 
@@ -112,6 +117,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //    //kodomoTextText.Add(kodomoTextObj[i].GetComponent<Text>());
         //    ///mojipanelオブジェのRectTransformを当てはめる
         //}
+        Debug.Log("wowow"+dtate.yokoMove);
     }
 
     //強調する文字が配列の何番目かを入れる変数（強調できる文字数3つ）
