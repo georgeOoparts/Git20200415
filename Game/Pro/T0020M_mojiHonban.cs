@@ -117,7 +117,7 @@ public class T0020M_mojiHonban : MonoBehaviour
         //    //kodomoTextText.Add(kodomoTextObj[i].GetComponent<Text>());
         //    ///mojipanelオブジェのRectTransformを当てはめる
         //}
-        Debug.Log("wowow"+dtate.yokoMove);
+        //Debug.Log("t20>start>yokomuve::"+dtate.yokoMove);
     }
 
     //強調する文字が配列の何番目かを入れる変数（強調できる文字数3つ）
@@ -198,10 +198,14 @@ public class T0020M_mojiHonban : MonoBehaviour
                 kyotu.MCount--;
         }
         //bKey();
-
+        //yokoMoveHantei()yokoMove==0の値を出すために　横移動の時rrcountプラスさせないためだけの処理
+        yokoMoveHantei();
         //kyotu.rrCountの数を増やす
-        if (rrPanelDown==true)//rrcountw
+        if (rrPanelDown==true && yokoMove==0)//rrcountw
         {
+            //Debug.Log("t20>update>if (rrPanelDown==true && dtate.yokoMove==0)" +
+            //    ">rrcount::" + kyotu.rrCount+"::yokomove::"+dtate.yokoMove);
+
             //Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
             listReset();
             //rrcountが紙芝居の最後のページじゃなければ
@@ -213,7 +217,10 @@ public class T0020M_mojiHonban : MonoBehaviour
                 {
                     if (kyotu.rrCount < ka1.GetLength(0) - 1)
                     {
+                        
                         kyotu.rrCount++;
+                        //Debug.Log("t20>update>if (kyotu.rrCount < ka1.GetLength(0) - 1)" +
+                        //    ">rrcount::" + kyotu.rrCount+"::yokomove::"+dtate.yokoMove);
                     }
 
                 }
@@ -327,7 +334,6 @@ public class T0020M_mojiHonban : MonoBehaviour
                     }
                 }
             }
-            rrPanelDown = false;
             //Debug.Log("T20MmojiHonban>update>if (rrPanelDown==true)外::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount +"::"+ rrPanelDown);
 
         }
@@ -337,6 +343,7 @@ public class T0020M_mojiHonban : MonoBehaviour
             kyotu.MCount++;
             kyotu.rrCount = 0;
         }
+        rrPanelDown = false;
 
         hairetuToList();
 
@@ -750,7 +757,59 @@ public class T0020M_mojiHonban : MonoBehaviour
 
 
     }//updateend
-    
+
+    //yokoMoveHantei-----------------------------------------------------------
+    private float yokoMove;
+    Vector3 yokopMoveHanteiFirstPoint = new Vector3(0, 0, 0);
+    Vector3 yokopMoveHanteiSa = new Vector3(0, 0, 0);
+    void yokoMoveHantei()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            yokoMove = 0;
+            yokopMoveHanteiFirstPoint = Input.mousePosition;
+        }
+        if (Input.GetMouseButton(0))
+        {
+            yokopMoveHanteiSa = Input.mousePosition - yokopMoveHanteiFirstPoint;
+
+            if (yokopMoveHanteiSa.x == 0)
+            {
+                yokoMove = 0;
+            }
+            else if (yokopMoveHanteiSa.y == 0)
+            {
+                if (yokopMoveHanteiSa.x > 0)
+                {
+                    yokoMove = -1;
+                }
+                else
+                {
+                    yokoMove = 1;
+                }
+
+            }
+            else
+            {
+                if (-0.3 <= yokopMoveHanteiSa.y / yokopMoveHanteiSa.x
+                    && yokopMoveHanteiSa.y / yokopMoveHanteiSa.x <= 0.3)
+                {
+                    if (yokopMoveHanteiSa.x > 0)
+                    {
+                        yokoMove = -1;
+                    }
+                    else
+                    {
+                        yokoMove = 1;
+                    }
+                    //Debug.Log(yokoMove);
+                }
+            }
+        }
+    }
+
+    //yokoMoveHantei-----------end---------------------------------------------
+
     //mojipanelのスタート位置のための変数
     float startWidth = 0;
 
