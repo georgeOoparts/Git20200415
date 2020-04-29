@@ -148,6 +148,8 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
     //tupKyoriHantei--------------------------------------------------------------------------
     //tup down up  した時の距離がスクリーンポイント100以上だったら
     //kyoriHanteiが１、他は０になるメソッド
+    //このメソッド現在、使われていない
+
     //スクリーンポイントをkyoriに値を入れる
     //縦、横とも移動はメインカメラが動くので
     //world座標でなく、スクリーン座標で距離を得る
@@ -169,7 +171,7 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
             {
                 kyoriHantei = 1;
             }
-            Debug.Log("kyori::" + kyori + "hantei::" + kyoriHantei);
+            //Debug.Log("kyori::" + kyori + "hantei::" + kyoriHantei);
         }
         else
         {
@@ -179,6 +181,7 @@ public class H_99_57_TateFlagFlickSwipe : MonoBehaviour
     }
     //tupKyoriHantei---end-----------------------------------------------------------------------
     //tupTimeHantei-------------------------------------------------------------------------------
+    //このメソッド現在使われていない
     //tupしてから指を離した時、その時間が0.35秒以内だった瞬間だけ
     //変数timeHanteiが1、その他はtimeHanteiが0になるメソッド
     //k6_a:ストップウォッチ関数を使う時のおまじない。
