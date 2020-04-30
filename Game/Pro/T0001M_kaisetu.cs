@@ -215,11 +215,14 @@ public class T0001M_kaisetu : MonoBehaviour
     using UnityEngine.UI;
 
     //k7_1_1:オブジェを存在するけど見えなくする。
-    this.gameObject.GetComponent<Image>().enabled = false;
+    this.gameObject.GetComponent<Image>().enabled = false;//uipanelの時
 
+    this.gameObject.GetComponent<Text>().enabled = false;//uitextの時
     //k7_1_2:オブジェを見えるようにするよ。
-    this.gameObject.GetComponent<Image>().enabled = true;
+    this.gameObject.GetComponent<Image>().enabled = true;//uipanelの時
 
+    this.gameObject.GetComponent<Text>().enabled = true;//uitextの時
+    
     //k7Bオブジェクトを見えたり見えなくしたりする(uiじゃないオブジェの時)---
     //スプライトの場合もspriterendererじゃなくこれ。
     //しかし、スプライトの場合Rederer変数が作れないので注意
@@ -475,14 +478,14 @@ public class T0001M_kaisetu : MonoBehaviour
     //M1_5KakuABC.GetComponent<Shape>().settings.fillColor = MColor6Pink_same2.GetColor("_EmissionColor");
 
     //0021_99_1:uiボタンを使う-----------------------------------------------------------------------------------------
-    
+
     //uiボタンを押したときの操作publicメソッド（注意メソッドはパブリック）を作る（update、starat以外)
     //＞uiにアタッチ>
     //ui＞インスペ＞button（script）＞onclick　＋＞ボタンを押したときの処理を描いたスクリプトがアタッチされたオブジェを選択
-    
+
     //ここいつもつまずく→onclickのオブジェ当てはめの時、デフォルトでassetにタブが選択されているので注意
     //sceneにタブを合わせないと、ボタンにしたいオブジェを選択できない。
-    
+
     //＞→選んだオブジェのアタッチプログラムのメソッドを選択
     //-------------------------------------------------------------------------------------------------------------------
 }
