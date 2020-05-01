@@ -43,6 +43,9 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //meidaiパネルボタン１～６を押すと変更される
     public int meidaiHensu = 0;
 
+    //canvas>readmepanelの処理のための変数。
+    public int ReadMePanelCount = 0;
+
     ////cameraTakasaY：カメラの真ん中から上半分のyジクの距離
     //public float cameraTakasaY = 5;
     ////upSpace：カメラの上から一番上のオブジェまでの距離
