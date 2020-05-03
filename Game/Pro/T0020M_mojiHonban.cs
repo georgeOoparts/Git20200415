@@ -201,7 +201,8 @@ public class T0020M_mojiHonban : MonoBehaviour
         //yokoMoveHantei()yokoMove==0の値を出すために　横移動の時rrcountプラスさせないためだけの処理
         yokoMoveHantei();
         //kyotu.rrCountの数を増やす
-        if (rrPanelDown==true && yokoMove==0)//rrcountw
+        //kyotu.rrCountLock==false ファイル名t1mkyotuhensuで解説。readmepanelが表示されなくなるとfalseになる
+        if (rrPanelDown==true && yokoMove==0&&kyotu.rrCountLock==false)//rrcountw
         {
             //Debug.Log("t20>update>if (rrPanelDown==true && dtate.yokoMove==0)" +
             //    ">rrcount::" + kyotu.rrCount+"::yokomove::"+dtate.yokoMove);
