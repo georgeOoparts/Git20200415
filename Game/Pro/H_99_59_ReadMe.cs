@@ -26,14 +26,32 @@ public class H_99_59_ReadMe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //k7_1_1:オブジェを存在するけど見えなくする。
-        TupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
-
-        if (kyotu.ReadMePanelCount>=1) 
+        if (kyotu.ReadMePanelCount==0) 
         {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            TupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
+
+            //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
+            OkReadMePanel.GetComponent<Text>().enabled = false;
+        }
+        else if (kyotu.ReadMePanelCount == 1) 
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            TupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
+
             //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
             OkReadMePanel.GetComponent<Text>().enabled = true;
         }
+        else 
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            TupReadMePanel.GetComponent<Text>().enabled = false;
+
+            //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
+            OkReadMePanel.GetComponent<Text>().enabled = false;
+        }
+        
+        
         Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
 
     }
