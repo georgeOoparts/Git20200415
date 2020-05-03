@@ -82,7 +82,7 @@ public class H_99_59_ReadMe : MonoBehaviour
             kyotu.rrCountLock = false;
         }
 
-        Debug.Log("H_99_59_ReadMe>update>kyotu.rrCountLock::" + kyotu.rrCountLock+ ":;ReadMePanelCount::" + kyotu.ReadMePanelCount);
+        //Debug.Log("H_99_59_ReadMe>update>kyotu.rrCountLock::" + kyotu.rrCountLock+ ":;ReadMePanelCount::" + kyotu.ReadMePanelCount);
 
         //Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
 
