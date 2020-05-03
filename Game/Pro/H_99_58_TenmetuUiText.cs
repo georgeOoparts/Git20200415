@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class H_99_58_TenmetuUiText : MonoBehaviour
 {
+    //現在使われていない
+    
     //点滅処理のために呼び出す
     public H_99_01B_kyotuElapse kyotuela;
     

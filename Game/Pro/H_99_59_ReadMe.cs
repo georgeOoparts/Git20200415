@@ -8,10 +8,16 @@ public class H_99_59_ReadMe : MonoBehaviour
     //canvas＞rrpanel>readmepanelにアタッチ
     //canvas＞rrpanel>readmepanelをtupするたびにkyotu.ReadMePanelCountを１づつ増やす
     //kyotu.ReadMePanelCountが１になった時canvas＞rrpanel>readmepanel>OkReadMePanelを表示
+    //canvas＞rrpanel>TupReadMePanelの点滅制御をする
     public H_99_01_kyoutuHensu kyotu;
-    // Start is called before the first frame update
+
+    //点滅処理のために呼び出す
+    public H_99_01B_kyotuElapse kyotuela;
+
     public GameObject OkReadMePanel;
 
+    public GameObject TupReadMePanel;
+    
     void Start()
     {
         
@@ -20,6 +26,9 @@ public class H_99_59_ReadMe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //k7_1_1:オブジェを存在するけど見えなくする。
+        TupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
+
         if (kyotu.ReadMePanelCount>=1) 
         {
             //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
