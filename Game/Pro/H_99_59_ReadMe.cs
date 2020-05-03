@@ -16,12 +16,13 @@ public class H_99_59_ReadMe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount); ;
+        Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount); ;
 
     }
     //0021_99_1:uiボタンを使う
     public void onClickReadMe() 
     {
-        Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
+        kyotu.ReadMePanelCount++;
+        Debug.Log("H_99_59_ReadMe>onClickReadMe>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
     }
 }
