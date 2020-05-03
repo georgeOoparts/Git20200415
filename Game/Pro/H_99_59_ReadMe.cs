@@ -79,16 +79,17 @@ public class H_99_59_ReadMe : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
             TextReadMePanel.GetComponent<Text>().enabled = false;
         }
-        
-        
-        Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
+
+        Debug.Log("H_99_59_ReadMe>update>kyotu.rrCountLock::" + kyotu.rrCountLock);
+
+        //Debug.Log("H_99_59_ReadMe>update>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
 
     }
     //0021_99_1:uiボタンを使う
     public void onClickReadMe() 
     {
         kyotu.ReadMePanelCount++;
-        Debug.Log("H_99_59_ReadMe>onClickReadMe>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
+        //Debug.Log("H_99_59_ReadMe>onClickReadMe>kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
     }
 
 }

@@ -44,7 +44,12 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public int meidaiHensu = 0;
 
     //canvas>readmepanelの処理のための変数。
+    //canvas>readmepanel>H_99_59_ReadMeで使う
     public int ReadMePanelCount = 0;
+
+    //canvas>readmepanel>H_99_59_ReadMe（この変数使用）でreadmepanelの表示が消された時のみ、
+    //canvasworld＞UIオブジェtextpanel＞T0020M_mojiHonban（子の変数使用）でrrcountが+1されるようにする
+    public bool rrCountLock = true;
 
     ////cameraTakasaY：カメラの真ん中から上半分のyジクの距離
     //public float cameraTakasaY = 5;
