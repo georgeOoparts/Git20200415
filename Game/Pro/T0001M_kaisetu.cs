@@ -232,8 +232,15 @@ public class T0001M_kaisetu : MonoBehaviour
 
     //k7B_1_2:オブジェを見えるようにするよ。
     //this.gameObject.GetComponent<Renderer>().enabled = true;
-
-
+----------------------------------------------------------------------------------
+    //k7 textmeshpro を使う場合
+    using TMPro;
+    //k7 textmeshpro を使う場合　直接enableを記述しなければならない
+    GameObject.GetComponent<TextMeshProUGUI>().enabled = false;
+----------------------------------------------------------------------------------
+    //k7オブジェクトを直接onoff
+    //k7　GameObject.SetActive(true);
+    GameObject.SetActive(false);
 
 ----------------------------------------------------------------------------------
     //shape2dの使い方

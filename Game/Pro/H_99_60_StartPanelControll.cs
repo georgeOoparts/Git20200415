@@ -10,9 +10,9 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     public H_99_01_kyoutuHensu kyotu;
 
     public H_99_01B_kyotuElapse kyotuEla;
-    
+    //UIパネルのAutoSavePanelオブジェを直接　消したり、出したりするのに使う
     public GameObject AutoSavePanel;
-
+    //TextMeshProUGUIのtextオブジェを消したり、出したりするのに使う
     public GameObject ReallyText;
 
     int YesCount = 0;
@@ -40,6 +40,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
         else if(YesCount == 2) 
         {
             YesCount = 0;
+            //k7オブジェクトを直接onoff
             AutoSavePanel.SetActive(false);
         }
         
@@ -55,12 +56,14 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     }
     public void onClickSaveButton() 
     {
+        //k7オブジェクトを直接onoff
         AutoSavePanel.SetActive(true);
 
     }
     public void onClickButtonNo() 
     {
         YesCount = 0;
+        //k7オブジェクトを直接onoff
         AutoSavePanel.SetActive(false);
     }
     public void onClickButtonYes()
