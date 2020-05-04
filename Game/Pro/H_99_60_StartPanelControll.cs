@@ -11,7 +11,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
 
     public H_99_01B_kyotuElapse kyotuEla;
     
-    //public GameObject Title;
+    public GameObject AutoSavePanel;
 
     //public GameObject StartButton;
     void Start()
@@ -36,6 +36,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     public void onClickSaveButton() 
     {
         Debug.Log("H_99_60_StartPanelControll>Title:::");
+        AutoSavePanel.SetActive(true);
 
     }
 }
