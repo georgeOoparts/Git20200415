@@ -13,6 +13,8 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     
     public GameObject AutoSavePanel;
 
+
+    int YesCount = 0;
     //public GameObject StartButton;
     void Start()
     {
@@ -39,8 +41,13 @@ public class H_99_60_StartPanelControll : MonoBehaviour
 
     }
     public void onClickButtonNo() 
-    { 
-        Debug.Log("H_99_60_StartPanelControll>Title:::");
+    {
+        YesCount = 0;
         AutoSavePanel.SetActive(false);
+    }
+    public void onClickButtonYes()
+    {
+        YesCount++;
+        Debug.Log("H_99_60_StartPanelControll>YesCount:::" + YesCount);
     }
 }
