@@ -35,8 +35,12 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     }
     public void onClickSaveButton() 
     {
-        Debug.Log("H_99_60_StartPanelControll>Title:::");
         AutoSavePanel.SetActive(true);
 
+    }
+    public void onClickButtonNo() 
+    { 
+        Debug.Log("H_99_60_StartPanelControll>Title:::");
+        AutoSavePanel.SetActive(false);
     }
 }
