@@ -13,6 +13,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     
     public GameObject AutoSavePanel;
 
+    public GameObject ReallyText;
 
     int YesCount = 0;
     //public GameObject StartButton;
@@ -26,6 +27,23 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (YesCount == 0)
+        {
+            //k7 textmeshpro を使う場合　直接enableを記述しなければならない
+            ReallyText.GetComponent<TextMeshProUGUI>().enabled = false;
+        }
+        else if (YesCount == 1) 
+        {
+            //k7 textmeshpro を使う場合　直接enableを記述しなければならない
+            ReallyText.GetComponent<TextMeshProUGUI>().enabled = true;
+        }
+        else if(YesCount == 2) 
+        {
+            YesCount = 0;
+            AutoSavePanel.SetActive(false);
+        }
+        
+        
         //Title.GetComponent<TextMeshProUGUI>().enabled = kyotuEla.tenmetuOnOff;//ok
 
         //Debug.Log("H_99_60_StartPanelControll>Title:::"+Title.name);
@@ -48,6 +66,6 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     public void onClickButtonYes()
     {
         YesCount++;
-        Debug.Log("H_99_60_StartPanelControll>YesCount:::" + YesCount);
+        //Debug.Log("H_99_60_StartPanelControll>YesCount:::" + YesCount);
     }
 }

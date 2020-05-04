@@ -59770,6 +59770,7 @@ MonoBehaviour:
   kyotu: {fileID: 1291038115}
   kyotuEla: {fileID: 1291038114}
   AutoSavePanel: {fileID: 1071943440}
+  ReallyText: {fileID: 106155736}
 --- !u!21 &1784362214
 Material:
   serializedVersion: 6
