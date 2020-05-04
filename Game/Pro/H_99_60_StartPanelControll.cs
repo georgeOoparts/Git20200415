@@ -30,7 +30,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     }
     public void onClickStartButton() 
     {
-        Debug.Log("H_99_60_StartPanelControll>Title:::");
+        //Debug.Log("H_99_60_StartPanelControll>Title:::");
         kyotu.mainCameraPosi = 0;
     }
 }
