@@ -9,6 +9,9 @@ public class T0019M_moveCameraNumber : MonoBehaviour
     //共通変数カメラポジション0＞メインカメラのx座標　0
     //共通変数カメラポジション1＞メインカメラのx座標　5
     //共通変数カメラポジション2＞メインカメラのx座標　10
+
+    //共通変数カメラポジション99＞(start画面作る)メインカメラのx座標　-5
+
     Transform cameraMove;
 
     public H_99_01_kyoutuHensu kyotu;
@@ -37,6 +40,10 @@ public class T0019M_moveCameraNumber : MonoBehaviour
             else if (kyotu.mainCameraPosi == 2)
             {
                 cameraMove.position = new Vector3(10, cameraMove.position.y, cameraMove.position.z);
+            }
+            else if (kyotu.mainCameraPosi == 99)
+            {
+                cameraMove.position = new Vector3(-5, cameraMove.position.y, cameraMove.position.z);
             }
         }
         //Debug.Log(this.gameObject);   
