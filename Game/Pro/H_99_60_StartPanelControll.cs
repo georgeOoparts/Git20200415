@@ -15,6 +15,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     //TextMeshProUGUIのtextオブジェを消したり、出したりするのに使う
     public GameObject ReallyText;
 
+    public GameObject StartButtonText;
     int YesCount = 0;
     //public GameObject StartButton;
     void Start()
@@ -43,11 +44,18 @@ public class H_99_60_StartPanelControll : MonoBehaviour
             //k7オブジェクトを直接onoff
             AutoSavePanel.SetActive(false);
         }
-        
-        
+
+        if (kyotu.tuduki == false)
+        {
+            StartButtonText.GetComponent<TextMeshProUGUI>().text = "START";
+        }
+        else 
+        {
+            StartButtonText.GetComponent<TextMeshProUGUI>().text = "CONTINUE";
+        }
         //Title.GetComponent<TextMeshProUGUI>().enabled = kyotuEla.tenmetuOnOff;//ok
 
-        //Debug.Log("H_99_60_StartPanelControll>Title:::"+Title.name);
+        Debug.Log("H_99_60_StartPanelControll>Title:::"+kyotu.tuduki);
     }
     public void onClickStartButton() 
     {

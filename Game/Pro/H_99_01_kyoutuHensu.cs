@@ -51,6 +51,9 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //canvasworld＞UIオブジェtextpanel＞T0020M_mojiHonban（子の変数使用）でrrcountが+1されるようにする
     public bool rrCountLock = true;
 
+    //canvas>startpanel>H_99_60_StartPanelControll
+    public bool tuduki = false;
+
     ////cameraTakasaY：カメラの真ん中から上半分のyジクの距離
     //public float cameraTakasaY = 5;
     ////upSpace：カメラの上から一番上のオブジェまでの距離
