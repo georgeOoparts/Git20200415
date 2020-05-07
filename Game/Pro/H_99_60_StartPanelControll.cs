@@ -55,7 +55,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
         }
         //Title.GetComponent<TextMeshProUGUI>().enabled = kyotuEla.tenmetuOnOff;//ok
 
-        Debug.Log("H_99_60_StartPanelControll>Title:::"+kyotu.tuduki);
+        //Debug.Log("H_99_60_StartPanelControll>Title:::"+kyotu.tuduki);
     }
     public void onClickStartButton() 
     {

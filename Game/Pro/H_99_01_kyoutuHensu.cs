@@ -54,6 +54,12 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //canvas>startpanel>H_99_60_StartPanelControll
     public bool tuduki = false;
 
+    
+    void Start()
+    {
+        
+    }
+
     ////cameraTakasaY：カメラの真ん中から上半分のyジクの距離
     //public float cameraTakasaY = 5;
     ////upSpace：カメラの上から一番上のオブジェまでの距離
@@ -135,9 +141,11 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //public GameObject p1_6_4;
     //public GameObject p1_6_5;
     //public GameObject p1_6_6;
-
+    public int i = 0;
     private void Update()
     {
+        
+
         //Debug.Log("kyoutuhensu::"+rrCount);
         //Debug.Log("H_99_01_kyoutuHensu>update::t2mMeidaiNumber::t2mCameraPosiNumber::"
         //    + T0002M_kyotuHensu.meidaiNumber + "::" + T0002M_kyotuHensu.cameraPosiNumber);
