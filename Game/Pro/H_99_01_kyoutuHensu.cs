@@ -54,7 +54,13 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //canvas>startpanel>H_99_60_StartPanelControll
     public bool tuduki = false;
 
-    
+    //
+    public bool BoolMeidai1_2 = false;
+    public bool BoolMeidai1_3 = false;
+    public bool BoolMeidai1_4 = false;
+    public bool BoolMeidai1_5 = false;
+    public bool BoolMeidai1_6 = false;
+
     void Start()
     {
         
