@@ -21,7 +21,9 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TextMokuji1_2.GetComponent<Text>().text = "";
+        TextMokuji1_2.GetComponent<Text>().text = "???";
+        TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+
         Debug.Log("canvas>mokujipanel>movemokujipanel>H_99_61_MokujiQuetion::boolmeidai::"+kyotu.BoolMeidai1_6);
     }
 }
