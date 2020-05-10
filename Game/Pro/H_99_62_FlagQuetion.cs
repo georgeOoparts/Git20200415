@@ -15,7 +15,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("rerer"+ kyotu.BoolTeigi15);
+        //Debug.Log("rerer"+ kyotu.BoolTeigi15);
     }
 
     // Update is called once per frame
@@ -32,5 +32,6 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             BoolKoujun1.GetComponent<Text>().text = "???";
             BoolKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
+        Debug.Log(kyotu.rrCount);
     }
 }
