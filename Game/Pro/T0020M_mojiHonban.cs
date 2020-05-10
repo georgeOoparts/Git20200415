@@ -34,6 +34,10 @@ public class T0020M_mojiHonban : MonoBehaviour
 
     //uitext のプレハブ //canvasはプレハブ化せずにおく、publicにはしておく
 
+
+    //20200510 rrpanel teigi15でrrcount終了ともに　rrからflagにカメラを戻し、flagの次の???表示が解除されるよう改良
+
+
     //k5_3_1_1:gameobject(メソッド、変数)を使いまわす
     //このスクリプトをアタッチしたオブジェクトにいちいちこのオブジェクトをアタッチ
     public H_99_01_kyoutuHensu kyotu;
@@ -283,10 +287,18 @@ public class T0020M_mojiHonban : MonoBehaviour
 
                 }
                 else if (kyotu.MCount == 1)
-                {
-                    if (kyotu.rrCount < tdi15.GetLength(0) - 1)
+                {//kairyou20200510
+                    if (kyotu.rrCount < tdi15.GetLength(0))
                     {
                         kyotu.rrCount++;
+                        //Debug.Log("hajimata");
+                    }
+                    else if(kyotu.rrCount == tdi15.GetLength(0)) 
+                    {
+                        kyotu.mainCameraPosi = 1;
+                        kyotu.rrCount = 0;
+                        kyotu.BoolKoujun1 = true;
+                        //Debug.Log("owata");
                     }
                 }
             }
