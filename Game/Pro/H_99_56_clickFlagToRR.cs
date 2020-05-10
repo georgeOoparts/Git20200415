@@ -87,7 +87,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             //+ "kyotu.MCount::" + kyotu.MCount
             //);
         }
-        else if (boolClick1_1_3)
+        else if (boolClick1_1_3&&(kyotu.BoolKoujun1 == true))
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
             if ((up == down) && (elapse <= tupTime))
