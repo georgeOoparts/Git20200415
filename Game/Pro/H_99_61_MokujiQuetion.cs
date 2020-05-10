@@ -24,13 +24,13 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
         
         if(kyotu.BoolMeidai1_2 == true)
         {
-            Debug.Log("true");
+            //Debug.Log("true");
             TextMokuji1_2.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
             TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
         {
-            Debug.Log("false");
+            //Debug.Log("false");
 
             TextMokuji1_2.GetComponent<Text>().text = "???";
             TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
