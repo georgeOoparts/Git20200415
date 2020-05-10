@@ -61,6 +61,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool BoolMeidai1_5 = false;
     public bool BoolMeidai1_6 = false;
 
+    
     void Start()
     {
         

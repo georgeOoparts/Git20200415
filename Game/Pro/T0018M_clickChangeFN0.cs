@@ -70,7 +70,7 @@ public class T0018M_clickChangeFN0 : MonoBehaviour
         }
         else if (boolClick1)
         {
-            if ((up == down) && (elapse <= tupTime))
+            if ((up == down) && (elapse <= tupTime)&&(kyotu.BoolMeidai1_2==true))
             {
                 //T0002M_kyotuHensu.meidaiNumber = 1;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
