@@ -87,10 +87,10 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             //+ "kyotu.MCount::" + kyotu.MCount
             //);
         }
-        else if (boolClick1_1_3&&(kyotu.BoolKoujun1 == true))
+        else if (boolClick1_1_3)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
-            if ((up == down) && (elapse <= tupTime))
+            if ((up == down) && (elapse <= tupTime) && (kyotu.BoolKoujun1 == true))
             {
                 //T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
