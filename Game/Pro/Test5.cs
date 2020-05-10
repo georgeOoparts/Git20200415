@@ -14,6 +14,11 @@ public class Test5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0)) 
+        {
+            SaveTest++;
+        }
+        
         Debug.Log("Test5>Update::SaveTest::"+ SaveTest);
     }
 }
