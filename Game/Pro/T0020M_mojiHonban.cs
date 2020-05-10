@@ -667,10 +667,11 @@ public class T0020M_mojiHonban : MonoBehaviour
             else if (kyotu.MCount == 1)
             {
                 if (kyotu.rrCount < tdi15.GetLength(0))
+                {
                     kyouchouHenkanInt1 = int.Parse(tdi15[kyotu.rrCount, tdi15.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(tdi15[kyotu.rrCount, tdi15.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(tdi15[kyotu.rrCount, tdi15.GetLength(1) - 3]);
-
+                    kyouchouHenkanInt2 = int.Parse(tdi15[kyotu.rrCount, tdi15.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(tdi15[kyotu.rrCount, tdi15.GetLength(1) - 3]);
+                }
 
             }
         }
