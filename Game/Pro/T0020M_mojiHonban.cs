@@ -294,7 +294,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                         //Debug.Log("hajimata");
                     }
                     else if(kyotu.rrCount == tdi15.GetLength(0)) 
-                    {
+                    {//最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
                         kyotu.mainCameraPosi = 1;
                         kyotu.rrCount = 0;
                         kyotu.BoolKoujun1 = true;
