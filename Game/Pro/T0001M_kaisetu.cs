@@ -495,4 +495,68 @@ public class T0001M_kaisetu : MonoBehaviour
 
     //＞→選んだオブジェのアタッチプログラムのメソッドを選択
     //-------------------------------------------------------------------------------------------------------------------
+
+
+    /*
+     * k22:save実装
+     * 
+     * 
+     * 
+     * 
+     * boolのsave
+     * 下のファイルを用意。アタッチする必要はない
+     * public class H_99_63_SaveData : MonoBehaviour
+    {
+        //const string DataKey = "saveDataKey";
+        public static bool GetBool(string key, bool defalutValue)
+        {
+            var value = PlayerPrefs.GetInt(key, defalutValue ? 1 : 0);
+            return value == 1;
+        }
+
+        public static void SetBool(string key, bool value)
+        {
+            PlayerPrefs.SetInt(key, value ? 1 : 0);
+        }
+    }
+     //saveした"saveB"boolを代入。"saveB"に何も値がなければfalseを入れる
+     * bool SaveBool = H_99_63_SaveData.GetBool("saveB", false);
+    //savedataを全て駆除 
+    PlayerPrefs.DeleteAll();
+     // 削除時の処理
+    void OnDestroy()
+    {
+        // スコアを保存
+        PlayerPrefs.Save();
+
+        H_99_63_SaveData.SetBool("saveB", SaveBool);
+    }
+
+    k22_1:intのsave
+
+
+
+        int　SaveTestに
+    // スコアを保存"SCORE"という名前でbool　SaveTestを保存　
+        //PlayerPrefs.SetInt("SCORE", SaveTest);
+        //PlayerPrefs.Save();
+        
+    //savedataすべて削除
+    //PlayerPrefs.DeleteAll();
+    
+    //// "SCORE"という名前のセーブデータのロード　
+        //SaveTest = PlayerPrefs.GetInt("SCORE", 0);
+
+
+
+
+
+
+
+
+
+
+
+
+     */
 }
