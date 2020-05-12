@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Test5 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // 現在使われていない
     // int boolのsave　
     //　boolはunityでsave設定されていなく、転がっていたプログラムを使っているためデータの削除自体ができないが
     //　実装上は問題なし。
