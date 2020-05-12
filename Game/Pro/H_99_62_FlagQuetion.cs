@@ -22,6 +22,8 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
     private GameObject tupTeigi15;
 
+    private GameObject tupKoujun1;
+
     void Start()
     {
         //k0014_2_1 :プレハブを使う
@@ -32,6 +34,15 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupTeigi15.name = "ptupTeigi15";
+
+        //k0014_2_1 :プレハブを使う
+        tupKoujun1 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupKoujun1.transform.SetParent(BoolKoujun1.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupKoujun1.name = "ptupKoujun1";
         //Debug.Log("rerer"+ kyotu.BoolTeigi15);
     }
 
@@ -60,7 +71,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupTeigi15.GetComponent<Text>().enabled = false;
         }
-
+        if (kyotu.TupKoujun1 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKoujun1.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKoujun1.GetComponent<Text>().enabled = false;
+        }
 
 
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);

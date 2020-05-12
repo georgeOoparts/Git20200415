@@ -78,6 +78,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //H_99_62_FlagQuetion、で使う
     public bool TupTeigi15 = true;
 
+    public bool TupKoujun1 = false;
 
     void Start()
     {

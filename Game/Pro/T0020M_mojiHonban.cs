@@ -303,6 +303,8 @@ public class T0020M_mojiHonban : MonoBehaviour
                         kyotu.TupBoolMeidai1_2 = false;
 
                         kyotu.TupTeigi15 = false;
+
+                        kyotu.TupKoujun1 =true;
                         //Debug.Log("owata");
                     }
                 }
