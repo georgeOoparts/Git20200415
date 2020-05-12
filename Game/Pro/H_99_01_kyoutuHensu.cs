@@ -68,6 +68,9 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool BoolKouri1 = false;
     public bool BoolShoumei1 = false;
 
+    //panel右上の点滅tupを表示させるか
+    //H_99_61_MokujiQuetion、で使う
+    public bool TupBoolMeidai1_1 = true;
 
     void Start()
     {
