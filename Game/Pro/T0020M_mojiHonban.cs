@@ -298,6 +298,11 @@ public class T0020M_mojiHonban : MonoBehaviour
                         kyotu.mainCameraPosi = 1;
                         kyotu.rrCount = 0;
                         kyotu.BoolKoujun1 = true;
+
+                        kyotu.TupBoolMeidai1_1 = true;
+                        kyotu.TupBoolMeidai1_2 = false;
+
+                        kyotu.TupTeigi15 = false;
                         //Debug.Log("owata");
                     }
                 }
