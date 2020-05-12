@@ -17,6 +17,9 @@ public class H_99_59_ReadMe : MonoBehaviour
     //canvas＞rrpanel>TextReadMePanelがkyotu.ReadMePanelCountが2で表示を消す
     //>kyotu.ReadMePanelCountが2で表示を消す
 
+
+    //20200512点滅tupをプレハブ化
+
     //canvas＞rrpanel>readmepanel
     public H_99_01_kyoutuHensu kyotu;
 
@@ -25,13 +28,28 @@ public class H_99_59_ReadMe : MonoBehaviour
 
     public GameObject OkReadMePanel;
 
-    public GameObject TupReadMePanel;
+    //public GameObject TupReadMePanel;
 
     public GameObject TextReadMePanel;
 
+
+    
+    //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
+    public GameObject PreTupReadMePanel;
+
+    private GameObject pTupReadMePanel;
+
     void Start()
     {
-        
+        //k0014_2_1 :プレハブを使う
+        pTupReadMePanel = Instantiate(PreTupReadMePanel) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        pTupReadMePanel.transform.SetParent(this.gameObject.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        pTupReadMePanel.name = "pTupReadMePanel";
+
     }
 
     // Update is called once per frame
@@ -41,9 +59,9 @@ public class H_99_59_ReadMe : MonoBehaviour
         {
             //k7_1_1:オブジェを存在するけど見えなくする。//uipanelの時
             this.gameObject.GetComponent<Image>().enabled = true;
-            
+
             //k7_1_1:オブジェを存在するけど見えなくする。
-            TupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
+            pTupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
 
             //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
             OkReadMePanel.GetComponent<Text>().enabled = false;
@@ -57,7 +75,7 @@ public class H_99_59_ReadMe : MonoBehaviour
             this.gameObject.GetComponent<Image>().enabled = true;
 
             //k7_1_1:オブジェを存在するけど見えなくする。
-            TupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
+            pTupReadMePanel.GetComponent<Text>().enabled = kyotuela.tenmetuOnOff;
 
             //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
             OkReadMePanel.GetComponent<Text>().enabled = true;
@@ -71,7 +89,7 @@ public class H_99_59_ReadMe : MonoBehaviour
             this.gameObject.GetComponent<Image>().enabled = false;
 
             //k7_1_1:オブジェを存在するけど見えなくする。
-            TupReadMePanel.GetComponent<Text>().enabled = false;
+            pTupReadMePanel.GetComponent<Text>().enabled = false;
 
             //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
             OkReadMePanel.GetComponent<Text>().enabled = false;

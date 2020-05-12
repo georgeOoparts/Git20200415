@@ -344,10 +344,12 @@ public class T0001M_kaisetu : MonoBehaviour
     public GameObject page;
 
     //k0014_2_1 :プレハブを使う
-    GameObject ptp = Instantiate(preTextPanel) as GameObject;
+    page = Instantiate(preTextPanel) as GameObject;
     
     //k0014_2_1_1 :プレハブをキャンバスの子供にする()
     ptp.transform.SetParent(canvas.transform, false);
+    //this.gameObjectが親にしたいオブジェの場合
+    ptp.transform.SetParent(this.gameObject.GetComponent<Transform>(), false);
 
     //k0014_2_1_1: オブジェの名前を変化させる
     ptp.name = "ptp0";
