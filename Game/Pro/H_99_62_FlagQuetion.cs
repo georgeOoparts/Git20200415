@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class H_99_62_FlagQuetion : MonoBehaviour
 {
+    //アタッチ　canvas＞flagpanel＞moveflagpanel
+    //kyotu.BoolKoujun1～6　trueなら内容表示、falseなら???を表示
+    //2020/05/12フラッグパネルの次のtupすべき所をtup表示する
     public H_99_01_kyoutuHensu kyotu;
+    public H_99_01B_kyotuElapse kyotuEla;
 
     public GameObject BoolTeigi15;
     public GameObject BoolKoujun1;
@@ -13,8 +17,21 @@ public class H_99_62_FlagQuetion : MonoBehaviour
     public GameObject BoolKouri1;
     public GameObject BoolShoumei1;
 
+    //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
+    public GameObject TupPrefab;
+
+    private GameObject tupTeigi15;
+
     void Start()
     {
+        //k0014_2_1 :プレハブを使う
+        tupTeigi15 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupTeigi15.transform.SetParent(BoolTeigi15.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupTeigi15.name = "ptupTeigi15";
         //Debug.Log("rerer"+ kyotu.BoolTeigi15);
     }
 
@@ -32,6 +49,20 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             BoolKoujun1.GetComponent<Text>().text = "???";
             BoolKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
+
+        if (kyotu.TupTeigi15==true) 
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupTeigi15.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else 
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupTeigi15.GetComponent<Text>().enabled = false;
+        }
+
+
+
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);
     }
 }

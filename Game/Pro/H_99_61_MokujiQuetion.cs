@@ -22,8 +22,15 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
 
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
-
+    //プレハブを代入したオブジェ
     private GameObject tupMokuji1_1;
+
+    private GameObject tupMokuji1_2;
+
+    private GameObject tupMokuji1_3;
+    private GameObject tupMokuji1_4;
+    private GameObject tupMokuji1_5;
+    private GameObject tupMokuji1_6;
 
     void Start()
     {
@@ -35,6 +42,15 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupMokuji1_1.name = "ptupMokuji1_1";
+
+        //k0014_2_1 :プレハブを使う
+        tupMokuji1_2 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupMokuji1_2.transform.SetParent(TextMokuji1_2.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupMokuji1_2.name = "ptupMokuji1_2";
     }
 
     // Update is called once per frame
@@ -55,12 +71,27 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
             TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
 
-        if (kyotu.TupBoolMeidai1_1==true) 
+        if (kyotu.TupBoolMeidai1_1 == true)
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupMokuji1_1.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
         }
+        else 
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupMokuji1_1.GetComponent<Text>().enabled = false;
+        }
 
+        if (kyotu.TupBoolMeidai1_2 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupMokuji1_2.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupMokuji1_2.GetComponent<Text>().enabled = false;
+        }
 
         //TextMokuji1_2.GetComponent<Text>().text = "???";
         //TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;

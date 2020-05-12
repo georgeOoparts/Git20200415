@@ -72,6 +72,13 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //H_99_61_MokujiQuetion、で使う
     public bool TupBoolMeidai1_1 = true;
 
+    public bool TupBoolMeidai1_2 = true;
+
+    //panel右上の点滅tupを表示させるか
+    //H_99_62_FlagQuetion、で使う
+    public bool TupTeigi15 = true;
+
+
     void Start()
     {
         
