@@ -65,7 +65,16 @@ public class H_99_60_StartPanelControll : MonoBehaviour
     public void onClickStartButton() 
     {
         //Debug.Log("H_99_60_StartPanelControll>Title:::");
-        kyotu.mainCameraPosi = 0;
+        //start画面である９９でゲーム終了なら目次へ
+        if(PlayerPrefs.GetInt("mainCameraPosi", 0) == 99) 
+        {
+            kyotu.mainCameraPosi = 0;
+        }
+        else //その他なら、終了時にsaveされたmaincamerapujiへ
+        {
+            kyotu.mainCameraPosi = PlayerPrefs.GetInt("mainCameraPosi", 0);
+        }
+        
     }
     public void onClickSaveButton() 
     {

@@ -41,17 +41,18 @@ public class H_99_65_Save : MonoBehaviour
     void OnDestroy()
     {
         // スコアを保存
+        Debug.Log("cameraposiFirst::"+kyotu.mainCameraPosi);
         PlayerPrefs.SetInt("rrCount", kyotu.rrCount);
-        //PlayerPrefs.Save();
-
+        PlayerPrefs.SetInt("mainCameraPosi",kyotu.mainCameraPosi);
+        Debug.Log("cameraposi::"+PlayerPrefs.GetInt("mainCameraPosi", 0));
         //H_99_63_SaveData.SetBool("saveBool", SaveBool);
         //PlayerPrefs.DeleteAll();
     }
-    private void OnApplicationQuit()
-    {
-        PlayerPrefs.SetInt("rrCount",kyotu.rrCount);
-        //H_99_63_SaveData.SetBool("saveBool", SaveBool);
+    //private void OnApplicationQuit()
+    //{
+    //    PlayerPrefs.SetInt("rrCount",kyotu.rrCount);
+    //    //H_99_63_SaveData.SetBool("saveBool", SaveBool);
 
 
-    }
+    //}
 }
