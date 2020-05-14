@@ -548,17 +548,12 @@ public class T0001M_kaisetu : MonoBehaviour
     
     //// "SCORE"という名前のセーブデータのロード　
         //SaveTest = PlayerPrefs.GetInt("SCORE", 0);
-
-
-
-
-
-
-
-
-
-
-
-
-     */
+    k23--------
+    gameobjectをすべて破壊する
+    Destroy(gameObject);
+    gameobjectを5行後すべて破壊する
+    Destroy(gameObject, 5);
+    gameobjectのコンポを破壊する
+    Destroy(GetComponent<Rigidbody>());
+ */
 }

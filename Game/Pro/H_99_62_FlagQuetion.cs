@@ -63,7 +63,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         if (kyotu.TupTeigi15==true) 
         {
-            //k7_1_1:オブジェを存在するけど見えなくする。
+            //点滅処理
             tupTeigi15.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
         }
         else 
