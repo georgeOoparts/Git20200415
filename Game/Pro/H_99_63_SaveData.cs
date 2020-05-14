@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class H_99_63_SaveData : MonoBehaviour
 {
-    
     public static bool GetBool(string key, bool defalutValue)
     {
         var value = PlayerPrefs.GetInt(key, defalutValue ? 1 : 0);
