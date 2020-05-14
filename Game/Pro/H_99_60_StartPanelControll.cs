@@ -48,6 +48,14 @@ public class H_99_60_StartPanelControll : MonoBehaviour
 
             kyotu.ReadMePanelCount = 0;
 
+            kyotu.TupBoolMeidai1_1 = true;
+
+            kyotu.TupTeigi15 = true;
+
+            kyotu.TupKoujun1 = false;
+
+
+
             //k7オブジェクトを直接onoff
             AutoSavePanel.SetActive(false);
 
