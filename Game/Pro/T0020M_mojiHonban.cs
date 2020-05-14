@@ -36,7 +36,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
 
     //20200510 rrpanel teigi15でrrcount終了ともに　rrからflagにカメラを戻し、flagの次の???表示が解除されるよう改良
-
+    //20200514　rrpanel teigi15でrrcount終了とともにreadOKのオブジェボタンがでるように改良
 
     //k5_3_1_1:gameobject(メソッド、変数)を使いまわす
     //このスクリプトをアタッチしたオブジェクトにいちいちこのオブジェクトをアタッチ
@@ -79,9 +79,13 @@ public class T0020M_mojiHonban : MonoBehaviour
     RectTransform rtTextPanel;
 
     //public GameObject textPanel;
-    void Start()
+
+    //rrcountの最後にreadokボタンを表示オブジェ取得
+    public GameObject ReadOk;
+    void Start()//startwww
     {
         //Debug.Log("T20MmojiHonban>start::kyotu.rrCount::rrPanelDown::" + kyotu.rrCount+ ":"+rrPanelDown);
+        //Debug.Log("T20MmojiHonban>start::ReadOk::" + kyotu.rrCount + tdi15.GetLength(0));
 
         //ここから↓ないとバグ出る-----------------
         for (int i = 0; i < 16; i++)
@@ -154,6 +158,7 @@ public class T0020M_mojiHonban : MonoBehaviour
     void Update()//updatew
     {
         //Debug.Log("T20MmojiHonban>updateFirst::kyotu.rrCount:rrPanelDown::" + kyotu.rrCount+ "::"+rrPanelDown);
+        //Debug.Log("T20MmojiHonban>update::ReadOk::" + kyotu.rrCount + tdi15.GetLength(0));
 
         //kyotu.mojiSwitch 初期値:3
         //変更
@@ -292,20 +297,29 @@ public class T0020M_mojiHonban : MonoBehaviour
                     {
                         kyotu.rrCount++;
                         //Debug.Log("hajimata");
+                        Debug.Log("T20MmojiHonban>kairyou::hajimata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
+
                     }
-                    else if(kyotu.rrCount == tdi15.GetLength(0)) 
+                    // 理由よくわからんが最終+1rrcount表示はtdi15.GetLength(0)-1
+                    if (kyotu.rrCount == tdi15.GetLength(0)) 
                     {//最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
-                        kyotu.mainCameraPosi = 1;
-                        kyotu.rrCount = 0;
-                        kyotu.BoolKoujun1 = true;
+                     //kyotu.mainCameraPosi = 1;
+                     //kyotu.rrCount = 0;
+                     //kyotu.BoolKoujun1 = true;
+                        Debug.Log("T20MmojiHonban>kairyou::owata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
 
-                        kyotu.TupBoolMeidai1_1 = true;
-                        kyotu.TupBoolMeidai1_2 = false;
+                        //kyotu.TupBoolMeidai1_1 = true;
+                        //kyotu.TupBoolMeidai1_2 = false;
 
-                        kyotu.TupTeigi15 = false;
+                        //kyotu.TupTeigi15 = false;
 
-                        kyotu.TupKoujun1 =true;
+                        //kyotu.TupKoujun1 =true;
+
                         //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
                     }
                 }
             }
