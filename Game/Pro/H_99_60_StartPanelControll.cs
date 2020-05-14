@@ -46,8 +46,12 @@ public class H_99_60_StartPanelControll : MonoBehaviour
 
             kyotu.rrCount=0;
 
+            kyotu.ReadMePanelCount = 0;
+
             //k7オブジェクトを直接onoff
             AutoSavePanel.SetActive(false);
+
+
         }
 
         if (kyotu.tuduki == false)

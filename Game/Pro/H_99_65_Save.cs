@@ -15,7 +15,8 @@ public class H_99_65_Save : MonoBehaviour
     {
         kyotu.rrCount = PlayerPrefs.GetInt("rrCount", 0);
         //SaveBool = H_99_63_SaveData.GetBool("saveBool", false);
-
+        //kyotu.rrCountLock = H_99_63_SaveData.GetBool("rrCountLock", true);
+        kyotu.ReadMePanelCount= PlayerPrefs.GetInt("ReadMePanelCount", 0);
     }
 
     // Update is called once per frame
@@ -45,6 +46,11 @@ public class H_99_65_Save : MonoBehaviour
         PlayerPrefs.SetInt("rrCount", kyotu.rrCount);
         PlayerPrefs.SetInt("mainCameraPosi",kyotu.mainCameraPosi);
         Debug.Log("cameraposi::"+PlayerPrefs.GetInt("mainCameraPosi", 0));
+        //変数名が分かりにくいが、readmepanel表示にするか決めるbool変数
+        //H_99_63_SaveData.SetBool("rrCountLock", kyotu.rrCountLock);
+        PlayerPrefs.SetInt("ReadMePanelCount", kyotu.ReadMePanelCount);
+
+
         //H_99_63_SaveData.SetBool("saveBool", SaveBool);
         //PlayerPrefs.DeleteAll();
     }

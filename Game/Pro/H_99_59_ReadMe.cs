@@ -55,6 +55,22 @@ public class H_99_59_ReadMe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (kyotu.rrCountLock == false) 
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。//uipanelの時
+        //    this.gameObject.GetComponent<Image>().enabled = false;
+
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    pTupReadMePanel.GetComponent<Text>().enabled = false;
+
+        //    //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
+        //    OkReadMePanel.GetComponent<Text>().enabled = false;
+
+        //    //k7_1_1:オブジェを存在するけど見えなくする。//uitextの時
+        //    TextReadMePanel.GetComponent<Text>().enabled = false;
+        //}
+        
+        
         if (kyotu.ReadMePanelCount==0) 
         {
             //k7_1_1:オブジェを存在するけど見えなくする。//uipanelの時
@@ -98,6 +114,8 @@ public class H_99_59_ReadMe : MonoBehaviour
             TextReadMePanel.GetComponent<Text>().enabled = false;
 
             kyotu.rrCountLock = false;
+
+            
         }
 
         //Debug.Log("H_99_59_ReadMe>update>kyotu.rrCountLock::" + kyotu.rrCountLock+ ":;ReadMePanelCount::" + kyotu.ReadMePanelCount);
