@@ -311,7 +311,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                      //kyotu.rrCount = 0;
                      //kyotu.BoolKoujun1 = true;
                         Debug.Log("T20MmojiHonban>kairyou::owata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
-
+                        kyotu.BoolrrReadTeigi15 = true;
                         //kyotu.TupBoolMeidai1_1 = true;
                         //kyotu.TupBoolMeidai1_2 = false;
 

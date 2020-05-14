@@ -21,23 +21,28 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     }
     public void onClickReadOK() 
     {
-        Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK");
-        kyotu.TupBoolMeidai1_1 = true;
-        kyotu.TupBoolMeidai1_2 = false;
+        Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK::"+ kyotu.BoolrrReadTeigi15);
 
-        kyotu.TupTeigi15 = false;
+        if (kyotu.BoolrrReadTeigi15==true) 
+        {
+            kyotu.TupBoolMeidai1_1 = true;
+            kyotu.TupBoolMeidai1_2 = false;
 
-        kyotu.TupKoujun1 = true;
+            kyotu.TupTeigi15 = false;
 
-        //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
-        kyotu.mainCameraPosi = 1;
-        kyotu.rrCount = 0;
-        kyotu.BoolKoujun1 = true;
+            kyotu.TupKoujun1 = true;
 
-        //k7オブジェクトを直接onoff
-        //k7　GameObject.SetActive(true);
+            //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+            kyotu.mainCameraPosi = 1;
+            kyotu.rrCount = 0;
+            kyotu.BoolKoujun1 = true;
 
-        ReadOk.SetActive(false);
+            //k7オブジェクトを直接onoff
+            //k7　GameObject.SetActive(true);
+
+            ReadOk.SetActive(false);
+        }
+        
     }
     public void onClickReadNo() 
     {

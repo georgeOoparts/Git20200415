@@ -56,6 +56,7 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //表示を？？？か内容か
         
         if(kyotu.BoolMeidai1_2 == true)
         {
@@ -70,7 +71,8 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
             TextMokuji1_2.GetComponent<Text>().text = "???";
             TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-
+        
+        //右上tup　を表示したり、しなかったり
         if (kyotu.TupBoolMeidai1_1 == true)
         {
             //k7_1_1:オブジェを存在するけど見えなくする。

@@ -54,14 +54,28 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //canvas>startpanel>H_99_60_StartPanelControll
     public bool tuduki = false;
 
-    //
+    //meidaiの内容false？？？true内容表示
     public bool BoolMeidai1_2 = false;
     public bool BoolMeidai1_3 = false;
     public bool BoolMeidai1_4 = false;
     public bool BoolMeidai1_5 = false;
     public bool BoolMeidai1_6 = false;
 
-    //
+    //最初の一回RR最後まで読んで終了したか
+    //>meidai
+    public bool BoolrrReadMeidai1_2 = false;
+    public bool BoolrrReadMeidai1_3 = false;
+    public bool BoolrrReadMeidai1_4 = false;
+    public bool BoolrrReadMeidai1_5 = false;
+    public bool BoolrrReadMeidai1_6 = false;
+    //>flag
+    public bool BoolrrReadTeigi15 = false;
+    public bool BoolrrReadKoujun1 = false;
+    public bool BoolrrReadKoujun3 = false;
+    public bool BoolrrReadKouri1 = false;
+    public bool BoolrrReadShoumei1 = false;
+
+    //フラッグの内容　false　？？？：true　内容
     public bool BoolTeigi15 = true;
     public bool BoolKoujun1 = false;
     public bool BoolKoujun3 = false;
@@ -79,6 +93,8 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool TupTeigi15 = true;
 
     public bool TupKoujun1 = false;
+
+    
 
     void Start()
     {
