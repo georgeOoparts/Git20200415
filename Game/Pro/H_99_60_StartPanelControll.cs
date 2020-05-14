@@ -41,6 +41,11 @@ public class H_99_60_StartPanelControll : MonoBehaviour
         else if(YesCount == 2) 
         {
             YesCount = 0;
+            //saveした変数を削除
+            PlayerPrefs.DeleteAll();
+
+            kyotu.rrCount=0;
+
             //k7オブジェクトを直接onoff
             AutoSavePanel.SetActive(false);
         }
