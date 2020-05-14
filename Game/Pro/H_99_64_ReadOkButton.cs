@@ -11,7 +11,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
   
     void Start()
     {
-        Debug.Log("H_99_64_ReadOkButton::");    
+        //Debug.Log("H_99_64_ReadOkButton::");    
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     }
     public void onClickReadOK() 
     {
-        Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK::"+ kyotu.BoolrrReadTeigi15);
+        //Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK::"+ kyotu.BoolrrReadTeigi15);
 
         if (kyotu.BoolrrReadTeigi15==true) 
         {
@@ -46,7 +46,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     }
     public void onClickReadNo() 
     {
-        Debug.Log("H_99_64_ReadOkButton>onclickno::NOOOONOOO");
+        //Debug.Log("H_99_64_ReadOkButton>onclickno::NOOOONOOO");
         kyotu.rrCount = 0;
         ReadOk.SetActive(false);
     }

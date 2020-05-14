@@ -301,7 +301,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     {
                         kyotu.rrCount++;
                         //Debug.Log("hajimata");
-                        Debug.Log("T20MmojiHonban>kairyou::hajimata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
+                        //Debug.Log("T20MmojiHonban>kairyou::hajimata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
 
                     }
                     // 理由よくわからんが最終+1rrcount表示はtdi15.GetLength(0)-1
@@ -310,7 +310,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                      //kyotu.mainCameraPosi = 1;
                      //kyotu.rrCount = 0;
                      //kyotu.BoolKoujun1 = true;
-                        Debug.Log("T20MmojiHonban>kairyou::owata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
+                        //Debug.Log("T20MmojiHonban>kairyou::owata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
                         kyotu.BoolrrReadTeigi15 = true;
                         //kyotu.TupBoolMeidai1_1 = true;
                         //kyotu.TupBoolMeidai1_2 = false;
