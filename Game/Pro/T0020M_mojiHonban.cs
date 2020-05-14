@@ -139,13 +139,17 @@ public class T0020M_mojiHonban : MonoBehaviour
     public void bKey() //bkeyw
     {
         backButton = true;
+        ReadOk.SetActive(false);
+
+        //この時、readOKボタンパネルは消す
+
         //rrcountを戻すにはとりあえずｂを押す
         //if (Input.GetKeyDown("b"))
         //{
-            //listReset();
-            //if (kyotu.rrCount > 0)//0の時はバックできない
-            //    kyotu.rrCount--;
-            //Debug.Log("T20MmojiHonban>bKey():kyotu.rrCount:" + kyotu.rrCount);
+        //listReset();
+        //if (kyotu.rrCount > 0)//0の時はバックできない
+        //    kyotu.rrCount--;
+        //Debug.Log("T20MmojiHonban>bKey():kyotu.rrCount:" + kyotu.rrCount);
         //}
     }
     bool rrPanelDown = false;

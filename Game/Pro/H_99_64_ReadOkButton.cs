@@ -29,6 +29,11 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
         kyotu.TupKoujun1 = true;
 
+        //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+        kyotu.mainCameraPosi = 1;
+        kyotu.rrCount = 0;
+        kyotu.BoolKoujun1 = true;
+
         //k7オブジェクトを直接onoff
         //k7　GameObject.SetActive(true);
 
@@ -37,5 +42,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     public void onClickReadNo() 
     {
         Debug.Log("H_99_64_ReadOkButton>onclickno::NOOOONOOO");
+        kyotu.rrCount = 0;
+        ReadOk.SetActive(false);
     }
 }
