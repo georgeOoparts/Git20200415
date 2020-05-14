@@ -6,8 +6,6 @@ public class Test5 : MonoBehaviour
 {
     // 現在使われていない
     // int boolのsave　
-    //　boolはunityでsave設定されていなく、転がっていたプログラムを使っているためデータの削除自体ができないが
-    //　実装上は問題なし。
     
     
     //public int SaveTest = 0;
