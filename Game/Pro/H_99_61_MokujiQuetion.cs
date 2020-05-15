@@ -71,7 +71,62 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
             TextMokuji1_2.GetComponent<Text>().text = "???";
             TextMokuji1_2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-        
+        if (kyotu.BoolMeidai1_3 == true)
+        {
+            //Debug.Log("true");
+            TextMokuji1_3.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            //Debug.Log("false");
+
+            TextMokuji1_3.GetComponent<Text>().text = "???";
+            TextMokuji1_3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        if (kyotu.BoolMeidai1_4 == true)
+        {
+            //Debug.Log("true");
+            TextMokuji1_4.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_4.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            //Debug.Log("false");
+
+            TextMokuji1_4.GetComponent<Text>().text = "???";
+            TextMokuji1_4.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        if (kyotu.BoolMeidai1_5 == true)
+        {
+            //Debug.Log("true");
+            TextMokuji1_5.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_5.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            //Debug.Log("false");
+
+            TextMokuji1_5.GetComponent<Text>().text = "???";
+            TextMokuji1_5.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        if (kyotu.BoolMeidai1_6 == true)
+        {
+            //Debug.Log("true");
+            TextMokuji1_6.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_6.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            //Debug.Log("false");
+
+            TextMokuji1_6.GetComponent<Text>().text = "???";
+            TextMokuji1_6.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+
+
+
+
         //右上tup　を表示したり、しなかったり
         if (kyotu.TupBoolMeidai1_1 == true)
         {

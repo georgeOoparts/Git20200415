@@ -40,6 +40,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
         }
         else if(YesCount == 2) 
         {
+            //savedata resetするときの処理　一番最初の初期値を入れる。 
             YesCount = 0;
             //saveした変数を削除
             PlayerPrefs.DeleteAll();
@@ -49,6 +50,11 @@ public class H_99_60_StartPanelControll : MonoBehaviour
             kyotu.ReadMePanelCount = 0;
 
             kyotu.TupBoolMeidai1_1 = true;
+            kyotu.TupBoolMeidai1_1 = false;
+            kyotu.TupBoolMeidai1_1 = false;
+            kyotu.TupBoolMeidai1_1 = false;
+            kyotu.TupBoolMeidai1_1 = false;
+            kyotu.TupBoolMeidai1_1 = false;
 
             kyotu.TupTeigi15 = true;
 
