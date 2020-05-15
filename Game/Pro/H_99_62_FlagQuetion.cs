@@ -49,6 +49,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //表示するもの???か内容か
         if (kyotu.BoolKoujun1 == true)
         {
             //Debug.Log("true");
@@ -60,7 +61,48 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             BoolKoujun1.GetComponent<Text>().text = "???";
             BoolKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
+        if (kyotu.BoolKoujun3 == true)
+        {
+            //Debug.Log("true");
+            BoolKoujun3.GetComponent<Text>().text = "公準P-1\n円とは周と呼ばれる1つの線の"+"\n"+
+            "境界で囲まれた平面図形であって" + "\n" +
+            "その中にある1つの点から円周上" + "\n" +
+            "の点に引かれた直線の長さが" + "\n" +
+            "すべて等しいようなものである";
+            BoolKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            BoolKoujun3.GetComponent<Text>().text = "???";
+            BoolKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        
+        if (kyotu.BoolKouri1 == true)
+        {
+            //Debug.Log("true");
+            BoolKouri1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            BoolKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            BoolKouri1.GetComponent<Text>().text = "???";
+            BoolKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        if (kyotu.BoolShoumei1 == true)
+        {
+            //Debug.Log("true");
+            BoolShoumei1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            BoolShoumei1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            BoolShoumei1.GetComponent<Text>().text = "???";
+            BoolShoumei1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
 
+
+
+        //点滅するtupが表示されるか否か
         if (kyotu.TupTeigi15==true) 
         {
             //点滅処理

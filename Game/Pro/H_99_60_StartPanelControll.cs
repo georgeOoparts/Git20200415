@@ -49,16 +49,34 @@ public class H_99_60_StartPanelControll : MonoBehaviour
 
             kyotu.ReadMePanelCount = 0;
 
-            kyotu.TupBoolMeidai1_1 = true;
-            kyotu.TupBoolMeidai1_1 = false;
-            kyotu.TupBoolMeidai1_1 = false;
-            kyotu.TupBoolMeidai1_1 = false;
-            kyotu.TupBoolMeidai1_1 = false;
-            kyotu.TupBoolMeidai1_1 = false;
+            //meidai1???表示reset
+            kyotu.BoolMeidai1_2 = false;
+            kyotu.BoolMeidai1_3 = false;
+            kyotu.BoolMeidai1_4 = false;
+            kyotu.BoolMeidai1_5 = false;
+            kyotu.BoolMeidai1_6 = false;
 
+            
+
+            kyotu.BoolTeigi15 = true;
+            kyotu.BoolKoujun1 = false;
+            kyotu.BoolKoujun3 = false;
+            kyotu.BoolKouri1 = false;
+            kyotu.BoolShoumei1 = false;
+
+
+            kyotu.TupBoolMeidai1_1 = true;
+            kyotu.TupBoolMeidai1_2 = false;
+            kyotu.TupBoolMeidai1_3 = false;
+            kyotu.TupBoolMeidai1_4 = false;
+            kyotu.TupBoolMeidai1_5 = false;
+            kyotu.TupBoolMeidai1_6 = false;
+
+            //フラッグで？？？表示　内容表示
             kyotu.TupTeigi15 = true;
 
             kyotu.TupKoujun1 = false;
+            
 
 
 
