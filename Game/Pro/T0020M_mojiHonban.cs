@@ -620,33 +620,45 @@ public class T0020M_mojiHonban : MonoBehaviour
             //k10_2:strin>int変換
             if (kyotu.MCount == 0)
             {
-                if (kyotu.rrCount < ka1.GetLength(0))
+                if (kyotu.rrCount < ka1.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(ka1[kyotu.rrCount, ka1.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(ka1[kyotu.rrCount, ka1.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(ka1[kyotu.rrCount, ka1.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(ka1[kyotu.rrCount, ka1.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(ka1[kyotu.rrCount, ka1.GetLength(1) - 3]);
+                }
+                    
             }
             else if (kyotu.MCount == 1)
             {
-                if (kyotu.rrCount < ka3.GetLength(0))
+                if (kyotu.rrCount < ka3.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(ka3[kyotu.rrCount, ka3.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(ka3[kyotu.rrCount, ka3.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(ka3[kyotu.rrCount, ka3.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(ka3[kyotu.rrCount, ka3.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(ka3[kyotu.rrCount, ka3.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 2)
             {
-                if (kyotu.rrCount < ka4.GetLength(0))
+                if (kyotu.rrCount < ka4.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(ka4[kyotu.rrCount, ka4.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(ka4[kyotu.rrCount, ka4.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(ka4[kyotu.rrCount, ka4.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(ka4[kyotu.rrCount, ka4.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(ka4[kyotu.rrCount, ka4.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 3)
             {
-                if (kyotu.rrCount < ka5.GetLength(0))
+                if (kyotu.rrCount < ka5.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(ka5[kyotu.rrCount, ka5.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(ka5[kyotu.rrCount, ka5.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(ka5[kyotu.rrCount, ka5.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(ka5[kyotu.rrCount, ka5.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(ka5[kyotu.rrCount, ka5.GetLength(1) - 3]);
+                }
+                    
 
             }
         }
@@ -655,26 +667,33 @@ public class T0020M_mojiHonban : MonoBehaviour
             //k10_2:strin>int変換
             if (kyotu.MCount == 0)
             {
-                if (kyotu.rrCount < kjp1.GetLength(0))
+                if (kyotu.rrCount < kjp1.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(kjp1[kyotu.rrCount, kjp1.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(kjp1[kyotu.rrCount, kjp1.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(kjp1[kyotu.rrCount, kjp1.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(kjp1[kyotu.rrCount, kjp1.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(kjp1[kyotu.rrCount, kjp1.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 1)
             {
-                if (kyotu.rrCount < kjp2.GetLength(0))
+                if (kyotu.rrCount < kjp2.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(kjp2[kyotu.rrCount, kjp2.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(kjp2[kyotu.rrCount, kjp2.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(kjp2[kyotu.rrCount, kjp2.GetLength(1) - 3]);
-
+                    kyouchouHenkanInt2 = int.Parse(kjp2[kyotu.rrCount, kjp2.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(kjp2[kyotu.rrCount, kjp2.GetLength(1) - 3]);
+                }
             }
             else if (kyotu.MCount == 2)
             {
-                if (kyotu.rrCount < kjp3.GetLength(0))
+                if (kyotu.rrCount < kjp3.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(kjp3[kyotu.rrCount, kjp3.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(kjp3[kyotu.rrCount, kjp3.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(kjp3[kyotu.rrCount, kjp3.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(kjp3[kyotu.rrCount, kjp3.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(kjp3[kyotu.rrCount, kjp3.GetLength(1) - 3]);
+                }
+                    
 
             }
         }
@@ -683,10 +702,13 @@ public class T0020M_mojiHonban : MonoBehaviour
             //k10_2:strin>int変換
             if (kyotu.MCount == 0)
             {
-                if (kyotu.rrCount < tdi1.GetLength(0))
+                if (kyotu.rrCount < tdi1.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(tdi1[kyotu.rrCount, tdi1.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(tdi1[kyotu.rrCount, tdi1.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(tdi1[kyotu.rrCount, tdi1.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(tdi1[kyotu.rrCount, tdi1.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(tdi1[kyotu.rrCount, tdi1.GetLength(1) - 3]);
+
+                }
 
             }
             else if (kyotu.MCount == 1)
@@ -705,52 +727,70 @@ public class T0020M_mojiHonban : MonoBehaviour
             //k10_2:strin>int変換
             if (kyotu.MCount == 0)
             {
-                if (kyotu.rrCount < m1_1.GetLength(0))
+                if (kyotu.rrCount < m1_1.GetLength(0)) 
+                {
                     //強調する配列番号１、最後の番号から1つ手前である
                     kyouchouHenkanInt1 = int.Parse(m1_1[kyotu.rrCount, m1_1.GetLength(1) - 1]);
-                //強調する配列番号２、最後の番号である
-                kyouchouHenkanInt2 = int.Parse(m1_1[kyotu.rrCount, m1_1.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(m1_1[kyotu.rrCount, m1_1.GetLength(1) - 3]);
+                    //強調する配列番号２、最後の番号である
+                    kyouchouHenkanInt2 = int.Parse(m1_1[kyotu.rrCount, m1_1.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(m1_1[kyotu.rrCount, m1_1.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 1)
             {
-                if (kyotu.rrCount < m1_2.GetLength(0))
+                if (kyotu.rrCount < m1_2.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(m1_2[kyotu.rrCount, m1_2.GetLength(1) - 1]);///bug
-                kyouchouHenkanInt2 = int.Parse(m1_2[kyotu.rrCount, m1_2.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(m1_2[kyotu.rrCount, m1_2.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(m1_2[kyotu.rrCount, m1_2.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(m1_2[kyotu.rrCount, m1_2.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 2)
             {
-                if (kyotu.rrCount < m1_3.GetLength(0))
+                if (kyotu.rrCount < m1_3.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(m1_3[kyotu.rrCount, m1_3.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(m1_3[kyotu.rrCount, m1_3.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(m1_3[kyotu.rrCount, m1_3.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(m1_3[kyotu.rrCount, m1_3.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(m1_3[kyotu.rrCount, m1_3.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 3)
             {
-                if (kyotu.rrCount < m1_4.GetLength(0))
+                if (kyotu.rrCount < m1_4.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(m1_4[kyotu.rrCount, m1_4.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(m1_4[kyotu.rrCount, m1_4.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(m1_4[kyotu.rrCount, m1_4.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(m1_4[kyotu.rrCount, m1_4.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(m1_4[kyotu.rrCount, m1_4.GetLength(1) - 3]);
+                }
+                    
 
             }
             else if (kyotu.MCount == 4)
             {
-                if (kyotu.rrCount < m1_5.GetLength(0))
+                if (kyotu.rrCount < m1_5.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(m1_5[kyotu.rrCount, m1_5.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(m1_5[kyotu.rrCount, m1_5.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(m1_5[kyotu.rrCount, m1_5.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(m1_5[kyotu.rrCount, m1_5.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(m1_5[kyotu.rrCount, m1_5.GetLength(1) - 3]);
+                }
+                   
 
             }
             else if (kyotu.MCount == 5)
             {
-                if (kyotu.rrCount < m1_6.GetLength(0))
+                if (kyotu.rrCount < m1_6.GetLength(0)) 
+                {
                     kyouchouHenkanInt1 = int.Parse(m1_6[kyotu.rrCount, m1_6.GetLength(1) - 1]);
-                kyouchouHenkanInt2 = int.Parse(m1_6[kyotu.rrCount, m1_6.GetLength(1) - 2]);
-                kyouchouHenkanInt3 = int.Parse(m1_6[kyotu.rrCount, m1_6.GetLength(1) - 3]);
+                    kyouchouHenkanInt2 = int.Parse(m1_6[kyotu.rrCount, m1_6.GetLength(1) - 2]);
+                    kyouchouHenkanInt3 = int.Parse(m1_6[kyotu.rrCount, m1_6.GetLength(1) - 3]);
+                }
+                    
 
             }
 
