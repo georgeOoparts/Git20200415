@@ -40,7 +40,9 @@ public class H_99_65_Save : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("H_99_65_Save>Update::" + kyotu.rrCount) ;
+        //Debug.Log("H_99_65_Save>Update::kyotu.rrCount::" + kyotu.rrCount) ;
+        //Debug.Log("H_99_65_Save>Update::rrCountLock::" + kyotu.rrCountLock) ; 
+        //Debug.Log("H_99_65_Save>Update::kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
 
         if (Input.GetMouseButtonDown(0)) 
         {
