@@ -74,7 +74,7 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
         if (kyotu.BoolMeidai1_3 == true)
         {
             //Debug.Log("true");
-            TextMokuji1_3.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_3.GetComponent<Text>().text = "命題Ⅰ-3\n長さが異なる2つの直線が与えられたとき、長い方から短い方の"+"\n"+"長さを切り取ること。";
             TextMokuji1_3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -87,7 +87,7 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
         if (kyotu.BoolMeidai1_4 == true)
         {
             //Debug.Log("true");
-            TextMokuji1_4.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_4.GetComponent<Text>().text = "命題Ⅰ-4\n2つの三角形において、2つの辺がそれぞれ等しく、その2辺に" + "\n" + "挟まれる角も等しいならば、" + "\n" + "底辺も等しく、2つの三角形は" + "\n" + "等しい。そして、残りの角も" + "\n" + "それぞれ等しい。";
             TextMokuji1_4.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -100,7 +100,7 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
         if (kyotu.BoolMeidai1_5 == true)
         {
             //Debug.Log("true");
-            TextMokuji1_5.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_5.GetComponent<Text>().text = "命題Ⅰ-5\n2等辺三角形の底辺上の２つの角は互いに等しい、そして、等辺を延長してできる底辺下の2つの角も互いに等しい";
             TextMokuji1_5.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -113,7 +113,7 @@ public class H_99_61_MokujiQuetion : MonoBehaviour
         if (kyotu.BoolMeidai1_6 == true)
         {
             //Debug.Log("true");
-            TextMokuji1_6.GetComponent<Text>().text = "命題Ⅰ-2\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            TextMokuji1_6.GetComponent<Text>().text = "命題Ⅰ-6\n三角形の２つの角が等しいしいならば、それらに対する2つの辺も互いに等しい。";
             TextMokuji1_6.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
