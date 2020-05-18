@@ -229,44 +229,82 @@ public class T0020M_mojiHonban : MonoBehaviour
             {
                 if (kyotu.MCount == 0)
                 {
-                    if (kyotu.rrCount < ka1.GetLength(0) - 1)
+                    if (kyotu.rrCount < ka1.GetLength(0))
                     {
                         
                         kyotu.rrCount++;
                         //Debug.Log("t20>update>if (kyotu.rrCount < ka1.GetLength(0) - 1)" +
                         //    ">rrcount::" + kyotu.rrCount+"::yokomove::"+dtate.yokoMove);
                     }
+                    if (kyotu.rrCount ==ka1.GetLength(0)) 
+                    {
+                        kyotu.BoolrrReadTeigi15 = true;
+                        //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
+                    }
 
                 }
                 else if (kyotu.MCount == 1)
                 {
-                    if (kyotu.rrCount < ka3.GetLength(0) - 1)
+                    if (kyotu.rrCount < ka3.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == ka3.GetLength(0)) 
+                    {
+                        kyotu.BoolrrReadTeigi15 = true;
+                        //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 2)
                 {
-                    if (kyotu.rrCount < ka4.GetLength(0) - 1)
+                    if (kyotu.rrCount < ka4.GetLength(0))
                     {
                         kyotu.rrCount++;
                     }
+                    if (kyotu.rrCount == ka4.GetLength(0)) 
+                    {
+                        kyotu.BoolrrReadTeigi15 = true;
+                        //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
+                    }
+
                 }
                 else if (kyotu.MCount == 3)
                 {
-                    if (kyotu.rrCount < ka5.GetLength(0) - 1)
+                    if (kyotu.rrCount < ka5.GetLength(0))
                     {
                         kyotu.rrCount++;
                     }
+                    
                 }
             }
             else if (kyotu.mojiSwitch == 1)//koujun　3つ kjp1～3
             {
-                if (kyotu.MCount == 0)
+                if (kyotu.MCount == 0)//kairyoukoujun1
                 {
-                    if (kyotu.rrCount < kjp1.GetLength(0) - 1)
+                    if (kyotu.rrCount < kjp1.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == kjp1.GetLength(0)) 
+                    {
+                        kyotu.BoolrrReadTeigi15 = true;
+                        //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
                     }
 
                 }
@@ -296,7 +334,7 @@ public class T0020M_mojiHonban : MonoBehaviour
 
                 }
                 else if (kyotu.MCount == 1)
-                {//kairyou20200510
+                {//kairyouteigi15
                     if (kyotu.rrCount < tdi15.GetLength(0))
                     {
                         kyotu.rrCount++;
