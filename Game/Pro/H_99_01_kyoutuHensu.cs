@@ -52,6 +52,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool rrCountLock = true;
 
     //canvas>startpanel>H_99_60_StartPanelControll
+    //START画面がfalseならばStartPanelがSTART　TRUEならば　conteinue
     public bool tuduki = false;
 
     //meidaiの内容false？？？true内容表示
@@ -186,7 +187,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     //public GameObject p1_6_4;
     //public GameObject p1_6_5;
     //public GameObject p1_6_6;
-    public int i = 0;
+    //public int i = 0;
     private void Update()
     {
         

@@ -76,8 +76,8 @@ public class H_99_60_StartPanelControll : MonoBehaviour
             kyotu.TupTeigi15 = true;
 
             kyotu.TupKoujun1 = false;
-            
 
+            kyotu.tuduki = false;
 
 
             //k7オブジェクトを直接onoff
