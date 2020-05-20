@@ -6,11 +6,11 @@ public class H_99_65_Save : MonoBehaviour
 {
     public H_99_01_kyoutuHensu　kyotu;
 
-    int save = 0;
+    //int save = 0;
 
 
 
-    public bool SaveBool = false;
+    //public bool SaveBool = false;
     void Start()
     {
         kyotu.rrCount = PlayerPrefs.GetInt("rrCount", 0);
@@ -31,6 +31,8 @@ public class H_99_65_Save : MonoBehaviour
         //???か内容か
         kyotu.BoolTeigi15 = H_99_63_SaveData.GetBool("BoolTeigi15", false);
         kyotu.BoolKoujun1 = H_99_63_SaveData.GetBool("BoolKoujun1", false);
+        //Debug.Log("H_99_65_Save>start::BoolKoujun1::" + kyotu.BoolKoujun1) ;
+
         kyotu.BoolKoujun3 = H_99_63_SaveData.GetBool("BoolKoujun3", false);
         kyotu.BoolKouri1 = H_99_63_SaveData.GetBool("BoolKouri1", false);
         kyotu.BoolShoumei1 = H_99_63_SaveData.GetBool("BoolShoumei1", false);
@@ -40,7 +42,7 @@ public class H_99_65_Save : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("H_99_65_Save>Update::kyotu.rrCount::" + kyotu.rrCount) ;
+        //Debug.Log("H_99_65_Save>Update::savebool::" + SaveBool) ;
         //Debug.Log("H_99_65_Save>Update::rrCountLock::" + kyotu.rrCountLock) ; 
         //Debug.Log("H_99_65_Save>Update::kyotu.ReadMePanelCount::" + kyotu.ReadMePanelCount);
 
@@ -83,11 +85,15 @@ public class H_99_65_Save : MonoBehaviour
         H_99_63_SaveData.SetBool("BoolMeidai1_6", kyotu.BoolMeidai1_6);
 
         //???か内容か
-        H_99_63_SaveData.GetBool("BoolTeigi15", kyotu.BoolTeigi15);
-        H_99_63_SaveData.GetBool("BoolKoujun1", kyotu.BoolKoujun1);
-        H_99_63_SaveData.GetBool("BoolKoujun3", kyotu.BoolKoujun3);
-        H_99_63_SaveData.GetBool("BoolKouri1", kyotu.BoolKouri1);
-        H_99_63_SaveData.GetBool("BoolShoumei1", kyotu.BoolShoumei1);
+        H_99_63_SaveData.SetBool("BoolTeigi15", kyotu.BoolTeigi15);
+
+        H_99_63_SaveData.SetBool("BoolKoujun1", kyotu.BoolKoujun1);
+
+        H_99_63_SaveData.SetBool("BoolKoujun3", kyotu.BoolKoujun3);
+
+        H_99_63_SaveData.SetBool("BoolKouri1", kyotu.BoolKouri1);
+        
+        H_99_63_SaveData.SetBool("BoolShoumei1", kyotu.BoolShoumei1);
 
         //H_99_63_SaveData.SetBool("saveBool", SaveBool);
         //PlayerPrefs.DeleteAll();
