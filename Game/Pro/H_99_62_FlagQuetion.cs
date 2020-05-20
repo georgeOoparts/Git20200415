@@ -11,11 +11,11 @@ public class H_99_62_FlagQuetion : MonoBehaviour
     public H_99_01_kyoutuHensu kyotu;
     public H_99_01B_kyotuElapse kyotuEla;
 
-    public GameObject BoolTeigi15;
-    public GameObject BoolKoujun1;
-    public GameObject BoolKoujun3;
-    public GameObject BoolKouri1;
-    public GameObject BoolShoumei1;
+    public GameObject henkaTeigi15;
+    public GameObject henkaKoujun1;
+    public GameObject henkaKoujun3;
+    public GameObject henkaKouri1;
+    public GameObject henkaShoumei1;
 
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
@@ -30,7 +30,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         tupTeigi15 = Instantiate(TupPrefab) as GameObject;
 
         // k0014_2_1_1 :プレハブをキャンバスの子供にする()
-        tupTeigi15.transform.SetParent(BoolTeigi15.GetComponent<Transform>(), false);
+        tupTeigi15.transform.SetParent(henkaTeigi15.GetComponent<Transform>(), false);
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupTeigi15.name = "ptupTeigi15";
@@ -39,7 +39,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         tupKoujun1 = Instantiate(TupPrefab) as GameObject;
 
         // k0014_2_1_1 :プレハブをキャンバスの子供にする()
-        tupKoujun1.transform.SetParent(BoolKoujun1.GetComponent<Transform>(), false);
+        tupKoujun1.transform.SetParent(henkaKoujun1.GetComponent<Transform>(), false);
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupKoujun1.name = "ptupKoujun1";
@@ -53,51 +53,51 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolKoujun1 == true)
         {
             //Debug.Log("true");
-            BoolKoujun1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
-            BoolKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+            henkaKoujun1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            henkaKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else 
         {
-            BoolKoujun1.GetComponent<Text>().text = "???";
-            BoolKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+            henkaKoujun1.GetComponent<Text>().text = "???";
+            henkaKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
         if (kyotu.BoolKoujun3 == true)
         {
             //Debug.Log("true");
-            BoolKoujun3.GetComponent<Text>().text = "公準P-1\n円とは周と呼ばれる1つの線の"+"\n"+
+            henkaKoujun3.GetComponent<Text>().text = "公準P-1\n円とは周と呼ばれる1つの線の"+"\n"+
             "境界で囲まれた平面図形であって" + "\n" +
             "その中にある1つの点から円周上" + "\n" +
             "の点に引かれた直線の長さが" + "\n" +
             "すべて等しいようなものである";
-            BoolKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+            henkaKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
         {
-            BoolKoujun3.GetComponent<Text>().text = "???";
-            BoolKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+            henkaKoujun3.GetComponent<Text>().text = "???";
+            henkaKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
         
         if (kyotu.BoolKouri1 == true)
         {
             //Debug.Log("true");
-            BoolKouri1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
-            BoolKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+            henkaKouri1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            henkaKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
         {
-            BoolKouri1.GetComponent<Text>().text = "???";
-            BoolKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+            henkaKouri1.GetComponent<Text>().text = "???";
+            henkaKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
         if (kyotu.BoolShoumei1 == true)
         {
             //Debug.Log("true");
-            BoolShoumei1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
-            BoolShoumei1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+            henkaShoumei1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            henkaShoumei1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
         {
-            BoolShoumei1.GetComponent<Text>().text = "???";
-            BoolShoumei1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+            henkaShoumei1.GetComponent<Text>().text = "???";
+            henkaShoumei1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
 
 
