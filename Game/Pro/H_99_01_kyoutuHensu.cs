@@ -56,11 +56,20 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool tuduki = false;
 
     //meidaiの内容false？？？true内容表示
+    public bool BoolMeidai1_1 = false;
     public bool BoolMeidai1_2 = false;
     public bool BoolMeidai1_3 = false;
     public bool BoolMeidai1_4 = false;
     public bool BoolMeidai1_5 = false;
     public bool BoolMeidai1_6 = false;
+
+    //meidaiの内容false？？？true内容表示 フラグ↓
+    public bool BoolShomeiMeidai1_1 = false;
+    public bool BoolShomeiMeidai1_2 = false;
+    public bool BoolShomeiMeidai1_3 = false;
+    public bool BoolShomeiMeidai1_4 = false;
+    public bool BoolShomeiMeidai1_5 = false;
+    public bool BoolShomeiMeidai1_6 = false;
 
     //最初の一回RR最後まで読んで終了したか
     //>meidai
