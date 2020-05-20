@@ -19,11 +19,13 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     {
         
     }
+    //rrを最後まで読んだとき出てくるパネルREADOKにYESと答えた時の処理
+
     public void onClickReadOK() 
     {
         //Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK::"+ kyotu.BoolrrReadTeigi15);
-
-        if (kyotu.BoolrrReadTeigi15==true) 
+        //tup表示があるものだけ処理。tupboolがfalseのものはただメインカメラの位置を1にして　ｒｒcount=0にする
+        if (kyotu.BoolrrReadTeigi15==true　&&kyotu.TupTeigi15==true) 
         {
             kyotu.TupBoolMeidai1_1 = true;
             kyotu.TupBoolMeidai1_2 = false;
@@ -43,7 +45,9 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             ReadOk.SetActive(false);
         }
         
+
     }
+    //rrを最後まで読んだとき出てくるパネルREADOKにNOと答えた時の処理
     public void onClickReadNo() 
     {
         //Debug.Log("H_99_64_ReadOkButton>onclickno::NOOOONOOO");

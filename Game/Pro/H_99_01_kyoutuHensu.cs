@@ -98,8 +98,10 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool TupTeigi15 = true;
 
     public bool TupKoujun1 = false;
+    public bool TupKoujun2 = false;
+    public bool TupKoujun3 = false;
 
-    
+
 
     void Start()
     {
