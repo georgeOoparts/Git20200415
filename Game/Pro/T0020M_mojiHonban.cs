@@ -238,7 +238,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     }
                     if (kyotu.rrCount ==ka1.GetLength(0)) 
                     {
-                        kyotu.BoolrrReadTeigi15 = true;
+                        //kyotu.BoolrrReadTeigi15 = true;
                         //Debug.Log("owata");
                         //k7オブジェクトを直接onoff
                         //k7　GameObject.SetActive(true);
@@ -255,7 +255,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     }
                     if (kyotu.rrCount == ka3.GetLength(0)) 
                     {
-                        kyotu.BoolrrReadTeigi15 = true;
+                        //kyotu.BoolrrReadTeigi15 = true;
                         //Debug.Log("owata");
                         //k7オブジェクトを直接onoff
                         //k7　GameObject.SetActive(true);
@@ -271,7 +271,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     }
                     if (kyotu.rrCount == ka4.GetLength(0)) 
                     {
-                        kyotu.BoolrrReadTeigi15 = true;
+                        //kyotu.BoolrrReadTeigi15 = true;
                         //Debug.Log("owata");
                         //k7オブジェクトを直接onoff
                         //k7　GameObject.SetActive(true);
@@ -299,7 +299,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     }
                     if (kyotu.rrCount == kjp1.GetLength(0)) 
                     {
-                        kyotu.BoolrrReadTeigi15 = true;
+                        //kyotu.BoolrrReadTeigi15 = true;
                         //Debug.Log("owata");
                         //k7オブジェクトを直接onoff
                         //k7　GameObject.SetActive(true);
@@ -349,7 +349,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                      //kyotu.rrCount = 0;
                      //kyotu.BoolKoujun1 = true;
                         //Debug.Log("T20MmojiHonban>kairyou::owata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
-                        kyotu.BoolrrReadTeigi15 = true;
+                        //kyotu.BoolrrReadTeigi15 = true;
                         //kyotu.TupBoolMeidai1_1 = true;
                         //kyotu.TupBoolMeidai1_2 = false;
 

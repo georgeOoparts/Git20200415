@@ -25,7 +25,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     {
         //Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK::"+ kyotu.BoolrrReadTeigi15);
         //tup表示があるものだけ処理。tupboolがfalseのものはただメインカメラの位置を1にして　ｒｒcount=0にする
-        if (kyotu.BoolrrReadTeigi15==true　&&kyotu.TupTeigi15==true) 
+        if (kyotu.TupTeigi15==true) 
         {
             kyotu.TupBoolMeidai1_1 = true;
             kyotu.TupBoolMeidai1_2 = false;
@@ -44,7 +44,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
             ReadOk.SetActive(false);
         }
-        else if (kyotu.BoolKoujun1 == true && kyotu.TupKoujun1 == true)
+        else if (kyotu.TupKoujun1 == true)
         {
             Debug.Log("seikou;;BoolKoujun1");
             //kyotu.TupBoolMeidai1_1 = true;
