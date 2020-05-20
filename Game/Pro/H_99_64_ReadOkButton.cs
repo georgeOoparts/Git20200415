@@ -44,6 +44,14 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
             ReadOk.SetActive(false);
         }
+        else 
+        {
+            //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+            kyotu.mainCameraPosi = 1;
+            kyotu.rrCount = 0;
+            ReadOk.SetActive(false);
+
+        }
         
 
     }
