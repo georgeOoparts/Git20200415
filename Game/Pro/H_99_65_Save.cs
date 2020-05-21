@@ -106,29 +106,61 @@ public class H_99_65_Save : MonoBehaviour
         //変数名が分かりにくいが、readmepanel表示にするか決めるbool変数
         //H_99_63_SaveData.SetBool("rrCountLock", kyotu.rrCountLock);
         PlayerPrefs.SetInt("ReadMePanelCount", kyotu.ReadMePanelCount);
-        
-        H_99_63_SaveData.SetBool("TupBoolMeidai1_1", kyotu.TupBoolMeidai1_1);
-        H_99_63_SaveData.SetBool("TupTeigi15", kyotu.TupTeigi15);
+
+        //tup表示させるか否かのboolロード
+        ///mokujiのtup
+        H_99_63_SaveData.SetBool("TupBoolMeidai1_1", kyotu.TupBoolMeidai1_1);//一番最初常にtrue
+        H_99_63_SaveData.SetBool("TupBoolMeidai1_2", kyotu.TupBoolMeidai1_2);
+        H_99_63_SaveData.SetBool("TupBoolMeidai1_3", kyotu.TupBoolMeidai1_3);
+        H_99_63_SaveData.SetBool("TupBoolMeidai1_4", kyotu.TupBoolMeidai1_4);
+        H_99_63_SaveData.SetBool("TupBoolMeidai1_5", kyotu.TupBoolMeidai1_5);
+        H_99_63_SaveData.SetBool("TupBoolMeidai1_6", kyotu.TupBoolMeidai1_6);
+
+        ///フラグのtup
+        H_99_63_SaveData.SetBool("TupKouri1", kyotu.TupKouri1);
+        H_99_63_SaveData.SetBool("TupKouri3", kyotu.TupKouri3);
+        H_99_63_SaveData.SetBool("TupKouri4", kyotu.TupKouri4);
+        H_99_63_SaveData.SetBool("TupKouri5", kyotu.TupKouri5);
+
         H_99_63_SaveData.SetBool("TupKoujun1", kyotu.TupKoujun1);
+        H_99_63_SaveData.SetBool("TupKoujun2", kyotu.TupKoujun2);
+        H_99_63_SaveData.SetBool("TupKoujun3", kyotu.TupKoujun3);
 
+        H_99_63_SaveData.SetBool("TupTeigi1", kyotu.TupTeigi1);
+        H_99_63_SaveData.SetBool("TupTeigi15", kyotu.TupTeigi15);//一番最初常にtrue
 
-        //kyotu.meidai2～6までをsave
+        //内容を表示させるか？？？を決めるboolのロード
+        ///目次パネルの表示　内容表示か？？？かのboolのsave
+        //kyotu.meidai1～6までをsave
+        H_99_63_SaveData.SetBool("BoolMeidai1_1", kyotu.BoolMeidai1_1);
         H_99_63_SaveData.SetBool("BoolMeidai1_2", kyotu.BoolMeidai1_2);
         H_99_63_SaveData.SetBool("BoolMeidai1_3", kyotu.BoolMeidai1_3);
         H_99_63_SaveData.SetBool("BoolMeidai1_4", kyotu.BoolMeidai1_4);
         H_99_63_SaveData.SetBool("BoolMeidai1_5", kyotu.BoolMeidai1_5);
         H_99_63_SaveData.SetBool("BoolMeidai1_6", kyotu.BoolMeidai1_6);
 
-        //???か内容か
-        H_99_63_SaveData.SetBool("BoolTeigi15", kyotu.BoolTeigi15);
+        ///フラグ図の一番下　meidaiの内容false？？？true内容表示 フラグ↓ロード
+        H_99_63_SaveData.SetBool("BoolShomeiMeidai1_1", kyotu.BoolShomeiMeidai1_1);
+        H_99_63_SaveData.SetBool("BoolShomeiMeidai1_2", kyotu.BoolShomeiMeidai1_2);
+        H_99_63_SaveData.SetBool("BoolShomeiMeidai1_3", kyotu.BoolShomeiMeidai1_3);
+        H_99_63_SaveData.SetBool("BoolShomeiMeidai1_4", kyotu.BoolShomeiMeidai1_4);
+        H_99_63_SaveData.SetBool("BoolShomeiMeidai1_5", kyotu.BoolShomeiMeidai1_5);
+        H_99_63_SaveData.SetBool("BoolShomeiMeidai1_6", kyotu.BoolShomeiMeidai1_6);
+
+        ///フラグパネルの???か内容か決めるboolのロード
+        H_99_63_SaveData.SetBool("BoolKouri1", kyotu.BoolKouri1);
+        H_99_63_SaveData.SetBool("BoolKouri3", kyotu.BoolKouri3);
+        H_99_63_SaveData.SetBool("BoolKouri4", kyotu.BoolKouri4);
+        H_99_63_SaveData.SetBool("BoolKouri5", kyotu.BoolKouri5);
 
         H_99_63_SaveData.SetBool("BoolKoujun1", kyotu.BoolKoujun1);
-
+        H_99_63_SaveData.SetBool("BoolKoujun2", kyotu.BoolKoujun2);
         H_99_63_SaveData.SetBool("BoolKoujun3", kyotu.BoolKoujun3);
 
-        H_99_63_SaveData.SetBool("BoolKouri1", kyotu.BoolKouri1);
+        H_99_63_SaveData.SetBool("BoolTeigi1", kyotu.BoolTeigi1);
+        H_99_63_SaveData.SetBool("BoolTeigi15", kyotu.BoolTeigi15);//一番最初　常にtrue
+
         
-        H_99_63_SaveData.SetBool("kyotu.BoolShomeiMeidai1_1", kyotu.BoolShomeiMeidai1_1);
 
         //H_99_63_SaveData.SetBool("saveBool", SaveBool);
         //PlayerPrefs.DeleteAll();
