@@ -65,6 +65,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
             if ((up == down) && (elapse <= tupTime))
             {
+                //Debug.Log("ositaaaaaAAAA");   
                 //T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
 
@@ -117,7 +118,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
         else if (boolClick1_1_4)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
-            if ((up == down) && (elapse <= tupTime))
+            if ((up == down) && (elapse <= tupTime) && (kyotu.BoolKoujun3 == true))
             {
                 //T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
@@ -144,7 +145,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
         else if (boolClick1_1_5)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
-            if ((up == down) && (elapse <= tupTime))
+            if ((up == down) && (elapse <= tupTime) && (kyotu.BoolKouri1 == true))
             {
                 //T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
@@ -171,7 +172,7 @@ public class H_99_56_clickFlagToRR : MonoBehaviour
         else if (boolClick1_1_6)
         {
             //tupUpとtupDownが同じ位置　かつ　タップの時間が一定以下ならば
-            if ((up == down) && (elapse <= tupTime))
+            if ((up == down) && (elapse <= tupTime) && (kyotu.BoolShomeiMeidai1_1 == true))
             {
                 //T0002M_kyotuHensu.meidaiNumber = 0;
                 //T0002M_kyotuHensu.cameraPosiNumber = 1;
