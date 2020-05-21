@@ -17,19 +17,26 @@ public class H_99_65_Save : MonoBehaviour
         //SaveBool = H_99_63_SaveData.GetBool("saveBool", false);
         //kyotu.rrCountLock = H_99_63_SaveData.GetBool("rrCountLock", true);
         kyotu.ReadMePanelCount= PlayerPrefs.GetInt("ReadMePanelCount", 0);
-
+        
+        //tup表示させるか否かのbool保存
         kyotu.TupBoolMeidai1_1 = H_99_63_SaveData.GetBool("BoolMeidai1_1", true);
         kyotu.TupTeigi15 = H_99_63_SaveData.GetBool("TupTeigi15", true);
         kyotu.TupKoujun1 = H_99_63_SaveData.GetBool("TupKoujun1", true);
 
+
+
+
+        //内容を表示させるか？？？を決めるboolのsave
+        ///meidaiパネルの表示　内容表示か？？？かのboolのsave
+        kyotu.BoolMeidai1_1 = H_99_63_SaveData.GetBool("BoolMeidai1_1", true);//一番最初常にtrue
         kyotu.BoolMeidai1_2 = H_99_63_SaveData.GetBool("BoolMeidai1_2", false);
         kyotu.BoolMeidai1_3 = H_99_63_SaveData.GetBool("BoolMeidai1_3", false);
         kyotu.BoolMeidai1_4 = H_99_63_SaveData.GetBool("BoolMeidai1_4", false);
         kyotu.BoolMeidai1_5 = H_99_63_SaveData.GetBool("BoolMeidai1_5", false);
         kyotu.BoolMeidai1_6 = H_99_63_SaveData.GetBool("BoolMeidai1_6", false);
 
-        //???か内容か
-        kyotu.BoolTeigi15 = H_99_63_SaveData.GetBool("BoolTeigi15", false);
+        ///フラグパネルの???か内容か決めるboolの保存
+        kyotu.BoolTeigi15 = H_99_63_SaveData.GetBool("BoolTeigi15", true);//一番最初　常にtrue
         kyotu.BoolKoujun1 = H_99_63_SaveData.GetBool("BoolKoujun1", false);
         //Debug.Log("H_99_65_Save>start::BoolKoujun1::" + kyotu.BoolKoujun1) ;
 
