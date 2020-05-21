@@ -13,21 +13,38 @@ public class H_99_65_Save : MonoBehaviour
     //public bool SaveBool = false;
     void Start()
     {
+        
+
         kyotu.rrCount = PlayerPrefs.GetInt("rrCount", 0);
+        //一番最初のカメラの位置は99スタートであることに注意。最初から前回のカメラ位置をロードしない。
+
         //SaveBool = H_99_63_SaveData.GetBool("saveBool", false);
         //kyotu.rrCountLock = H_99_63_SaveData.GetBool("rrCountLock", true);
-        kyotu.ReadMePanelCount= PlayerPrefs.GetInt("ReadMePanelCount", 0);
-        
-        //tup表示させるか否かのbool保存
-        kyotu.TupBoolMeidai1_1 = H_99_63_SaveData.GetBool("BoolMeidai1_1", true);
-        kyotu.TupTeigi15 = H_99_63_SaveData.GetBool("TupTeigi15", true);
-        kyotu.TupKoujun1 = H_99_63_SaveData.GetBool("TupKoujun1", true);
+        kyotu.ReadMePanelCount = PlayerPrefs.GetInt("ReadMePanelCount", 0);
 
+        //tup表示させるか否かのboolロード
+        ///mokujiのtup
+        kyotu.TupBoolMeidai1_1 = H_99_63_SaveData.GetBool("TupBoolMeidai1_1", true);//一番最初常にtrue
+        kyotu.TupBoolMeidai1_2 = H_99_63_SaveData.GetBool("TupBoolMeidai1_2", true);
+        kyotu.TupBoolMeidai1_3 = H_99_63_SaveData.GetBool("TupBoolMeidai1_3", true);
+        kyotu.TupBoolMeidai1_4 = H_99_63_SaveData.GetBool("TupBoolMeidai1_4", true);
+        kyotu.TupBoolMeidai1_5 = H_99_63_SaveData.GetBool("TupBoolMeidai1_5", true);
+        kyotu.TupBoolMeidai1_6 = H_99_63_SaveData.GetBool("TupBoolMeidai1_6", true);
+        ///フラグのtup
+        kyotu.TupKouri1 = H_99_63_SaveData.GetBool("TupKouri1", false);
+        kyotu.TupKouri3 = H_99_63_SaveData.GetBool("TupKouri3", false);
+        kyotu.TupKouri4 = H_99_63_SaveData.GetBool("TupKouri4", false);
+        kyotu.TupKouri5 = H_99_63_SaveData.GetBool("TupKouri5", false);
 
+        kyotu.TupKoujun1 = H_99_63_SaveData.GetBool("TupKoujun1", false);
+        kyotu.TupKoujun2 = H_99_63_SaveData.GetBool("TupKoujun2", false);
+        kyotu.TupKoujun3 = H_99_63_SaveData.GetBool("TupKoujun3", false);
 
+        kyotu.TupTeigi1 = H_99_63_SaveData.GetBool("TupTeigi1", true);
+        kyotu.TupTeigi15 = H_99_63_SaveData.GetBool("TupTeigi15", true);//一番最初常にtrue
 
-        //内容を表示させるか？？？を決めるboolのsave
-        ///meidaiパネルの表示　内容表示か？？？かのboolのsave
+        //内容を表示させるか？？？を決めるboolのロード
+        ///目次パネルの表示　内容表示か？？？かのboolのロード
         kyotu.BoolMeidai1_1 = H_99_63_SaveData.GetBool("BoolMeidai1_1", true);//一番最初常にtrue
         kyotu.BoolMeidai1_2 = H_99_63_SaveData.GetBool("BoolMeidai1_2", false);
         kyotu.BoolMeidai1_3 = H_99_63_SaveData.GetBool("BoolMeidai1_3", false);
@@ -35,15 +52,26 @@ public class H_99_65_Save : MonoBehaviour
         kyotu.BoolMeidai1_5 = H_99_63_SaveData.GetBool("BoolMeidai1_5", false);
         kyotu.BoolMeidai1_6 = H_99_63_SaveData.GetBool("BoolMeidai1_6", false);
 
-        ///フラグパネルの???か内容か決めるboolの保存
-        kyotu.BoolTeigi15 = H_99_63_SaveData.GetBool("BoolTeigi15", true);//一番最初　常にtrue
-        kyotu.BoolKoujun1 = H_99_63_SaveData.GetBool("BoolKoujun1", false);
-        //Debug.Log("H_99_65_Save>start::BoolKoujun1::" + kyotu.BoolKoujun1) ;
+        ///フラグ図の一番下　meidaiの内容false？？？true内容表示 フラグ↓ロード
+        kyotu.BoolShomeiMeidai1_1 = H_99_63_SaveData.GetBool("BoolShomeiMeidai1_1", false);
+        kyotu.BoolShomeiMeidai1_2 = H_99_63_SaveData.GetBool("BoolShomeiMeidai1_2", false);
+        kyotu.BoolShomeiMeidai1_3 = H_99_63_SaveData.GetBool("BoolShomeiMeidai1_3", false);
+        kyotu.BoolShomeiMeidai1_4 = H_99_63_SaveData.GetBool("BoolShomeiMeidai1_4", false);
+        kyotu.BoolShomeiMeidai1_5 = H_99_63_SaveData.GetBool("BoolShomeiMeidai1_5", false);
+        kyotu.BoolShomeiMeidai1_6 = H_99_63_SaveData.GetBool("BoolShomeiMeidai1_6", false);
 
-        kyotu.BoolKoujun3 = H_99_63_SaveData.GetBool("BoolKoujun3", false);
+        ///フラグパネルの???か内容か決めるboolのロード
         kyotu.BoolKouri1 = H_99_63_SaveData.GetBool("BoolKouri1", false);
-        kyotu.BoolShomeiMeidai1_1 = H_99_63_SaveData.GetBool("kyotu.BoolShomeiMeidai1_1", false);
+        kyotu.BoolKouri3 = H_99_63_SaveData.GetBool("BoolKouri3", false);
+        kyotu.BoolKouri4 = H_99_63_SaveData.GetBool("BoolKouri4", false);
+        kyotu.BoolKouri5 = H_99_63_SaveData.GetBool("BoolKouri5", false);
 
+        kyotu.BoolKoujun1 = H_99_63_SaveData.GetBool("BoolKoujun1", false);
+        kyotu.BoolKoujun2 = H_99_63_SaveData.GetBool("BoolKoujun2", false);
+        kyotu.BoolKoujun3 = H_99_63_SaveData.GetBool("BoolKoujun3", false);
+
+        kyotu.BoolTeigi1 = H_99_63_SaveData.GetBool("BoolTeigi1", false);
+        kyotu.BoolTeigi15 = H_99_63_SaveData.GetBool("BoolTeigi15", true);//一番最初　常にtrue
     }
 
     // Update is called once per frame
