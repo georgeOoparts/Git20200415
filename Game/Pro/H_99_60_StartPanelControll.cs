@@ -62,7 +62,7 @@ public class H_99_60_StartPanelControll : MonoBehaviour
             kyotu.BoolKoujun1 = false;
             kyotu.BoolKoujun3 = false;
             kyotu.BoolKouri1 = false;
-            kyotu.BoolShoumei1 = false;
+            kyotu.BoolShomeiMeidai1_1 = false;
 
 
             kyotu.TupBoolMeidai1_1 = true;

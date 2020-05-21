@@ -35,7 +35,7 @@ public class H_99_65_Save : MonoBehaviour
 
         kyotu.BoolKoujun3 = H_99_63_SaveData.GetBool("BoolKoujun3", false);
         kyotu.BoolKouri1 = H_99_63_SaveData.GetBool("BoolKouri1", false);
-        kyotu.BoolShoumei1 = H_99_63_SaveData.GetBool("BoolShoumei1", false);
+        kyotu.BoolShomeiMeidai1_1 = H_99_63_SaveData.GetBool("kyotu.BoolShomeiMeidai1_1", false);
 
     }
 
@@ -93,7 +93,7 @@ public class H_99_65_Save : MonoBehaviour
 
         H_99_63_SaveData.SetBool("BoolKouri1", kyotu.BoolKouri1);
         
-        H_99_63_SaveData.SetBool("BoolShoumei1", kyotu.BoolShoumei1);
+        H_99_63_SaveData.SetBool("kyotu.BoolShomeiMeidai1_1", kyotu.BoolShomeiMeidai1_1);
 
         //H_99_63_SaveData.SetBool("saveBool", SaveBool);
         //PlayerPrefs.DeleteAll();

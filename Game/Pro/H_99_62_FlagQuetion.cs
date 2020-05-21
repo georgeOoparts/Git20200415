@@ -88,7 +88,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaKouri1.GetComponent<Text>().text = "???";
             henkaKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-        if (kyotu.BoolShoumei1 == true)
+        if (kyotu.BoolShomeiMeidai1_1 == true)
         {
             //Debug.Log("true");
             henkaShoumei1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
