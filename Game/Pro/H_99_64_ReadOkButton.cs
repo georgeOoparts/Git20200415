@@ -46,7 +46,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
         }
         else if (kyotu.TupKoujun1 == true)
         {
-            Debug.Log("seikou;;BoolKoujun1");
+            //Debug.Log("seikou;;BoolKoujun1");
             //kyotu.TupBoolMeidai1_1 = true;
             //kyotu.TupBoolMeidai1_2 = false;
 

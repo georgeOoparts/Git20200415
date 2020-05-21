@@ -56,7 +56,7 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool tuduki = false;
 
     //meidaiの内容false？？？true内容表示
-    public bool BoolMeidai1_1 = false;
+    public bool BoolMeidai1_1 = true;//一番最初常にtrue
     public bool BoolMeidai1_2 = false;
     public bool BoolMeidai1_3 = false;
     public bool BoolMeidai1_4 = false;
@@ -71,17 +71,31 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool BoolShomeiMeidai1_5 = false;
     public bool BoolShomeiMeidai1_6 = false;
 
+    
     //フラッグの内容　false　？？？：true　内容
-    public bool BoolTeigi15 = true;
-    public bool BoolKoujun1 = false;
-    public bool BoolKoujun3 = false;
     public bool BoolKouri1 = false;
-    //public bool BoolShoumei1 = false;
+    public bool BoolKouri3 = false;
+    public bool BoolKouri4 = false;
+    public bool BoolKouri5 = false;
 
+    public bool BoolKoujun1 = false;
+    public bool BoolKoujun2 = false;
+    public bool BoolKoujun3 = false;
 
-    //panel右上の点滅tupを表示させるか
+    public bool BoolTeigi1 = false;
+    public bool BoolTeigi15 = true;//一番最初常にtrue
+    
+    //フラグパネルの↓証明のtupを表示させるか否かを判定するプログラム
+    public bool tupBoolShomeiMeidai1_1 = false;
+    public bool tupBoolShomeiMeidai1_2 = false;
+    public bool tupBoolShomeiMeidai1_3 = false;
+    public bool tupBoolShomeiMeidai1_4 = false;
+    public bool tupBoolShomeiMeidai1_5 = false;
+    public bool tupBoolShomeiMeidai1_6 = false;
+
+    //meidaipanel右上の点滅tupを表示させるか meidaipanelで使うtup
     //H_99_61_MokujiQuetion、で使う
-    public bool TupBoolMeidai1_1 = true;
+    public bool TupBoolMeidai1_1 = true;//一番最初常にtrue
     public bool TupBoolMeidai1_2 = false;
     public bool TupBoolMeidai1_3 = false;
     public bool TupBoolMeidai1_4 = false;
@@ -90,13 +104,17 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
 
     //panel右上の点滅tupを表示させるか
     //H_99_62_FlagQuetion、で使う
-    public bool TupTeigi15 = true;
+    public bool TupKouri1 = false;
+    public bool TupKouri3 = false;
+    public bool TupKouri4 = false;
+    public bool TupKouri5 = false;
 
     public bool TupKoujun1 = false;
     public bool TupKoujun2 = false;
     public bool TupKoujun3 = false;
 
-
+    public bool TupTeigi1 = false;
+    public bool TupTeigi15 = true;//一番最初常にtrue
 
     void Start()
     {
