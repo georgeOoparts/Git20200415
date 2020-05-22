@@ -68,6 +68,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         //プレハブからtupKoujun3を作る。点滅するtupと表示されるGameオブジェクトーーーーー
         //k0014_2_1 :プレハブを使う
+        tupKoujun2 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupKoujun2.transform.SetParent(henkaKoujun2.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupKoujun2.name = "ptupKoujun2";
+
+        //プレハブからtupKoujun3を作る。点滅するtupと表示されるGameオブジェクトーーーーー
+        //k0014_2_1 :プレハブを使う
         tupKoujun3 = Instantiate(TupPrefab) as GameObject;
 
         // k0014_2_1_1 :プレハブをキャンバスの子供にする()
@@ -225,7 +235,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         else
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
-            tupKoujun2.GetComponent<Text>().enabled = false;
+            tupKoujun2.GetComponent<Text>().enabled = false;//
         }
         if (kyotu.TupKoujun3 == true)
         {

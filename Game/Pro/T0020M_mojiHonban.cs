@@ -395,6 +395,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     {
                         //ｒｒを最後まで読んだらreadokパネルを表示
                         ReadOk.SetActive(true);
+                        Debug.Log("3 0 IN>rrcount:;"+kyotu.rrCount);
                     }
                 }
                 else if (kyotu.MCount == 1)

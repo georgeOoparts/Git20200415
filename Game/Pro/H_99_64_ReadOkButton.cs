@@ -13,8 +13,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
     {
         //Debug.Log("H_99_64_ReadOkButton::");    
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -26,8 +25,13 @@ public class H_99_64_ReadOkButton : MonoBehaviour
         //rrcount最後まで読み込み。readok？にyesと返した時の処理
         //Debug.Log("H_99_64_ReadOkButton>onclickok::OKKKKKKOKKKK::"+ kyotu.BoolrrReadTeigi15);
         //tup表示があるものだけ処理。tupboolがfalseのものはただメインカメラの位置を1にして　ｒｒcount=0にする
-        if (kyotu.TupKouri1 == true)
+        if (kyotu.TupKouri1 == true && kyotu.mojiSwitch == 0 && kyotu.MCount == 0)
         {
+            //Debug.Log("kouriIN");
+            //k7オブジェクトを直接onoff
+            //k7　GameObject.SetActive(true);
+            //readok　buttonを消す
+            ReadOk.SetActive(false);
             //目次　タップ表示　on　off
             kyotu.TupBoolMeidai1_1 = true;
 
@@ -41,12 +45,11 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             kyotu.mainCameraPosi = 1;
             kyotu.rrCount = 0;
 
-            //k7オブジェクトを直接onoff
-            //k7　GameObject.SetActive(true);
-            //readok　buttonを消す
-            ReadOk.SetActive(false);
+
+            //Debug.Log("kouriOut");
+
         }
-        else if (kyotu.TupTeigi15==true) 
+        else if (kyotu.TupTeigi15==true&&kyotu.mojiSwitch==2&&kyotu.MCount==1) 
         {
             //目次　タップ表示　on　off
             kyotu.TupBoolMeidai1_1 = true;
@@ -66,7 +69,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //readok　buttonを消す
             ReadOk.SetActive(false);
         }
-        else if (kyotu.TupKoujun1 == true)
+        else if (kyotu.TupKoujun1 == true && kyotu.mojiSwitch == 1 && kyotu.MCount == 0)
         {
             //Debug.Log("seikou;;BoolKoujun1");
             //kyotu.TupBoolMeidai1_1 = true;
@@ -94,7 +97,7 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
             ReadOk.SetActive(false);
         }
-        else if (kyotu.TupKoujun3 == true)
+        else if (kyotu.TupKoujun3 == true && kyotu.mojiSwitch == 1 && kyotu.MCount == 2)
         {
             
             //現在のtup消し次のtup開放
@@ -114,8 +117,10 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
             ReadOk.SetActive(false);
         }
-        else if (kyotu.tupBoolShomeiMeidai1_1 == true) 
+        else if (kyotu.tupBoolShomeiMeidai1_1 == true && kyotu.mojiSwitch == 3 && kyotu.MCount == 0) 
         {
+            //Debug.Log("shoumeiIN::rrcout;:"+kyotu.rrCount);
+
             //m1_2が開く
             //目次 ？？？から表示があれば
             kyotu.BoolMeidai1_2 = true;
@@ -135,11 +140,13 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
-
+            
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
             //readok　buttonを消す
             ReadOk.SetActive(false);
+            //Debug.Log("shoumeiOut::rrcout;:"+kyotu.rrCount);
+
         }
         else 
         {
