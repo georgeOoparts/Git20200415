@@ -91,7 +91,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         tupShomeiM1.transform.SetParent(henkaShomei1.GetComponent<Transform>(), false);
 
         //k0014_2_1_1: オブジェの名前を変化させる
-        tupShomeiM1.name = "ptupKoujun1";
+        tupShomeiM1.name = "ptupShomeiM1";
 
         //ここからフラグパネルm1_2のtupのためのオブジェ------------
 
@@ -115,12 +115,8 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         }
         if (kyotu.BoolKoujun3 == true)
         {
-            //Debug.Log("true");
-            henkaKoujun3.GetComponent<Text>().text = "公準P-1\n円とは周と呼ばれる1つの線の"+"\n"+
-            "境界で囲まれた平面図形であって" + "\n" +
-            "その中にある1つの点から円周上" + "\n" +
-            "の点に引かれた直線の長さが" + "\n" +
-            "すべて等しいようなものである";
+            //Debug.Log("yomikomareteru");
+            henkaKoujun3.GetComponent<Text>().text = "公準P-3\n"+"任意の中心と任意の半径の円を描くこと";
             henkaKoujun3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -132,7 +128,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolKouri1 == true)
         {
             //Debug.Log("true");
-            henkaKouri1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            henkaKouri1.GetComponent<Text>().text = "公準P-3\n任意の点から任意の点へ直線を\n引くことができる";
             henkaKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -156,16 +152,47 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         //点滅するtupが表示されるか否か
         //使うGameオブジェクトはスタートでプレハブから作っている
-        if (kyotu.TupTeigi15==true) 
-        {
-            //点滅処理
-            tupTeigi15.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
-        }
-        else 
+        if (kyotu.TupKouri1 == true)
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
-            tupTeigi15.GetComponent<Text>().enabled = false;
+            tupKouri1.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
         }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri1.GetComponent<Text>().enabled = false;
+        }
+        //if (kyotu.TupKouri3 == true)
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKouri3.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        //}
+        //else
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKouri3.GetComponent<Text>().enabled = false;
+        //}
+        //if (kyotu.TupKouri4 == true)
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKouri4.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        //}
+        //else
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKouri4.GetComponent<Text>().enabled = false;
+        //}
+        //if (kyotu.TupKouri5 == true)
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKouri5.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        //}
+        //else
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKouri5.GetComponent<Text>().enabled = false;
+        //}
+
         if (kyotu.TupKoujun1 == true)
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
@@ -176,7 +203,58 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupKoujun1.GetComponent<Text>().enabled = false;
         }
+        //if (kyotu.TupKoujun2 == true)
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKoujun2.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        //}
+        //else
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupKoujun2.GetComponent<Text>().enabled = false;
+        //}
+        if (kyotu.TupKoujun3 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKoujun3.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKoujun3.GetComponent<Text>().enabled = false;
+        }
 
+        //if (kyotu.TupTeigi1 == true)
+        //{
+        //    //点滅処理
+        //    tupTeigi1.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        //}
+        //else
+        //{
+        //    //k7_1_1:オブジェを存在するけど見えなくする。
+        //    tupTeigi1.GetComponent<Text>().enabled = false;
+        //}
+        if (kyotu.TupTeigi15 == true)
+        {
+            //点滅処理
+            tupTeigi15.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupTeigi15.GetComponent<Text>().enabled = false;
+        }
+
+        if (kyotu.tupBoolShomeiMeidai1_1 == true)
+        {
+            //点滅処理
+            tupShomeiM1.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupShomeiM1.GetComponent<Text>().enabled = false;
+        }
 
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);
     }
