@@ -387,44 +387,74 @@ public class T0020M_mojiHonban : MonoBehaviour
             {
                 if (kyotu.MCount == 0)
                 {
-                    if (kyotu.rrCount < m1_1.GetLength(0) - 1)
+                    if (kyotu.rrCount < m1_1.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == m1_1.GetLength(0))
+                    {
+                        //ｒｒを最後まで読んだらreadokパネルを表示
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 1)
                 {
-                    if (kyotu.rrCount < m1_2.GetLength(0) - 1)
+                    if (kyotu.rrCount < m1_2.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == m1_2.GetLength(0))
+                    {
+                        //ｒｒを最後まで読んだらreadokパネルを表示
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 2)
                 {
-                    if (kyotu.rrCount < m1_3.GetLength(0) - 1)
+                    if (kyotu.rrCount < m1_3.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == m1_3.GetLength(0))
+                    {
+                        //ｒｒを最後まで読んだらreadokパネルを表示
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 3)
                 {
-                    if (kyotu.rrCount < m1_4.GetLength(0) - 1)
+                    if (kyotu.rrCount < m1_4.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == m1_4.GetLength(0))
+                    {
+                        //ｒｒを最後まで読んだらreadokパネルを表示
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 4)
                 {
-                    if (kyotu.rrCount < m1_5.GetLength(0) - 1)
+                    if (kyotu.rrCount < m1_5.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == m1_5.GetLength(0))
+                    {
+                        //ｒｒを最後まで読んだらreadokパネルを表示
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 5)
                 {
-                    if (kyotu.rrCount < m1_6.GetLength(0) - 1)
+                    if (kyotu.rrCount < m1_6.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == m1_6.GetLength(0))
+                    {
+                        //ｒｒを最後まで読んだらreadokパネルを表示
+                        ReadOk.SetActive(true);
                     }
                 }
             }

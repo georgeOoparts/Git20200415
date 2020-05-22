@@ -43,6 +43,14 @@ public class H_99_65_Save : MonoBehaviour
         kyotu.TupTeigi1 = H_99_63_SaveData.GetBool("TupTeigi1", true);
         kyotu.TupTeigi15 = H_99_63_SaveData.GetBool("TupTeigi15", true);//一番最初常にtrue
 
+        //フラグ一番最後のパネル証明のtupを表示か非表示か
+        kyotu.tupBoolShomeiMeidai1_1 = H_99_63_SaveData.GetBool("tupBoolShomeiMeidai1_1",false);
+        kyotu.tupBoolShomeiMeidai1_2 = H_99_63_SaveData.GetBool("tupBoolShomeiMeidai1_2",false);
+        kyotu.tupBoolShomeiMeidai1_3 = H_99_63_SaveData.GetBool("tupBoolShomeiMeidai1_3", false);
+        kyotu.tupBoolShomeiMeidai1_4 = H_99_63_SaveData.GetBool("tupBoolShomeiMeidai1_4", false);
+        kyotu.tupBoolShomeiMeidai1_5 = H_99_63_SaveData.GetBool("tupBoolShomeiMeidai1_5", false);
+        kyotu.tupBoolShomeiMeidai1_6 = H_99_63_SaveData.GetBool("tupBoolShomeiMeidai1_6", false);
+
         //内容を表示させるか？？？を決めるboolのロード
         ///目次パネルの表示　内容表示か？？？かのboolのロード
         kyotu.BoolMeidai1_1 = H_99_63_SaveData.GetBool("BoolMeidai1_1", true);//一番最初常にtrue
@@ -128,6 +136,14 @@ public class H_99_65_Save : MonoBehaviour
 
         H_99_63_SaveData.SetBool("TupTeigi1", kyotu.TupTeigi1);
         H_99_63_SaveData.SetBool("TupTeigi15", kyotu.TupTeigi15);//一番最初常にtrue
+        
+        //フラグ一番最後のパネル証明のtupを表示か非表示か
+        H_99_63_SaveData.SetBool("tupBoolShomeiMeidai1_1", kyotu.tupBoolShomeiMeidai1_1);
+        H_99_63_SaveData.SetBool("tupBoolShomeiMeidai1_2", kyotu.tupBoolShomeiMeidai1_2);
+        H_99_63_SaveData.SetBool("tupBoolShomeiMeidai1_3", kyotu.tupBoolShomeiMeidai1_3);
+        H_99_63_SaveData.SetBool("tupBoolShomeiMeidai1_4", kyotu.tupBoolShomeiMeidai1_4);
+        H_99_63_SaveData.SetBool("tupBoolShomeiMeidai1_5", kyotu.tupBoolShomeiMeidai1_5);
+        H_99_63_SaveData.SetBool("tupBoolShomeiMeidai1_6", kyotu.tupBoolShomeiMeidai1_6);
 
         //内容を表示させるか？？？を決めるboolのロード
         ///目次パネルの表示　内容表示か？？？かのboolのsave
