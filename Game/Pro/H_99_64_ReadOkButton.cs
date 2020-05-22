@@ -56,6 +56,14 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
             //kyotu.TupKoujun1 = true;
 
+            //現在のtup消し次のtup開放
+            kyotu.TupKoujun1 = false;
+            kyotu.TupKoujun3 = true;
+
+            //次の表示開放　一回開放したらfalseには戻さない
+            kyotu.BoolKoujun3 = true;
+
+
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
             kyotu.mainCameraPosi = 1;
             kyotu.rrCount = 0;
