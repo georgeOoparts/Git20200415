@@ -128,7 +128,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolKouri1 == true)
         {
             //Debug.Log("true");
-            henkaKouri1.GetComponent<Text>().text = "公準P-3\n任意の点から任意の点へ直線を\n引くことができる";
+            henkaKouri1.GetComponent<Text>().text = "公理A-1\n同じものに等しいものは互いに等しい";
             henkaKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -139,7 +139,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolShomeiMeidai1_1 == true)
         {
             //Debug.Log("true");
-            henkaShomei1.GetComponent<Text>().text = "公準P-1\n任意の点から任意の点へ直線を\n引くことができる";
+            henkaShomei1.GetComponent<Text>().text = "命題1-1　　　証明\n与えられた直線を一辺とする\n正三角形を作図すること";
             henkaShomei1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else

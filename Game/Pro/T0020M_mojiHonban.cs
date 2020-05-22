@@ -310,9 +310,18 @@ public class T0020M_mojiHonban : MonoBehaviour
                 }
                 else if (kyotu.MCount == 1)
                 {
-                    if (kyotu.rrCount < kjp2.GetLength(0) - 1)
+                    if (kyotu.rrCount < kjp2.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == kjp2.GetLength(0))
+                    {
+                        //kyotu.BoolrrReadTeigi15 = true;
+                        //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
                     }
                 }
                 else if (kyotu.MCount == 2)
