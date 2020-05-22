@@ -18,6 +18,9 @@ public class H_99_62_FlagQuetion : MonoBehaviour
     public GameObject henkaKouri1;
     public GameObject henkaShomei1;
 
+    public GameObject henkaKoujun2;
+    public GameObject henkaKouri3;
+
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
 
@@ -113,6 +116,17 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaKoujun1.GetComponent<Text>().text = "???";
             henkaKoujun1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
+        if (kyotu.BoolKoujun2 == true)
+        {
+            //Debug.Log("yomikomareteru");
+            henkaKoujun2.GetComponent<Text>().text = "公準P-2\n" + "korekara";
+            henkaKoujun2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaKoujun2.GetComponent<Text>().text = "???";
+            henkaKoujun2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
         if (kyotu.BoolKoujun3 == true)
         {
             //Debug.Log("yomikomareteru");
@@ -203,16 +217,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupKoujun1.GetComponent<Text>().enabled = false;
         }
-        //if (kyotu.TupKoujun2 == true)
-        //{
-        //    //k7_1_1:オブジェを存在するけど見えなくする。
-        //    tupKoujun2.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
-        //}
-        //else
-        //{
-        //    //k7_1_1:オブジェを存在するけど見えなくする。
-        //    tupKoujun2.GetComponent<Text>().enabled = false;
-        //}
+        if (kyotu.TupKoujun2 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKoujun2.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKoujun2.GetComponent<Text>().enabled = false;
+        }
         if (kyotu.TupKoujun3 == true)
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
