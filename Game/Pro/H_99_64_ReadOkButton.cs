@@ -148,6 +148,26 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //Debug.Log("shoumeiOut::rrcout;:"+kyotu.rrCount);
 
         }
+        else if (kyotu.TupKoujun2 == true && kyotu.mojiSwitch == 1 && kyotu.MCount == 1)
+        {
+
+            //現在のtup消し次のtup開放
+            kyotu.TupKoujun2 = false;
+            kyotu.TupKouri3 = true;
+
+            //次の表示開放　一回開放したらfalseには戻さない
+            kyotu.BoolKouri3 = true;
+
+
+            //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+            kyotu.mainCameraPosi = 1;
+            kyotu.rrCount = 0;
+
+            //k7オブジェクトを直接onoff
+            //k7　GameObject.SetActive(true);
+
+            ReadOk.SetActive(false);
+        }
         else 
         {
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放

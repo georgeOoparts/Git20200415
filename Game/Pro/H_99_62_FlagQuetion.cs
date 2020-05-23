@@ -20,6 +20,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
     public GameObject henkaKoujun2;
     public GameObject henkaKouri3;
+    public GameObject henkaShomei2;
 
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
@@ -96,6 +97,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         //k0014_2_1_1: オブジェの名前を変化させる
         tupKouri1.name = "ptupKouri1";
 
+        //プレハブからtupKouri3を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupKouri3 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupKouri3.transform.SetParent(henkaKouri3.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupKouri3.name = "ptupKouri3";
+
         //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
         //k0014_2_1 :プレハブを使う
         tupShomeiM1 = Instantiate(TupPrefab) as GameObject;
@@ -129,7 +140,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolKoujun2 == true)
         {
             //Debug.Log("yomikomareteru");
-            henkaKoujun2.GetComponent<Text>().text = "公準P-2\n" + "korekara";
+            henkaKoujun2.GetComponent<Text>().text = "公準P-2\n" + "任意の直線を連続してのばすこと";
             henkaKoujun2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -160,6 +171,19 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaKouri1.GetComponent<Text>().text = "???";
             henkaKouri1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
+        if (kyotu.BoolKouri3 == true)
+        {
+            //Debug.Log("true");
+            henkaKouri3.GetComponent<Text>().text = "公理A-1\n同じものに等しいものは互いに等しい";
+            henkaKouri3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaKouri3.GetComponent<Text>().text = "???";
+            henkaKouri3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+
+
         if (kyotu.BoolShomeiMeidai1_1 == true)
         {
             //Debug.Log("true");
@@ -171,7 +195,17 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaShomei1.GetComponent<Text>().text = "???";
             henkaShomei1.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-
+        if (kyotu.BoolShomeiMeidai1_2 == true)
+        {
+            //Debug.Log("true");
+            henkaShomei2.GetComponent<Text>().text = "命題1-2　　　証明\n与えられた直線と同じ長さの直線を与えられた点から作図すること";
+            henkaShomei2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaShomei2.GetComponent<Text>().text = "???";
+            henkaShomei2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
 
 
         //点滅するtupが表示されるか否か
@@ -186,16 +220,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupKouri1.GetComponent<Text>().enabled = false;
         }
-        //if (kyotu.TupKouri3 == true)
-        //{
-        //    //k7_1_1:オブジェを存在するけど見えなくする。
-        //    tupKouri3.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
-        //}
-        //else
-        //{
-        //    //k7_1_1:オブジェを存在するけど見えなくする。
-        //    tupKouri3.GetComponent<Text>().enabled = false;
-        //}
+        if (kyotu.TupKouri3 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri3.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri3.GetComponent<Text>().enabled = false;
+        }
         //if (kyotu.TupKouri4 == true)
         //{
         //    //k7_1_1:オブジェを存在するけど見えなくする。
