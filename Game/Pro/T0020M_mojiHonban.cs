@@ -286,7 +286,15 @@ public class T0020M_mojiHonban : MonoBehaviour
                     {
                         kyotu.rrCount++;
                     }
-                    
+                    if (kyotu.rrCount == ka5.GetLength(0))
+                    {
+                        //kyotu.BoolrrReadTeigi15 = true;
+                        //Debug.Log("owata");
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
+                    }
                 }
             }
             else if (kyotu.mojiSwitch == 1)//koujun　3つ kjp1～3
@@ -345,9 +353,17 @@ public class T0020M_mojiHonban : MonoBehaviour
             {
                 if (kyotu.MCount == 0)
                 {
-                    if (kyotu.rrCount < tdi1.GetLength(0) - 1)
+                    if (kyotu.rrCount < tdi1.GetLength(0))
                     {
                         kyotu.rrCount++;
+                    }
+                    if (kyotu.rrCount == tdi1.GetLength(0))
+                    {//最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+                     
+                        //k7オブジェクトを直接onoff
+                        //k7　GameObject.SetActive(true);
+
+                        ReadOk.SetActive(true);
                     }
 
                 }
@@ -363,19 +379,7 @@ public class T0020M_mojiHonban : MonoBehaviour
                     // 理由よくわからんが最終+1rrcount表示はtdi15.GetLength(0)-1
                     if (kyotu.rrCount == tdi15.GetLength(0)) 
                     {//最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
-                     //kyotu.mainCameraPosi = 1;
-                     //kyotu.rrCount = 0;
-                     //kyotu.BoolKoujun1 = true;
-                        //Debug.Log("T20MmojiHonban>kairyou::owata::" + kyotu.rrCount + "::"+tdi15.GetLength(0));
-                        //kyotu.BoolrrReadTeigi15 = true;
-                        //kyotu.TupBoolMeidai1_1 = true;
-                        //kyotu.TupBoolMeidai1_2 = false;
-
-                        //kyotu.TupTeigi15 = false;
-
-                        //kyotu.TupKoujun1 =true;
-
-                        //Debug.Log("owata");
+                     
                         //k7オブジェクトを直接onoff
                         //k7　GameObject.SetActive(true);
 
