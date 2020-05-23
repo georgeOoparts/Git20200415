@@ -20,7 +20,7 @@ public class H_99_65_Save : MonoBehaviour
 
         kyotu.mojiSwitch = PlayerPrefs.GetInt("mojiSwitch", 0);
         kyotu.MCount= PlayerPrefs.GetInt("MCount", 0);
-
+        kyotu.meidaiHensu = PlayerPrefs.GetInt("meidaiHensu", 0);
         //SaveBool = H_99_63_SaveData.GetBool("saveBool", false);
         //kyotu.rrCountLock = H_99_63_SaveData.GetBool("rrCountLock", true);
         kyotu.ReadMePanelCount = PlayerPrefs.GetInt("ReadMePanelCount", 0);
@@ -120,6 +120,7 @@ public class H_99_65_Save : MonoBehaviour
 
         PlayerPrefs.SetInt("mojiSwitch", kyotu.mojiSwitch);
         PlayerPrefs.SetInt("MCount", kyotu.MCount);
+        PlayerPrefs.SetInt("meidaiHensu", kyotu.meidaiHensu);
 
         //tup表示させるか否かのboolロード
         ///mokujiのtup
