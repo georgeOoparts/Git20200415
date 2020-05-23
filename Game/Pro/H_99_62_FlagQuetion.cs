@@ -22,6 +22,8 @@ public class H_99_62_FlagQuetion : MonoBehaviour
     public GameObject henkaKouri3;
     public GameObject henkaShomei2;
 
+    public GameObject henkaShomei3;
+
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
 
@@ -126,6 +128,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupShomeiM2.name = "ptupShomeiM2";
+
+        //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupShomeiM3 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupShomeiM3.transform.SetParent(henkaShomei3.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupShomeiM3.name = "ptupShomeiM3";
 
         //ここからフラグパネルm1_2のtupのためのオブジェ------------
 
@@ -333,7 +345,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupShomeiM2.GetComponent<Text>().enabled = false;
         }
-
+        if (kyotu.tupBoolShomeiMeidai1_3 == true)
+        {
+            //点滅処理
+            tupShomeiM3.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupShomeiM3.GetComponent<Text>().enabled = false;
+        }
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);
     }
 }
