@@ -24,6 +24,10 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
     public GameObject henkaShomei3;
 
+    public GameObject henkaKouri4;
+    public GameObject henkaShomei4;
+
+
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
 
@@ -109,6 +113,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         //k0014_2_1_1: オブジェの名前を変化させる
         tupKouri3.name = "ptupKouri3";
 
+        //プレハブからtupKouri3を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupKouri4 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupKouri4.transform.SetParent(henkaKouri4.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupKouri4.name = "ptupKouri4";
+
         //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
         //k0014_2_1 :プレハブを使う
         tupShomeiM1 = Instantiate(TupPrefab) as GameObject;
@@ -139,6 +153,15 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         //k0014_2_1_1: オブジェの名前を変化させる
         tupShomeiM3.name = "ptupShomeiM3";
 
+        //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupShomeiM4 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupShomeiM4.transform.SetParent(henkaShomei4.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupShomeiM4.name = "ptupShomeiM4";
         //ここからフラグパネルm1_2のtupのためのオブジェ------------
 
     }
@@ -228,7 +251,33 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaShomei2.GetComponent<Text>().text = "???";
             henkaShomei2.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-
+        if (kyotu.BoolShomeiMeidai1_3 == true)
+        {
+            //Debug.Log("true");
+            henkaShomei3.GetComponent<Text>().text = "命題1-3　　　証明\n長さが異なる2つの直線が与えられたとき、長い方から短い方の　長さを切り取ること。";
+            henkaShomei3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaShomei3.GetComponent<Text>().text = "???";
+            henkaShomei3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        if (kyotu.BoolShomeiMeidai1_4 == true)
+        {
+            //Debug.Log("true");
+            henkaShomei4.GetComponent<Text>().text = "命題1-4　　　証明\n" +
+            "2つの三角形において"+"\n"+
+            "2つの辺がそれぞれ等しく" +"\n"+
+            "その2辺に挟まれる角も等しいならば、底辺も等しく" +"\n"+
+            "2つの三角形は等しい" + "\n" +
+            "そして、残りの角もそれぞれ等しい";
+            henkaShomei4.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaShomei4.GetComponent<Text>().text = "???";
+            henkaShomei4.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
 
         //点滅するtupが表示されるか否か
         //使うGameオブジェクトはスタートでプレハブから作っている
@@ -252,16 +301,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupKouri3.GetComponent<Text>().enabled = false;
         }
-        //if (kyotu.TupKouri4 == true)
-        //{
-        //    //k7_1_1:オブジェを存在するけど見えなくする。
-        //    tupKouri4.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
-        //}
-        //else
-        //{
-        //    //k7_1_1:オブジェを存在するけど見えなくする。
-        //    tupKouri4.GetComponent<Text>().enabled = false;
-        //}
+        if (kyotu.TupKouri4 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri4.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri4.GetComponent<Text>().enabled = false;
+        }
         //if (kyotu.TupKouri5 == true)
         //{
         //    //k7_1_1:オブジェを存在するけど見えなくする。
@@ -354,6 +403,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupShomeiM3.GetComponent<Text>().enabled = false;
+        }
+        if (kyotu.tupBoolShomeiMeidai1_4 == true)
+        {
+            //点滅処理
+            tupShomeiM4.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupShomeiM4.GetComponent<Text>().enabled = false;
         }
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);
     }
