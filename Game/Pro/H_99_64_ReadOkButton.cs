@@ -73,6 +73,30 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //Debug.Log("kouriOut");
 
         }
+        else if (kyotu.TupKouri4 == true && kyotu.mojiSwitch == 0 && kyotu.MCount == 2)
+        {
+            //k7オブジェクトを直接onoff
+            //k7　GameObject.SetActive(true);
+            //readok　buttonを消す
+            ReadOk.SetActive(false);
+            
+            //目次　タップ表示　on　off
+            //kyotu.TupBoolMeidai1_1 = true;
+
+            //フラグパネルのtup表示　on　off
+            kyotu.TupKouri4 = false;
+            kyotu.tupBoolShomeiMeidai1_4 = true;
+            //次に？？？から表示があれば
+            kyotu.BoolShomeiMeidai1_4 = true;
+
+            //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+            kyotu.mainCameraPosi = 1;
+            kyotu.rrCount = 0;
+
+
+            //Debug.Log("kouriOut");
+
+        }
         else if (kyotu.TupTeigi15==true&&kyotu.mojiSwitch==2&&kyotu.MCount==1) 
         {
             //目次　タップ表示　on　off
@@ -222,6 +246,37 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
             //次に？？？から表示があれば
             kyotu.BoolKouri4 = true;
+
+            //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+            kyotu.mainCameraPosi = 0;
+            kyotu.rrCount = 0;
+
+            //k7オブジェクトを直接onoff
+            //k7　GameObject.SetActive(true);
+            //readok　buttonを消す
+            ReadOk.SetActive(false);
+            //Debug.Log("shoumeiOut::rrcout;:"+kyotu.rrCount);
+
+        }
+        else if (kyotu.tupBoolShomeiMeidai1_4 == true && kyotu.mojiSwitch == 3 && kyotu.MCount == 3)
+        {
+            //Debug.Log("shoumeiIN::rrcout;:"+kyotu.rrCount);
+
+            //m1_2が開く
+            //目次 ？？？から表示があれば
+            kyotu.BoolMeidai1_5 = true;
+
+            //目次　タップ表示　on　off
+            kyotu.TupBoolMeidai1_4 = false;
+            kyotu.TupBoolMeidai1_5 = true;
+
+
+            //フラグパネルのtup表示　on　off
+            kyotu.tupBoolShomeiMeidai1_4 = false;
+            kyotu.tupBoolShomeiMeidai1_5 = true;
+
+            //次に？？？から表示があれば
+            kyotu.BoolShomeiMeidai1_5 = true;
 
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
             kyotu.mainCameraPosi = 0;

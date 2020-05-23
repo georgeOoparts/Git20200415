@@ -27,6 +27,10 @@ public class H_99_62_FlagQuetion : MonoBehaviour
     public GameObject henkaKouri4;
     public GameObject henkaShomei4;
 
+    public GameObject henkaShomei5;//
+
+    public GameObject henkaKouri5;
+    public GameObject henkaShomei6;
 
     //k0014_2 :プレハブ（画面のobjでもOK）を使う objにはりつけ
     public GameObject TupPrefab;
@@ -113,7 +117,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         //k0014_2_1_1: オブジェの名前を変化させる
         tupKouri3.name = "ptupKouri3";
 
-        //プレハブからtupKouri3を作る。点滅するtupと表示されるGameオブジェクト------------
+        //プレハブからtupKouri4を作る。点滅するtupと表示されるGameオブジェクト------------
         //k0014_2_1 :プレハブを使う
         tupKouri4 = Instantiate(TupPrefab) as GameObject;
 
@@ -122,6 +126,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupKouri4.name = "ptupKouri4";
+
+        //プレハブからtupKouri5を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupKouri5 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupKouri5.transform.SetParent(henkaKouri5.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupKouri5.name = "ptupKouri5";
 
         //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
         //k0014_2_1 :プレハブを使う
@@ -162,8 +176,26 @@ public class H_99_62_FlagQuetion : MonoBehaviour
 
         //k0014_2_1_1: オブジェの名前を変化させる
         tupShomeiM4.name = "ptupShomeiM4";
-        //ここからフラグパネルm1_2のtupのためのオブジェ------------
+        
+        //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupShomeiM5 = Instantiate(TupPrefab) as GameObject;
 
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupShomeiM5.transform.SetParent(henkaShomei5.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupShomeiM5.name = "ptupShomeiM5";
+
+        //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupShomeiM6 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupShomeiM6.transform.SetParent(henkaShomei6.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupShomeiM6.name = "ptupShomeiM5";
     }
 
     // Update is called once per frame
@@ -227,7 +259,17 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaKouri3.GetComponent<Text>().text = "???";
             henkaKouri3.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-
+        if (kyotu.BoolKouri5 == true)
+        {
+            //Debug.Log("true");
+            henkaKouri5.GetComponent<Text>().text = "公理A-5\n" + "korekara";
+            henkaKouri5.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaKouri5.GetComponent<Text>().text = "???";
+            henkaKouri5.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
 
         if (kyotu.BoolShomeiMeidai1_1 == true)
         {
@@ -278,7 +320,28 @@ public class H_99_62_FlagQuetion : MonoBehaviour
             henkaShomei4.GetComponent<Text>().text = "???";
             henkaShomei4.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
         }
-
+        if (kyotu.BoolShomeiMeidai1_5 == true)
+        {
+            //Debug.Log("true");
+            henkaShomei5.GetComponent<Text>().text = "命題1-5　　　証明\n" + "2等辺三角形の底辺上の２つの角は互いに等しい、そして、等辺を延長してできる底辺下の2つの角も互いに等しい";
+            henkaShomei5.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaShomei5.GetComponent<Text>().text = "???";
+            henkaShomei5.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
+        if (kyotu.BoolShomeiMeidai1_6 == true)
+        {
+            //Debug.Log("true");
+            henkaShomei6.GetComponent<Text>().text = "命題1-6　　　証明\n" + "三角形の２つの角が等しいしいならば、それらに対する2つの辺も互いに等しい。";
+            henkaShomei6.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        }
+        else
+        {
+            henkaShomei6.GetComponent<Text>().text = "???";
+            henkaShomei6.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
+        }
         //点滅するtupが表示されるか否か
         //使うGameオブジェクトはスタートでプレハブから作っている
         if (kyotu.TupKouri1 == true)
@@ -310,6 +373,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupKouri4.GetComponent<Text>().enabled = false;
+        }
+        if (kyotu.TupKouri5 == true)
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri5.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupKouri5.GetComponent<Text>().enabled = false;
         }
         //if (kyotu.TupKouri5 == true)
         //{
@@ -413,6 +486,26 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupShomeiM4.GetComponent<Text>().enabled = false;
+        }
+        if (kyotu.tupBoolShomeiMeidai1_5 == true)
+        {
+            //点滅処理
+            tupShomeiM5.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupShomeiM5.GetComponent<Text>().enabled = false;
+        }
+        if (kyotu.tupBoolShomeiMeidai1_6 == true)
+        {
+            //点滅処理
+            tupShomeiM6.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupShomeiM6.GetComponent<Text>().enabled = false;
         }
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);
     }
