@@ -117,6 +117,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         //k0014_2_1_1: オブジェの名前を変化させる
         tupShomeiM1.name = "ptupShomeiM1";
 
+        //プレハブからtupShomeiM1を作る。点滅するtupと表示されるGameオブジェクト------------
+        //k0014_2_1 :プレハブを使う
+        tupShomeiM2 = Instantiate(TupPrefab) as GameObject;
+
+        // k0014_2_1_1 :プレハブをキャンバスの子供にする()
+        tupShomeiM2.transform.SetParent(henkaShomei2.GetComponent<Transform>(), false);
+
+        //k0014_2_1_1: オブジェの名前を変化させる
+        tupShomeiM2.name = "ptupShomeiM2";
+
         //ここからフラグパネルm1_2のtupのためのオブジェ------------
 
     }
@@ -174,7 +184,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolKouri3 == true)
         {
             //Debug.Log("true");
-            henkaKouri3.GetComponent<Text>().text = "公理A-1\n同じものに等しいものは互いに等しい";
+            henkaKouri3.GetComponent<Text>().text = "公理A-3\n"+"等しいものから等しいものを引いた差は互いに等しい";
             henkaKouri3.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
@@ -312,6 +322,16 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         {
             //k7_1_1:オブジェを存在するけど見えなくする。
             tupShomeiM1.GetComponent<Text>().enabled = false;
+        }
+        if (kyotu.tupBoolShomeiMeidai1_2 == true)
+        {
+            //点滅処理
+            tupShomeiM2.GetComponent<Text>().enabled = kyotuEla.tenmetuOnOff;
+        }
+        else
+        {
+            //k7_1_1:オブジェを存在するけど見えなくする。
+            tupShomeiM2.GetComponent<Text>().enabled = false;
         }
 
         //Debug.Log("H_99_01_kyoutuHensu>update::rrCount::" + kyotu.rrCount);
