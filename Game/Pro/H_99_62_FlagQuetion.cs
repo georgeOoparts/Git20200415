@@ -262,7 +262,7 @@ public class H_99_62_FlagQuetion : MonoBehaviour
         if (kyotu.BoolKouri5 == true)
         {
             //Debug.Log("true");
-            henkaKouri5.GetComponent<Text>().text = "公理A-5\n" + "korekara";
+            henkaKouri5.GetComponent<Text>().text = "公理A-5\n" + "全体は部分より大きい";
             henkaKouri5.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
         }
         else
