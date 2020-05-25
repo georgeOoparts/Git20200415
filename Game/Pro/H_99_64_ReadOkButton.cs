@@ -356,8 +356,8 @@ public class H_99_64_ReadOkButton : MonoBehaviour
 
 
             //フラグパネルのtup表示　on　off
-            kyotu.tupBoolShomeiMeidai1_5 = false;
-            kyotu.TupKouri5 = false;
+            kyotu.tupBoolShomeiMeidai1_6 = false;
+           
 
             //次に？？？から表示があれば
             //kyotu.BoolKouri5 = true;
