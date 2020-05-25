@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class H_99_64_ReadOkButton : MonoBehaviour
 {
+
+    //20200525　readok＞okを返した後フラグパネルの表示変えるために
+    //shoumei１～5終わり,kyotu.meidaiHensu変更
     public H_99_01_kyoutuHensu kyotu;
 
     public GameObject ReadOk;
@@ -210,7 +213,11 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
-            
+
+            //フラグパネルの表示変えるためにshoumei終わり,kyotu.meidaiHensu変更
+            kyotu.meidaiHensu = 1;
+
+
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
             //readok　buttonを消す
@@ -241,6 +248,9 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
+
+            //フラグパネルの表示変えるためにshoumei終わり,kyotu.meidaiHensu変更
+            kyotu.meidaiHensu = 2;
 
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
@@ -273,6 +283,10 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
 
+
+            //フラグパネルの表示変えるためにshoumei終わり,kyotu.meidaiHensu変更
+            kyotu.meidaiHensu = 3;
+
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
             //readok　buttonを消す
@@ -303,6 +317,10 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
+
+
+            //フラグパネルの表示変えるためにshoumei終わり,kyotu.meidaiHensu変更
+            kyotu.meidaiHensu = 4;
 
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
@@ -335,6 +353,8 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
 
+            //フラグパネルの表示変えるためにshoumei終わり,kyotu.meidaiHensu変更
+            kyotu.meidaiHensu = 5;
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
             //readok　buttonを消す

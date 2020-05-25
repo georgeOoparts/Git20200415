@@ -71,7 +71,7 @@ public class H_99_66_LastButtonScript : MonoBehaviour
             kyotu.LastPanelCount = 0;
         }
 
-        Debug.Log("okkk" + kyotu.LastPanelHyouji + kyotu.LastPanelCount);
+        //Debug.Log("okkk" + kyotu.LastPanelHyouji + kyotu.LastPanelCount);
 
     }
 }
