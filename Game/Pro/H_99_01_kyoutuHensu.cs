@@ -117,7 +117,8 @@ public class H_99_01_kyoutuHensu : MonoBehaviour
     public bool TupTeigi15 = true;//一番最初常にtrue
 
     //クリア後、最後のパネルをmaincameraposi　0に表示させるための変数
-    //LastPanelをmaincameraposi　0に表示させるか否かのbool
+    //canvas>mokujipanel＞LastPanelをmaincameraposi　0に表示させるか否かのbool
+    //H_99_66_LastButtonScriptで使う
     public bool LastPanelHyouji = false;
     //LastPanelのテキスト内容を変更させるための変数
     public int LastPanelCount = 0;
