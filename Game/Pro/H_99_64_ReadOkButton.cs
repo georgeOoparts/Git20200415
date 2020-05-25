@@ -289,6 +289,37 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             //Debug.Log("shoumeiOut::rrcout;:"+kyotu.rrCount);
 
         }
+        else if (kyotu.tupBoolShomeiMeidai1_5 == true && kyotu.mojiSwitch == 3 && kyotu.MCount == 4)
+        {
+            //Debug.Log("shoumeiIN::rrcout;:"+kyotu.rrCount);
+
+            //m1_2が開く
+            //目次 ？？？から表示があれば
+            kyotu.BoolMeidai1_6 = true;
+
+            //目次　タップ表示　on　off
+            kyotu.TupBoolMeidai1_5 = false;
+            kyotu.TupBoolMeidai1_6 = true;
+
+
+            //フラグパネルのtup表示　on　off
+            kyotu.tupBoolShomeiMeidai1_5 = false;
+            kyotu.TupKouri5 = true;
+
+            //次に？？？から表示があれば
+            kyotu.BoolKouri5 = true;
+
+            //最後までrrをやり終えたら、フラグにカメラを戻す。次の???を開放
+            kyotu.mainCameraPosi = 0;
+            kyotu.rrCount = 0;
+
+            //k7オブジェクトを直接onoff
+            //k7　GameObject.SetActive(true);
+            //readok　buttonを消す
+            ReadOk.SetActive(false);
+            //Debug.Log("shoumeiOut::rrcout;:"+kyotu.rrCount);
+
+        }
         else if (kyotu.TupKoujun2 == true && kyotu.mojiSwitch == 1 && kyotu.MCount == 1)
         {
 
