@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class H_99_65_Save : MonoBehaviour
 {
+    //変数をsave　loadするプログラム
+
+    //20200525　H_99_66_LastButtonScriptのkyotu.LastPanelHyouji、int　kyotu.LastPanelCount追加
     public H_99_01_kyoutuHensu　kyotu;
 
     //int save = 0;
@@ -24,6 +27,10 @@ public class H_99_65_Save : MonoBehaviour
         //SaveBool = H_99_63_SaveData.GetBool("saveBool", false);
         //kyotu.rrCountLock = H_99_63_SaveData.GetBool("rrCountLock", true);
         kyotu.ReadMePanelCount = PlayerPrefs.GetInt("ReadMePanelCount", 0);
+
+        //H_99_66_LastButtonScriptのkyotu.LastPanelHyouji、int　kyotu.LastPanelCountのロード
+        kyotu.LastPanelHyouji = H_99_63_SaveData.GetBool("LastPanelHyouji", false);
+        kyotu.LastPanelCount = PlayerPrefs.GetInt("LastPanelCount", 0);
 
         //tup表示させるか否かのboolロード
         ///mokujiのtup
@@ -121,6 +128,10 @@ public class H_99_65_Save : MonoBehaviour
         PlayerPrefs.SetInt("mojiSwitch", kyotu.mojiSwitch);
         PlayerPrefs.SetInt("MCount", kyotu.MCount);
         PlayerPrefs.SetInt("meidaiHensu", kyotu.meidaiHensu);
+
+        //H_99_66_LastButtonScriptのkyotu.LastPanelHyouji、int　kyotu.LastPanelCount
+        PlayerPrefs.SetInt("LastPanelCount", kyotu.LastPanelCount);
+        H_99_63_SaveData.SetBool("LastPanelHyouji", kyotu.LastPanelHyouji);
 
         //tup表示させるか否かのboolロード
         ///mokujiのtup
