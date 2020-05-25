@@ -243,6 +243,13 @@ public class T0001M_kaisetu : MonoBehaviour
     GameObject.SetActive(false);
 
 ----------------------------------------------------------------------------------
+    bottonUIの表示を消し、butotonUIの後ろのuiをクリックできるようにする
+    //まずボタンの表示を見えなくして
+    //k7_1_1:オブジェを存在するけど見えなくする。
+    (ボタンのオブジェ).GetComponent<Image>().enabled = false;//uipanelの時
+    //ボタンの子オブジェてあるtextをoffにすればOK
+    (ボタンの子オブジェのtextオブジェ).GetComponent<Text>().enabled = true;//uitextの時
+----------------------------------------------------------------------------------
     //shape2dの使い方
     shape2d使い方（スプライトで円周の一部を作れる）
 
