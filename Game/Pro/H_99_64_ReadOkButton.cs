@@ -366,6 +366,9 @@ public class H_99_64_ReadOkButton : MonoBehaviour
             kyotu.mainCameraPosi = 0;
             kyotu.rrCount = 0;
 
+
+            //gameクリア　ラストめーせーじを表示させる
+            kyotu.LastPanelHyouji = true;
             //k7オブジェクトを直接onoff
             //k7　GameObject.SetActive(true);
             //readok　buttonを消す
