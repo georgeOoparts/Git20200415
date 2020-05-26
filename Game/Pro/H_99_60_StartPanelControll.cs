@@ -49,6 +49,9 @@ public class H_99_60_StartPanelControll : MonoBehaviour
 
             kyotu.ReadMePanelCount = 0;
 
+            //フラグパネルの表示をm1_1にリセット
+            kyotu.meidaiHensu = 0;
+
             //meidaiの内容false？？？true内容表示
             kyotu.BoolMeidai1_1 = true;//一番最初常にtrue
             kyotu.BoolMeidai1_2 = false;
