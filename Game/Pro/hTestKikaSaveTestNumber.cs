@@ -23,7 +23,7 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
     void Update()
     {
         //k0003_3:一瞬左クリックダウン入力されたか出力０１
-        if (Input.GetMouseButtonDown(0)) 
+        if (Input.GetMouseButtonUp(0)) 
         {
             //Vector3 aTapPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -34,21 +34,22 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
             //    GameObject obj = aCollider2d.transform.gameObject;
             //    Debug.Log(obj.name);
             //}
+            Debug.Log("kiterutyoBup" + hTestKikaSaveTestReset.click);
             if (hTestKikaSaveTestReset.click == false)
             {
                 i++;
 
                 //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
                 text.text = "Number:" + i;
-
+                Debug.Log("kiterutyo"+i);
                 //hTestKikaSaveTestReset.click = true;
             }
-            else 
+            else
             {
                 hTestKikaSaveTestReset.click = false;
-                Debug.Log("kiterutyo");
+                Debug.Log("kiterutyoSaisho");
             }
-            
+
         }
         
     }

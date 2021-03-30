@@ -22,19 +22,27 @@ public class hTestKikaSaveTestBool : MonoBehaviour
     void Update()
     {
         //k0003_3:一瞬左クリックダウン入力されたか出力０１
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
-            if (tf == false)
+            if (hTestKikaSaveTestReset.click == false)
             {
-                tf = true;
-            }
-            else 
-            {
-                tf = false;
-            }
+                if (tf == false)
+                {
+                    tf = true;
+                }
+                else
+                {
+                    tf = false;
+                }
 
-            //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
-            text.text = "Bool:" + tf;
+                //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
+                text.text = "Bool:" + tf;
+            }
+            else
+            {
+                hTestKikaSaveTestReset.click = false;
+
+            }
         }
     }
 }

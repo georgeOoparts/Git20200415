@@ -36,7 +36,12 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
         textNum.text = "Number:" + hTestKikaSaveTestNumber.i;
         textBo.text = "Bool:" + hTestKikaSaveTestBool.tf;
+
+        Debug.Log("kiterutyoReset" + hTestKikaSaveTestNumber.i);
+        Debug.Log("kiterutyoReset click:" + click);
+
         //Debug.Log("hTestKikaSaveTestReset Update:" + hTestKikaSaveTestNumber.i);
+
     }
 
     //public void outResetTest()
