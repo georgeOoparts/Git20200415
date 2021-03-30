@@ -25,21 +25,32 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
         //k0003_3:一瞬左クリックダウン入力されたか出力０１
         if (Input.GetMouseButtonDown(0)) 
         {
-            Vector3 aTapPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //Vector3 aTapPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            Collider2D aCollider2d = Physics2D.OverlapPoint(aTapPoint);
+            //Collider2D aCollider2d = Physics2D.OverlapPoint(aTapPoint);
 
-            if (aCollider2d)
+            //if (aCollider2d)
+            //{
+            //    GameObject obj = aCollider2d.transform.gameObject;
+            //    Debug.Log(obj.name);
+            //}
+            if (hTestKikaSaveTestReset.click == false)
             {
-                GameObject obj = aCollider2d.transform.gameObject;
-                Debug.Log(obj.name);
-            }
+                i++;
 
-            i++;
+                //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
+                text.text = "Number:" + i;
+
+                //hTestKikaSaveTestReset.click = true;
+            }
+            else 
+            {
+                hTestKikaSaveTestReset.click = false;
+                Debug.Log("kiterutyo");
+            }
             
-            //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
-            text.text = "Number:"+i;
         }
         
     }
+
 }
