@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 //k7_1:Imageコンポーネントを使う
 using UnityEngine.UI;
-//k7 textmeshpro を使う場合
-using TMPro;
 
 public class hTestKikaSaveTestNumber : MonoBehaviour
 {
@@ -12,7 +10,7 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
     Text text;
     // Start is called before the first frame update
 
-    int i = 0;
+    public static int i = 0;
 
     void Start()
     {
@@ -27,6 +25,16 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
         //k0003_3:一瞬左クリックダウン入力されたか出力０１
         if (Input.GetMouseButtonDown(0)) 
         {
+            Vector3 aTapPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            Collider2D aCollider2d = Physics2D.OverlapPoint(aTapPoint);
+
+            if (aCollider2d)
+            {
+                GameObject obj = aCollider2d.transform.gameObject;
+                Debug.Log(obj.name);
+            }
+
             i++;
             
             //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。

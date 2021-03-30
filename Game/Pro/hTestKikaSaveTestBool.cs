@@ -9,7 +9,7 @@ public class hTestKikaSaveTestBool : MonoBehaviour
     //k2_1:どこかに書かれている。Textというクラスを扱うための変数を作成
     Text text;
 
-    bool tf=true;
+    public static bool tf=true;
 
     // Start is called before the first frame update
     void Start()
