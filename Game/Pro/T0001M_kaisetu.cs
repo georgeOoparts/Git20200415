@@ -84,6 +84,13 @@ public class T0001M_kaisetu : MonoBehaviour
     Debug.Log("wowow"+hensu);
 
     ----------------------------------------------------------
+    注意　textを使う前提として
+    //k7_1:Imageコンポーネントを使う
+    using UnityEngine.UI;
+    を最初に記述する必要あり
+
+
+
     k2::Text回り
 
     //k2_1:どこかに書かれている。Textというクラスを扱うための変数を作成
