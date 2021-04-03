@@ -34,20 +34,23 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
             //    GameObject obj = aCollider2d.transform.gameObject;
             //    Debug.Log(obj.name);
             //}
-            Debug.Log("kiterutyoBup" + hTestKikaSaveTestReset.click);
-            if (hTestKikaSaveTestReset.click == false)
+            Debug.Log("Number ReserNumver:" + hTestKikaSaveTestReset.j);
+
+            Debug.Log("Number Click" + hTestKikaSaveTestReset.click);
+            if (hTestKikaSaveTestReset.j == 1)
             {
+                hTestKikaSaveTestReset.j = 0;
+                Debug.Log("Number click true kenshutu ");
+            }
+            else
+            {
+                
                 i++;
 
                 //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
                 text.text = "Number:" + i;
-                Debug.Log("kiterutyo"+i);
+                Debug.Log("Number Number" + i);
                 //hTestKikaSaveTestReset.click = true;
-            }
-            else
-            {
-                hTestKikaSaveTestReset.click = false;
-                Debug.Log("kiterutyoSaisho");
             }
 
         }

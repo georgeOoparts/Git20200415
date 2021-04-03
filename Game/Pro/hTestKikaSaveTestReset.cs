@@ -11,7 +11,7 @@ public class hTestKikaSaveTestReset : MonoBehaviour
 
     public static bool click=false;
 
-
+    public static int j = 0; 
     //k2_1:どこかに書かれている。Textというクラスを扱うための変数を作成
     Text textNum;
     Text textBo;
@@ -30,6 +30,7 @@ public class hTestKikaSaveTestReset : MonoBehaviour
     public void resetTest() 
     {
         click = true;
+        j=1;
 
         hTestKikaSaveTestNumber.i = 1;
         hTestKikaSaveTestBool.tf = false;
@@ -37,8 +38,8 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         textNum.text = "Number:" + hTestKikaSaveTestNumber.i;
         textBo.text = "Bool:" + hTestKikaSaveTestBool.tf;
 
-        Debug.Log("kiterutyoReset" + hTestKikaSaveTestNumber.i);
-        Debug.Log("kiterutyoReset click:" + click);
+        Debug.Log("ResetNumber" + hTestKikaSaveTestNumber.i);
+        Debug.Log("Reset click:" + click);
 
         //Debug.Log("hTestKikaSaveTestReset Update:" + hTestKikaSaveTestNumber.i);
 
