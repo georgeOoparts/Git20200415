@@ -24,7 +24,12 @@ public class hTestKikaSaveTestBool : MonoBehaviour
         //k0003_3:一瞬左クリックダウン入力されたか出力０１
         if (Input.GetMouseButtonUp(0))
         {
-            if (hTestKikaSaveTestReset.click == false)
+            if (hTestKikaSaveTestReset.click == true)
+            {
+                Debug.Log("Bool reset true ");
+
+            }
+            else
             {
                 if (tf == false)
                 {
@@ -37,10 +42,6 @@ public class hTestKikaSaveTestBool : MonoBehaviour
 
                 //k2_1_1_1:text.text = "・・・ "でTEXTのないよう変更。
                 text.text = "Bool:" + tf;
-            }
-            else
-            {
-                hTestKikaSaveTestReset.click = false;
 
             }
         }

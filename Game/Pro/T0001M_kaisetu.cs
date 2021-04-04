@@ -569,5 +569,61 @@ public class T0001M_kaisetu : MonoBehaviour
     Destroy(gameObject, 5);
     gameobjectのコンポを破壊する
     Destroy(GetComponent<Rigidbody>());
+
+    T0001-1ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
+    画面全体をタップする処理の中に、ボタンがあり、ボタンを押した時は、画面の全体のタップをキャンセルする処理
+    ↓ボタンにアタッチしたファイルの中にメソッドと共通に使える変数を作る
+    ↓呼び込まれるファイルの順番を最初にする
+    public static bool buttonClick=false;
+    public void button() 
+    {
+        //ボタンを押したらtrue
+        buttonClick = true;
+        
+
+    }
+    ↓全体をタップした時変化するオブジェクト（ボタンを押した時は変化しない）にアタッチ
+    ↓ボタンはunityではInput.GetMouseButtonUp(0)のタイミングになるのでこっちもInput.GetMouseButtonUp(0)
+    呼び込まれるファイルの順番を2番目にする（ボタンを押した時キャンセルするオブジェクトが複数の時はどれか1つを最後に読み込ませる。
+    最後以外は下の処理）
+    void Update()
+    {
+        //k0003_3:一瞬左クリックダウン入力されたか出力０１
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (ファイル名.buttonClick == true)
+            {
+                //キャンセル
+
+            }
+            else
+            {
+                処理
+
+            }
+        }
+    }
+    ↓全体をタップした時変化するオブジェクト（ボタンを押した時は変化しない）にアタッチ
+    ↓ボタンはunityではInput.GetMouseButtonUp(0)のタイミングになるのでこっちもInput.GetMouseButtonUp(0)
+    呼び込まれるファイルの順番を最後にする（ボタンを押した時キャンセルするオブジェクトが複数の時はどれか1つを最後に読み込ませ下の処理）
+    void Update()
+    {
+        //k0003_3:一瞬左クリックダウン入力されたか出力０１
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (ファイル名.buttonClick == true)
+            {
+                //キャンセル
+                ファイル名.buttonClick = false;
+
+            }
+            else
+            {
+                処理
+
+            }
+        }
+    }
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
  */
 }

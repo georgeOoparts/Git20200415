@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class hTestKikaSaveTestReset : MonoBehaviour
 {
+    
+    
     public GameObject num;
     public GameObject bo;
 
     public static bool click=false;
 
-    public static int j = 0; 
     //k2_1:どこかに書かれている。Textというクラスを扱うための変数を作成
     Text textNum;
     Text textBo;
@@ -22,15 +23,10 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         textBo = bo.GetComponent<Text>();
     }
 
-    //// Update is called once per frame
-    void Update()
-    {
-        //Debug.Log("number:" + hTestKikaSaveTestNumber.i + "bool:" + hTestKikaSaveTestBool.tf);
-    }
+    
     public void resetTest() 
     {
         click = true;
-        j=1;
 
         hTestKikaSaveTestNumber.i = 1;
         hTestKikaSaveTestBool.tf = false;
@@ -38,18 +34,8 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         textNum.text = "Number:" + hTestKikaSaveTestNumber.i;
         textBo.text = "Bool:" + hTestKikaSaveTestBool.tf;
 
-        Debug.Log("ResetNumber" + hTestKikaSaveTestNumber.i);
-        Debug.Log("Reset click:" + click);
-
-        //Debug.Log("hTestKikaSaveTestReset Update:" + hTestKikaSaveTestNumber.i);
 
     }
 
-    //public void outResetTest()
-    //{
-    //    click = true;
-    //    Debug.Log("sotokara:" + hTestKikaSaveTestNumber.i);
-
-    //    Debug.Log("hTestKikaSaveTestReset Update:" + hTestKikaSaveTestNumber.i);
-    //}
+    
 }
