@@ -519,9 +519,9 @@ public class T0001M_kaisetu : MonoBehaviour
      * 
      * 
      * 
-     * boolのsave
+     * boolのsave(int のsaveだけで良い？)
      * 下のファイルを用意。アタッチする必要はない
-     * public class H_99_63_SaveData : MonoBehaviour
+    public class H_99_63_SaveData : MonoBehaviour
     {
         //const string DataKey = "saveDataKey";
         public static bool GetBool(string key, bool defalutValue)
@@ -550,26 +550,37 @@ public class T0001M_kaisetu : MonoBehaviour
 
     k22_1:intのsave
 
-
-
-        int　SaveTestに
-    // スコアを保存"SCORE"という名前でbool　SaveTestを保存　
+    //int　SaveTestに
+    // スコアを保存"SCORE"という名前でint　SaveTest=5(具体例)を保存　
         //PlayerPrefs.SetInt("SCORE", SaveTest);
         //PlayerPrefs.Save();
         
-    //savedataすべて削除
-    //PlayerPrefs.DeleteAll();
+    上記で"SCORE"にintの5がsaveされる。saveされたものを呼び出すには
+    
     
     //// "SCORE"という名前のセーブデータのロード　
-        //SaveTest = PlayerPrefs.GetInt("SCORE", 0);
+        //Debug.log(PlayerPrefs.GetInt("SCORE", 0));
+        //上記でsaveした"SCORE"のを呼び出し表示。また、何もsaveしてなければ0を呼び出す
     k23--------
+    //savedataすべて削除
+    //PlayerPrefs.DeleteAll();
     gameobjectをすべて破壊する
     Destroy(gameObject);
     gameobjectを5行後すべて破壊する
     Destroy(gameObject, 5);
     gameobjectのコンポを破壊する
     Destroy(GetComponent<Rigidbody>());
+    //save　dataがあるかチェック
+    //if (PlayerPrefs.HasKey("saveNumber"))
+    //{
+    //    Debug.Log("savedataあるよ！");
+    //}
+    //else
+    //{
+    //    Debug.Log("savedataないよ！");
 
+
+    //}
     T0001-1ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
     画面全体をタップする処理の中に、ボタンがあり、ボタンを押した時は、画面の全体のタップをキャンセルする処理
     ↓ボタンにアタッチしたファイルの中にメソッドと共通に使える変数を作る
