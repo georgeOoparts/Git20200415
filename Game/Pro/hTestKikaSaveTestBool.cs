@@ -11,7 +11,7 @@ public class hTestKikaSaveTestBool : MonoBehaviour
 
     public static bool tf=true;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         //k2_1_1:Textをこのオブジェクトで使うためのおまじない

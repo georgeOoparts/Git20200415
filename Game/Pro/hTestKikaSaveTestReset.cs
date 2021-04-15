@@ -25,7 +25,7 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         //Debug.Log(k);
     }
 
-    
+    //リセットボタン押した時の処理
     public void resetTest() 
     {
         click = true;
@@ -36,6 +36,7 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         textNum.text = "Number:" + hTestKikaSaveTestNumber.i;
         textBo.text = "Bool:" + hTestKikaSaveTestBool.tf;
 
+        //リセットボタン　押したら、hTestKikaSaveTestNumber.iをsave
         PlayerPrefs.SetInt("saveNumer", hTestKikaSaveTestNumber.i);
         PlayerPrefs.Save();
     }
