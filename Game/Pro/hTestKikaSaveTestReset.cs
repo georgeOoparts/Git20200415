@@ -36,7 +36,8 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         textNum.text = "Number:" + hTestKikaSaveTestNumber.i;
         textBo.text = "Bool:" + hTestKikaSaveTestBool.tf;
 
-
+        PlayerPrefs.SetInt("saveNumer", hTestKikaSaveTestNumber.i);
+        PlayerPrefs.Save();
     }
 
     
