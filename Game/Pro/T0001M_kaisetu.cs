@@ -583,9 +583,9 @@ public class T0001M_kaisetu : MonoBehaviour
 
     }
     ↓全体をタップした時変化するオブジェクト（ボタンを押した時は変化しない）にアタッチ
-    ↓ボタンはunityではInput.GetMouseButtonUp(0)のタイミングになるのでこっちもInput.GetMouseButtonUp(0)
+    ↓注意　ボタンはunityではInput.GetMouseButtonUp(0)のタイミングになるのでこっちもInput.GetMouseButtonUp(0)
     呼び込まれるファイルの順番を2番目にする（ボタンを押した時キャンセルするオブジェクトが複数の時はどれか1つを最後に読み込ませる。
-    最後以外は下の処理）
+    最後以外は下の処理　　ボタン押した時の処理が1つの場合はこれいらない）
     void Update()
     {
         //k0003_3:一瞬左クリックダウン入力されたか出力０１
@@ -593,12 +593,12 @@ public class T0001M_kaisetu : MonoBehaviour
         {
             if (ファイル名.buttonClick == true)
             {
-                //キャンセル
+                //ボタン押していたら処理キャンセル
 
             }
             else
             {
-                処理
+                //ボタン以外の所を押していたら　処理
 
             }
         }
@@ -613,13 +613,14 @@ public class T0001M_kaisetu : MonoBehaviour
         {
             if (ファイル名.buttonClick == true)
             {
-                //キャンセル
+                //ボタン押していたら処理キャンセル
+                //複数の処理がある場合、プログラムの読込順序最後にして下の処理を実行
                 ファイル名.buttonClick = false;
 
             }
             else
             {
-                処理
+                //ボタン以外の所を押していたら　処理
 
             }
         }

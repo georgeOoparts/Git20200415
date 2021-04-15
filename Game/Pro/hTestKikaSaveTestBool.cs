@@ -26,7 +26,7 @@ public class hTestKikaSaveTestBool : MonoBehaviour
         {
             if (hTestKikaSaveTestReset.click == true)
             {
-                Debug.Log("Bool reset true ");
+                //Debug.Log("Bool reset true ");
 
             }
             else

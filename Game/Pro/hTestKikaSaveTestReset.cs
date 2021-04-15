@@ -21,6 +21,8 @@ public class hTestKikaSaveTestReset : MonoBehaviour
         //k2_1_1:Textをこのオブジェクトで使うためのおまじない
         textNum = num.GetComponent<Text>();
         textBo = bo.GetComponent<Text>();
+        //int k= PlayerPrefs.GetInt("saveNumber");
+        //Debug.Log(k);
     }
 
     
