@@ -16,7 +16,9 @@ public class hTestKikaSaveTestNumber : MonoBehaviour
         //k2_1_1:Textをこのオブジェクトで使うためのおまじない
         text = this.gameObject.GetComponent<Text>();
 
-        
+
+        i = PlayerPrefs.GetInt("saveNumer", 0);
+        text.text = "Number:" +i;
         Debug.Log("start::"+PlayerPrefs.GetInt("saveNumer",0));
         
     }
